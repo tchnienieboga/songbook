@@ -1,29 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-
+import {parseSong} from "../utils/parser";
 
 class Song extends React.Component {
 
-    parseLine(line) {
-        const chordRegex = /\[.*?]/g;
-
-        const lyrics = line.replace(chordRegex, '').trim();
-        const chords = (line.match(chordRegex) || []).map(chord => chord.replace(/[[\]]/g, ''));
-
-        return {
-            lyrics,
-            chords
-        }
-    };
-
     render() {
-        const {song, title} = this.props;
-        const lines = (song.split('\n') || []).map(this.parseLine);
+        const {song: rawSong} = this.props;
+        const song = parseSong(rawSong);
 
         return <div>
-            <h4>{title}</h4>
-            {lines.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
+            <h4>{song.title}</h4>
+            {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col-xs-8">
                     {lyrics || <br/>}
                 </div>
@@ -36,7 +23,6 @@ class Song extends React.Component {
 }
 
 Song.propTypes = {
-    title: PropTypes.string.isRequired,
     song: PropTypes.string.isRequired
 };
 
