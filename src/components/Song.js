@@ -23,12 +23,12 @@ class Song extends React.Component {
 
         return <div>
             <h4>{title}</h4>
-            {lines.map(line => <div className="row">
+            {lines.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col-xs-8">
-                    {line.lyrics || <br/>}
+                    {lyrics || <br/>}
                 </div>
                 <div className="col-xs-4">
-                    {line.chords.map(chord => `${chord} `)}
+                    {chords.map(chord => `${chord} `)}
                 </div>
             </div>)}
         </div>;
