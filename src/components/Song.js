@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {parseSong} from "../utils/parser";
 
 class Song extends React.Component {
 
     render() {
-        const {song: rawSong} = this.props;
-        const song = parseSong(rawSong);
+        const {song} = this.props;
 
         return <div>
-            <h4>{song.title}</h4>
+            <h4>{song.number}. {song.title}</h4>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col-xs-8">
                     {lyrics || <br/>}
@@ -23,7 +21,7 @@ class Song extends React.Component {
 }
 
 Song.propTypes = {
-    song: PropTypes.string.isRequired
+    song: PropTypes.object.isRequired
 };
 
 export default Song;
