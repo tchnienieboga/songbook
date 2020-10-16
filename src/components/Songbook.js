@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Songbook.css'
 import Song from "./Song";
 
 class Songbook extends React.Component {
@@ -7,7 +8,7 @@ class Songbook extends React.Component {
     render() {
         const {songbook} = this.props;
         return (
-            <div>
+            <div className={"songbook"}>
                 {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
             </div>
         );

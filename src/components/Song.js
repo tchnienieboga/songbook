@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SongTitle from "./SongTitle";
 
 class Song extends React.Component {
 
@@ -7,12 +8,12 @@ class Song extends React.Component {
         const {song} = this.props;
 
         return <div>
-            <h4>{song.number}. {song.title}</h4>
+            <SongTitle number={song.number} title={song.title}/>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
-                <div className="col-xs-8">
+                <div className="col-8">
                     {lyrics || <br/>}
                 </div>
-                <div className="col-xs-4">
+                <div className="col-4">
                     {chords.map(chord => `${chord} `)}
                 </div>
             </div>)}
