@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SongTitle from "./SongTitle";
+import './Song.css';
+import SongTitle from './SongTitle';
 
 class Song extends React.Component {
 
     render() {
         const {song} = this.props;
 
-        return <div>
+        return <div className={"song"}>
             <SongTitle number={song.number} title={song.title}/>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col-8">

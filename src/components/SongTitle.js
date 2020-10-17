@@ -7,7 +7,7 @@ class SongTitle extends React.Component {
     render() {
         const {number, title} = this.props;
         return (
-            <p className={"songtitle"}><strong>{number}. {title}</strong></p>
+            <div className={"songtitle"}>{number}. {title}</div>
         );
     }
 
