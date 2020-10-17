@@ -14,7 +14,7 @@ class SongTitle extends React.Component {
 }
 
 SongTitle.propTypes = {
-    number: PropTypes.number.isRequired,
+    number: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired
 };
 

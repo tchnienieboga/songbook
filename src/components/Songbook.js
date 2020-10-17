@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Songbook.css'
-import Song from "./Song";
+import Song from './Song';
+import Pinch from './Pinch';
 
 class Songbook extends React.Component {
     defaultFontSize = 14;
@@ -22,9 +23,11 @@ class Songbook extends React.Component {
     render() {
         const {songbook} = this.props;
         return (
-            <div className={"songbook"} style={{fontSize: this.state.fontSize + "px"}} onClick={this.handleClick}>
-                {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
-            </div>
+            <Pinch>
+                <div className={"songbook"} style={{fontSize: this.state.fontSize + "px"}}>
+                    {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
+                </div>
+            </Pinch>
         );
     }
 
