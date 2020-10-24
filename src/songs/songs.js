@@ -3,7 +3,7 @@ import {parseSongs} from "../utils/parser";
 // language=TEXT
 const songs = `
 {title: Otwórz me oczy, o Panie}
-{number: 215}
+{number: 214}
 {key: C}
 
 Otwórz me oczy o Panie               [C]
