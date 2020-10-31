@@ -6,24 +6,41 @@ import Pinch from './Pinch';
 
 class Songbook extends React.Component {
     defaultFontSize = 14;
+    minimumFontSize = 8;
+    maximumFontSize = 32;
 
     constructor(props) {
         super(props);
         this.state = {fontSize: this.defaultFontSize};
-        this.handleClick = this.handleClick.bind(this);
+        this.pinchStart = this.pinchStart.bind(this);
+        this.pinchContinue = this.pinchContinue.bind(this);
     }
 
-    handleClick() {
-        this.setState(state => ({
-            ...state,
-            fontSize: state.fontSize + 1
-        }))
+    pinchStart(distance) {
+        this.setState((state) => ({
+            initialDistance: distance,
+            initialFontSize: state.fontSize
+        }));
     }
+
+    pinchContinue(distance) {
+        this.setState(state => {
+            if (!state.initialDistance) {
+                return {};
+            }
+            const ratio = distance / state.initialDistance;
+            const newFontSize = Math.min(Math.max(this.minimumFontSize, Math.floor(state.initialFontSize * ratio)), this.maximumFontSize);
+            return {
+                fontSize: newFontSize
+            };
+        });
+    }
+
 
     render() {
         const {songbook} = this.props;
         return (
-            <Pinch>
+            <Pinch onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
                 <div className={"songbook"} style={{fontSize: this.state.fontSize + "px"}}>
                     {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
                 </div>
