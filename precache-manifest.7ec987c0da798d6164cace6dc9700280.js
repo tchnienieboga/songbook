@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45b2f22ac7a304ab2448ef25a27e3ffd",
+    "revision": "4b21232cc164b2bd5b7e9d7237076f92",
     "url": "/songbook/index.html"
   },
   {
-    "revision": "4e6407f4fe7823108b41",
+    "revision": "898c4e694a5965abfbeb",
     "url": "/songbook/static/css/2.1afe660f.chunk.css"
   },
   {
-    "revision": "b9f9ab9c40f2d969e4e1",
+    "revision": "7ede3365869728ff43f8",
     "url": "/songbook/static/css/main.5d6abd3e.chunk.css"
   },
   {
-    "revision": "4e6407f4fe7823108b41",
-    "url": "/songbook/static/js/2.0e80f2f1.chunk.js"
+    "revision": "898c4e694a5965abfbeb",
+    "url": "/songbook/static/js/2.147326af.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/songbook/static/js/2.0e80f2f1.chunk.js.LICENSE.txt"
+    "url": "/songbook/static/js/2.147326af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9f9ab9c40f2d969e4e1",
-    "url": "/songbook/static/js/main.18b45f35.chunk.js"
+    "revision": "7ede3365869728ff43f8",
+    "url": "/songbook/static/js/main.c1d177e6.chunk.js"
   },
   {
     "revision": "edcd49477194d73dc98b",
