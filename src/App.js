@@ -6,7 +6,7 @@ import Songbook from './components/Songbook';
 import songbook from './songs/songs';
 
 const App = () => (
-    <Container>
+    <Container fluid={true}>
         <Songbook songbook={songbook}/>
     </Container>
 );

@@ -1,2 +1,3 @@
 .songbook {
+    touch-action: pan-y;
 }

@@ -5,9 +5,9 @@ import Song from './Song';
 import Pinch from './Pinch';
 
 class Songbook extends React.Component {
-    defaultFontSize = 14;
+    defaultFontSize = 16;
     minimumFontSize = 8;
-    maximumFontSize = 32;
+    maximumFontSize = 64;
 
     constructor(props) {
         super(props);
