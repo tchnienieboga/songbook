@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b21232cc164b2bd5b7e9d7237076f92",
+    "revision": "e1739a6aa9dbee47d8c220a0a3220474",
     "url": "/songbook/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/songbook/static/css/2.1afe660f.chunk.css"
   },
   {
-    "revision": "7ede3365869728ff43f8",
-    "url": "/songbook/static/css/main.5d6abd3e.chunk.css"
+    "revision": "a4743b78d8c44d0b7e0c",
+    "url": "/songbook/static/css/main.0881a3b2.chunk.css"
   },
   {
     "revision": "898c4e694a5965abfbeb",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/songbook/static/js/2.147326af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ede3365869728ff43f8",
-    "url": "/songbook/static/js/main.c1d177e6.chunk.js"
+    "revision": "a4743b78d8c44d0b7e0c",
+    "url": "/songbook/static/js/main.eb1ced3f.chunk.js"
   },
   {
     "revision": "edcd49477194d73dc98b",
