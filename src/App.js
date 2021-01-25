@@ -4,7 +4,7 @@ import Songbook from './components/Songbook';
 import songbook from './songs/songs';
 
 const App = () => (
-    <div className="container-md bg-white">
+    <div className="container-lg bg-white">
         <Songbook songbook={songbook}/>
     </div>
 );
