@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import {Container} from 'react-bootstrap';
+import './App.scss';
 import Songbook from './components/Songbook';
 import songbook from './songs/songs';
 
 const App = () => (
-    <Container fluid={true}>
+    <div className="container-md bg-white">
         <Songbook songbook={songbook}/>
-    </Container>
+    </div>
 );
 
 export default App;

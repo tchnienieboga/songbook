@@ -37,8 +37,12 @@
   }
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px
+);
+
+$body-bg: #ced4da;
+
+@import '~bootstrap/scss/bootstrap';
+
