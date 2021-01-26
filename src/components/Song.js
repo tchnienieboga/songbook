@@ -11,12 +11,12 @@ class Song extends React.Component {
         return <div className={"song"}>
             <SongTitle number={song.number} title={song.title}/>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
-                <div className="col-8">
+                <div className="col">
                     {lyrics || <br/>}
                 </div>
-                <div className="col-4">
+                {chords.length > 0 && <div className="col-4">
                     {chords.map(chord => `${chord} `)}
-                </div>
+                </div>}
             </div>)}
         </div>;
     }

@@ -41,7 +41,7 @@ class Songbook extends React.Component {
         const {songbook} = this.props;
         return (
             <Pinch onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
-                <div className={"songbook"} style={{fontSize: this.state.fontSize + "px"}}>
+                <div className="songbook py-1" style={{fontSize: this.state.fontSize + "px"}}>
                     {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
                 </div>
             </Pinch>
