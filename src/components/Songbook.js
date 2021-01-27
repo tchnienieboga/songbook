@@ -4,13 +4,13 @@ import Song from './Song';
 import Pinch from './Pinch';
 
 class Songbook extends React.Component {
-    defaultFontSize = 16;
-    minimumFontSize = 8;
-    maximumFontSize = 64;
+    defaultZoomLevel = 5;
+    minimumZoomLevel = 1;
+    maximumZoomLevel = 20;
 
     constructor(props) {
         super(props);
-        this.state = {fontSize: this.defaultFontSize};
+        this.state = {zoomLevel: this.defaultZoomLevel};
         this.pinchStart = this.pinchStart.bind(this);
         this.pinchContinue = this.pinchContinue.bind(this);
     }
@@ -18,7 +18,7 @@ class Songbook extends React.Component {
     pinchStart(distance) {
         this.setState((state) => ({
             initialDistance: distance,
-            initialFontSize: state.fontSize
+            initialZoomLevel: state.zoomLevel
         }));
     }
 
@@ -28,9 +28,10 @@ class Songbook extends React.Component {
                 return {};
             }
             const ratio = distance / state.initialDistance;
-            const newFontSize = Math.min(Math.max(this.minimumFontSize, Math.floor(state.initialFontSize * ratio)), this.maximumFontSize);
+            const change = Math.floor(Math.log10(ratio) * 10);
+            const newZoomLevel = Math.min(Math.max(this.minimumZoomLevel, state.initialZoomLevel + change), this.maximumZoomLevel);
             return {
-                fontSize: newFontSize
+                zoomLevel: newZoomLevel
             };
         });
     }
@@ -40,7 +41,7 @@ class Songbook extends React.Component {
         const {songbook} = this.props;
         return (
             <Pinch onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
-                <div className="songbook py-1" style={{fontSize: this.state.fontSize + "px"}}>
+                <div className="songbook py-1" style={{fontSize: (Math.pow(1.05, this.state.zoomLevel - 1) * 12) + "px"}}>
                     {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
                 </div>
             </Pinch>

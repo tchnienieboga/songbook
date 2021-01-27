@@ -12,6 +12,7 @@ Dusze nasze odrodzi, [a7] [G]
 Niech Twe przebaczenie [Cadd9] [G]
 Czystym dzieckiem uczyni nas. [a7] [h7] [Cadd9] [D]
  [C] [G]
+
 2. Chryste, który byłeś posłuszny, Zmiłuj się!
 Który uczniom nogi obmyłeś, Zmiłuj się!
 Niech Twe przebaczenie moc pokory objawi,
