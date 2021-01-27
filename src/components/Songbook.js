@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Songbook.css'
 import Song from './Song';
 import Pinch from './Pinch';
 

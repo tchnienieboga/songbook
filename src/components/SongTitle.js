@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './SongTitle.css';
 
 class SongTitle extends React.Component {
 

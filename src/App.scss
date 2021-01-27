@@ -47,3 +47,14 @@ $grid-gutter-width: 20px;
 
 @import '~bootstrap/scss/bootstrap';
 
+.songtitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+.songbook {
+  touch-action: pan-y;
+}
+
