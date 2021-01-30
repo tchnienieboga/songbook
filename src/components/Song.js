@@ -7,7 +7,7 @@ class Song extends React.Component {
     render() {
         const {song} = this.props;
 
-        return <div className={"song"}>
+        return <React.Fragment>
             <SongTitle number={song.number} title={song.title}/>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col">
@@ -17,7 +17,7 @@ class Song extends React.Component {
                     {chords.map(chord => `${chord} `)}
                 </div>}
             </div>)}
-        </div>;
+        </React.Fragment>;
     }
 }
 

@@ -40,10 +40,9 @@ class Songbook extends React.Component {
     render() {
         const {songbook} = this.props;
         return (
-            <Pinch onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
-                <div className="songbook py-1" style={{fontSize: (Math.pow(1.05, this.state.zoomLevel - 1) * 12) + "px"}}>
-                    {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
-                </div>
+            <Pinch className={`container-lg bg-white py-1 songbook zoom-level-${this.state.zoomLevel}`}
+                   onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
+                {songbook.songs.map((song, index) => <Song key={`song${index}`} song={song}/>)}
             </Pinch>
         );
     }

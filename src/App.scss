@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .App {
   text-align: center;
 }
@@ -47,14 +49,56 @@ $grid-gutter-width: 20px;
 
 @import '~bootstrap/scss/bootstrap';
 
-.songtitle {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 1em;
-  margin-bottom: 0.4em;
+.songbook.zoom-level-1  { font-size: 0.8227rem;}
+.songbook.zoom-level-2  { font-size: 0.8638rem;}
+.songbook.zoom-level-3  { font-size: 0.9070rem;}
+.songbook.zoom-level-4  { font-size: 0.9523rem;}
+.songbook.zoom-level-5  { font-size: 1.0000rem;}
+.songbook.zoom-level-6  { font-size: 1.0499rem;}
+.songbook.zoom-level-7  { font-size: 1.1024rem;}
+.songbook.zoom-level-8  { font-size: 1.1576rem;}
+.songbook.zoom-level-9  { font-size: 1.2155rem;}
+.songbook.zoom-level-10 { font-size: 1.2762rem;}
+.songbook.zoom-level-11 { font-size: 1.3400rem;}
+.songbook.zoom-level-12 { font-size: 1.4070rem;}
+.songbook.zoom-level-13 { font-size: 1.4774rem;}
+.songbook.zoom-level-14 { font-size: 1.5513rem;}
+.songbook.zoom-level-15 { font-size: 1.6288rem;}
+.songbook.zoom-level-16 { font-size: 1.7103rem;}
+.songbook.zoom-level-17 { font-size: 1.7958rem;}
+.songbook.zoom-level-18 { font-size: 1.8856rem;}
+.songbook.zoom-level-19 { font-size: 1.9799rem;}
+.songbook.zoom-level-20 { font-size: 2.0789rem;}
+
+@include media-breakpoint-up(sm) {
+  .songbook.zoom-level-1  { font-size: 1.0000rem;}
+  .songbook.zoom-level-2  { font-size: 1.0499rem;}
+  .songbook.zoom-level-3  { font-size: 1.1024rem;}
+  .songbook.zoom-level-4  { font-size: 1.1576rem;}
+  .songbook.zoom-level-5  { font-size: 1.2155rem;}
+  .songbook.zoom-level-6  { font-size: 1.2762rem;}
+  .songbook.zoom-level-7  { font-size: 1.3400rem;}
+  .songbook.zoom-level-8  { font-size: 1.4070rem;}
+  .songbook.zoom-level-9  { font-size: 1.4774rem;}
+  .songbook.zoom-level-10 { font-size: 1.5513rem;}
+  .songbook.zoom-level-11 { font-size: 1.6288rem;}
+  .songbook.zoom-level-12 { font-size: 1.7103rem;}
+  .songbook.zoom-level-13 { font-size: 1.7958rem;}
+  .songbook.zoom-level-14 { font-size: 1.8856rem;}
+  .songbook.zoom-level-15 { font-size: 1.9799rem;}
+  .songbook.zoom-level-16 { font-size: 2.0789rem;}
+  .songbook.zoom-level-17 { font-size: 2.1828rem;}
+  .songbook.zoom-level-18 { font-size: 2.2920rem;}
+  .songbook.zoom-level-19 { font-size: 2.4066rem;}
+  .songbook.zoom-level-20 { font-size: 2.5269rem;}
 }
 
 .songbook {
   touch-action: pan-y;
+}
+
+.songtitle {
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
