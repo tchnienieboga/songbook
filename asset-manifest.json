@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/songbook/static/css/main.d0f60d4f.chunk.css",
-    "main.js": "/songbook/static/js/main.e4f7a68f.chunk.js",
-    "main.js.map": "/songbook/static/js/main.e4f7a68f.chunk.js.map",
+    "main.css": "/songbook/static/css/main.852d59cd.chunk.css",
+    "main.js": "/songbook/static/js/main.5980e0b0.chunk.js",
+    "main.js.map": "/songbook/static/js/main.5980e0b0.chunk.js.map",
     "runtime-main.js": "/songbook/static/js/runtime-main.593b930d.js",
     "runtime-main.js.map": "/songbook/static/js/runtime-main.593b930d.js.map",
     "static/js/2.86890b24.chunk.js": "/songbook/static/js/2.86890b24.chunk.js",
     "static/js/2.86890b24.chunk.js.map": "/songbook/static/js/2.86890b24.chunk.js.map",
     "index.html": "/songbook/index.html",
-    "precache-manifest.ae3250f4173f349d050b09a36c1c85d2.js": "/songbook/precache-manifest.ae3250f4173f349d050b09a36c1c85d2.js",
+    "precache-manifest.29669a15264b8d52b0d9b330c775d015.js": "/songbook/precache-manifest.29669a15264b8d52b0d9b330c775d015.js",
     "service-worker.js": "/songbook/service-worker.js",
-    "static/css/main.d0f60d4f.chunk.css.map": "/songbook/static/css/main.d0f60d4f.chunk.css.map",
+    "static/css/main.852d59cd.chunk.css.map": "/songbook/static/css/main.852d59cd.chunk.css.map",
     "static/js/2.86890b24.chunk.js.LICENSE.txt": "/songbook/static/js/2.86890b24.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.593b930d.js",
     "static/js/2.86890b24.chunk.js",
-    "static/css/main.d0f60d4f.chunk.css",
-    "static/js/main.e4f7a68f.chunk.js"
+    "static/css/main.852d59cd.chunk.css",
+    "static/js/main.5980e0b0.chunk.js"
   ]
 }
