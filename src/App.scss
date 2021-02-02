@@ -102,3 +102,10 @@ $grid-gutter-width: 20px;
   font-weight: bold;
 }
 
+.sb-menu-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+

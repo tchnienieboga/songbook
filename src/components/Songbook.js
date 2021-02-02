@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Pinch from './Pinch';
 import Menu from "./Menu";
+import Button from "react-bootstrap/Button";
 
 class Songbook extends React.Component {
     defaultZoomLevel = 5;
@@ -20,6 +21,7 @@ class Songbook extends React.Component {
         this.pinchContinue = this.pinchContinue.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
         this.closeMenu = this.closeMenu.bind(this);
+        this.chooseSong = this.chooseSong.bind(this);
     }
 
     pinchStart(distance) {
@@ -44,15 +46,15 @@ class Songbook extends React.Component {
     }
 
     toggleMenu() {
-        this.setState(state => ({
-            menuShown: !state.menuShown
-        }));
+        this.setState(state => ({menuShown: !state.menuShown}));
     }
 
     closeMenu() {
-        this.setState({
-            menuShown: false
-        });
+        this.setState({menuShown: false});
+    }
+
+    chooseSong(songNumber) {
+        this.setState({song: songNumber, menuShown: false});
     }
 
     render() {
@@ -60,13 +62,18 @@ class Songbook extends React.Component {
         const songIndex = this.state.song - 1;
         const song = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
         return (<React.Fragment>
-                <Pinch className={`container-lg py-1 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
+                <div className="sb-menu-button">
+                    <Button variant="secondary" className="shadow rounded-lg" onClick={this.toggleMenu}>☰
+                    </Button>
+                </div>
+
+                <Pinch className={`container-lg pt-1 pb-5 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
                        onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
 
-                    <button type="button" className="btn btn-light float-right" onClick={this.toggleMenu}>...</button>
                     {song && <Song key={`song${this.state.song}`} song={song}/>}
                 </Pinch>
-                {this.state.menuShown && <Menu songbook={songbook} onClose={this.closeMenu}/>}
+                <Menu songbook={songbook} songIndex={songIndex} show={this.state.menuShown}
+                      chooseSong={this.chooseSong} onClose={this.closeMenu}/>
             </React.Fragment>
         );
     }
