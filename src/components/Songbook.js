@@ -62,10 +62,10 @@ class Songbook extends React.Component {
         const songIndex = this.state.song - 1;
         const song = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
         return (<React.Fragment>
-                <div className="sb-menu-button">
-                    <Button variant="secondary" className="shadow rounded-lg" onClick={this.toggleMenu}>☰
+                {!this.state.menuShown && <div className="sb-menu-button">
+                    <Button variant="primary" className="shadow rounded-lg" onClick={this.toggleMenu}>#
                     </Button>
-                </div>
+                </div>}
 
                 <Pinch className={`container-lg pt-1 pb-5 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
                        onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
