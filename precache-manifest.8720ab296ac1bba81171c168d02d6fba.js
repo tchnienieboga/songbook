@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b308b7a65543b5163d282cb2f8eecc12",
+    "revision": "d80ae3353acf96eff956e996a811f371",
     "url": "/songbook/index.html"
   },
   {
-    "revision": "4b60849dda577239c98b",
-    "url": "/songbook/static/css/main.dfe98ad9.chunk.css"
+    "revision": "23ae807056b2738ff4fd",
+    "url": "/songbook/static/css/main.5246c00f.chunk.css"
   },
   {
     "revision": "349ad5a37ed8251b9505",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/songbook/static/js/2.b2c3d44e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b60849dda577239c98b",
+    "revision": "23ae807056b2738ff4fd",
     "url": "/songbook/static/js/main.0cb5f23c.chunk.js"
   },
   {
