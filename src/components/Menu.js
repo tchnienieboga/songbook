@@ -19,8 +19,11 @@ class Menu extends React.Component {
                     {songbook.songs.map((song, index) => {
                         const chosenSong = index === songIndex;
                         return <React.Fragment>
-                            {chosenSong ? <span className="font-weight-bold">{song.number}. {song.title}</span>
-                                : <span><a href="#" className="text-reset" onClick={clickSong(song.number)}>{song.number}. {song.title}</a></span>}
+                            {chosenSong ? <span className="sb-menu-songtitle font-weight-bold">{song.number}. {song.title}</span>
+                                : <span className="sb-menu-songtitle">
+                                    {/* eslint-disable-next-line */}
+                                    <a className="text-reset" onClick={clickSong(song.number)}>{song.number}. {song.title}</a>
+                                </span>}
                             <br/>
                         </React.Fragment>
                     })}

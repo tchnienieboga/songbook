@@ -14,7 +14,7 @@ class Songbook extends React.Component {
         super(props);
         this.state = {
             zoomLevel: this.defaultZoomLevel,
-            menuShown: false,
+            menuShown: true,
             song: 1
         };
         this.pinchStart = this.pinchStart.bind(this);
