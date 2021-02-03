@@ -55,7 +55,7 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
-  navigator.serviceWorker.getRegistration('https://tchnienieboga.github.io/songbook/')
+  navigator.serviceWorker.getRegistration('https://tchnienieboga.github.io/')
       .then(swReg => {
         if (swReg) {
           navigator.serviceWorker.addEventListener('controllerchange', () => {
