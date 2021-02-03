@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SongTitle from './SongTitle';
+import Chord from "./Chord";
 
 class Song extends React.Component {
 
@@ -14,7 +15,7 @@ class Song extends React.Component {
                     {lyrics || <br/>}
                 </div>
                 {chords.length > 0 && <div className="col-4">
-                    {chords.map(chord => `${chord} `)}
+                    {chords.map((chord, index) => <Chord key={index} chord={chord}/>)}
                 </div>}
             </div>)}
         </React.Fragment>;
