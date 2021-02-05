@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Pinch from './Pinch';
 import Menu from "./Menu";
-import Button from "react-bootstrap/Button";
+import MenuButton from "./MenuButton";
 
 class Songbook extends React.Component {
     defaultZoomLevel = 5;
@@ -19,7 +19,7 @@ class Songbook extends React.Component {
         };
         this.pinchStart = this.pinchStart.bind(this);
         this.pinchContinue = this.pinchContinue.bind(this);
-        this.toggleMenu = this.toggleMenu.bind(this);
+        this.openMenu = this.openMenu.bind(this);
         this.closeMenu = this.closeMenu.bind(this);
         this.chooseSong = this.chooseSong.bind(this);
     }
@@ -45,8 +45,8 @@ class Songbook extends React.Component {
         });
     }
 
-    toggleMenu() {
-        this.setState(state => ({menuShown: !state.menuShown}));
+    openMenu() {
+        this.setState({menuShown: true});
     }
 
     closeMenu() {
@@ -62,12 +62,9 @@ class Songbook extends React.Component {
         const songIndex = this.state.song - 1;
         const song = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
         return (<React.Fragment>
-                {!this.state.menuShown && <div className="sb-menu-button">
-                    <Button variant="primary" className="shadow rounded-lg" onClick={this.toggleMenu}>#
-                    </Button>
-                </div>}
+                {!this.state.menuShown && <MenuButton onClick={this.openMenu}/>}
 
-                <Pinch className={`container-lg pt-1 pb-5 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
+                <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
                        onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
 
                     {song && <Song key={`song${this.state.song}`} song={song}/>}

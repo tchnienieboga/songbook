@@ -47,6 +47,17 @@ $container-max-widths: (
 $body-bg: #ced4da;
 $grid-gutter-width: 20px;
 
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #b9174f;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
 @import '~bootstrap/scss/bootstrap';
 
 .songbook.zoom-level-1  { font-size: 0.8227rem;}
@@ -95,6 +106,7 @@ $grid-gutter-width: 20px;
 
 .songbook {
   touch-action: pan-y;
+  padding-bottom: 60px;
 }
 
 .songtitle {
@@ -103,15 +115,24 @@ $grid-gutter-width: 20px;
 }
 
 .sb-chord {
-  color: #b9174f;
+  color: $red;
   font-weight: 500;
 }
 
 .sb-menu-button {
+  @include button-variant($cyan, $cyan);
+
   position: fixed;
+  width: 40px;
+  height: 40px;
   bottom: 10px;
   right: 10px;
   z-index: 100;
+
+  .sb-menu-button-icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .sb-menu-songtitle {

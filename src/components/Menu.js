@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import MenuSongTitle from "./MenuSongTitle";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 class Menu extends React.Component {
 
@@ -11,15 +13,16 @@ class Menu extends React.Component {
 
         return (
             <Modal show={show} onHide={onClose} scrollable={true}>
-                <Modal.Header closeButton>
+                <Modal.Header>
                     <h5>Który numer?</h5>
+                    <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
                 </Modal.Header>
                 <Modal.Body>
                     {songbook.songs.map((song, index) =>
                         <MenuSongTitle key={index} number={song.number} title={song.title} chosen={index === songIndex} onClick={chooseSong}/>)}
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={onClose}>Zamknij</Button>
+                    <Button variant="info" onClick={onClose}>Zamknij</Button>
                 </Modal.Footer>
             </Modal>
         );
