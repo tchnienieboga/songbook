@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGuitar} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 
 const MenuButton = ({onClick}) => (
     <div className="sb-menu-button shadow rounded-circle"

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-import MenuSongTitle from "./MenuSongTitle";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faTimes} from "@fortawesome/free-solid-svg-icons";
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+import MenuSongTitle from './MenuSongTitle';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
 
 class Menu extends React.Component {
 

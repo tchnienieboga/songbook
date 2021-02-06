@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SongTitle from './SongTitle';
-import Chord from "./Chord";
+import Chord from './Chord';
 
 class Song extends React.Component {
 

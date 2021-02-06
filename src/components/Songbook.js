@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 import Pinch from './Pinch';
-import Menu from "./Menu";
-import MenuButton from "./MenuButton";
+import Menu from './Menu';
+import MenuButton from './MenuButton';
+import ls from '../utils/localStorage';
+import Observer from './Observer';
 
 class Songbook extends React.Component {
     defaultZoomLevel = 5;
@@ -13,9 +15,9 @@ class Songbook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            zoomLevel: this.defaultZoomLevel,
+            song: ls.chosenSong.get() || 1,
+            zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
             menuShown: false,
-            song: 1
         };
         this.pinchStart = this.pinchStart.bind(this);
         this.pinchContinue = this.pinchContinue.bind(this);
@@ -25,7 +27,7 @@ class Songbook extends React.Component {
     }
 
     pinchStart(distance) {
-        this.setState((state) => ({
+        this.setState(state => ({
             initialDistance: distance,
             initialZoomLevel: state.zoomLevel
         }));
@@ -54,7 +56,11 @@ class Songbook extends React.Component {
     }
 
     chooseSong(songNumber) {
-        this.setState({song: songNumber, menuShown: false});
+        const song = parseInt(songNumber);
+        this.setState(state => ({
+            song: isNaN(song) ? state.song : song,
+            menuShown: false
+        }));
     }
 
     render() {
@@ -63,6 +69,9 @@ class Songbook extends React.Component {
         const song = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
         return (<React.Fragment>
                 {!this.state.menuShown && <MenuButton onClick={this.openMenu}/>}
+
+                <Observer value={this.state.zoomLevel} didUpdate={ls.zoomLevel.set}/>
+                <Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>
 
                 <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
                        onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>

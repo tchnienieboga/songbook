@@ -1,4 +1,4 @@
-import {parseSongs} from "../utils/parser";
+import {parseSongs} from '../utils/parser';
 
 // language=TEXT
 const songs = `
