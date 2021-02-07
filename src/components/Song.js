@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SongTitle from './SongTitle';
 import Chord from './Chord';
 
 class Song extends React.Component {
@@ -9,7 +8,11 @@ class Song extends React.Component {
         const {song} = this.props;
 
         return <React.Fragment>
-            <SongTitle number={song.number} title={song.title}/>
+            <div className="row songtitle mt-1 mb-1">
+                <div className="col-12">
+                    {song.number}. {song.title}
+                </div>
+            </div>
             {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
                 <div className="col">
                     {lyrics || <br/>}
