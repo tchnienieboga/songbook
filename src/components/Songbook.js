@@ -50,7 +50,7 @@ class Songbook extends React.Component {
 
     swipe = (swipeX) => {
         this.setState(state => {
-            const newSong = state.song + swipeX;
+            const newSong = state.song - swipeX;
             return {
                 song: newSong > this.songCount ? 1 : newSong < 1 ? this.songCount : newSong
             };
