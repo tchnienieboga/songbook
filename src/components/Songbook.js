@@ -14,6 +14,7 @@ class Songbook extends React.Component {
 
     constructor(props) {
         super(props);
+        this.songCount = props.songbook.songs.length;
         this.state = {
             song: ls.chosenSong.get() || 1,
             zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
@@ -47,6 +48,15 @@ class Songbook extends React.Component {
         });
     }
 
+    swipe = (swipeX) => {
+        this.setState(state => {
+            const newSong = state.song + swipeX;
+            return {
+                song: newSong > this.songCount ? 1 : newSong < 1 ? this.songCount : newSong
+            };
+        });
+    };
+
     openMenu() {
         this.setState({menuShown: true});
     }
@@ -74,7 +84,7 @@ class Songbook extends React.Component {
                 <Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>
 
                 <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
-                       onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue}>
+                       onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue} onSwipeX={this.swipe}>
 
                     {song && <Song key={`song${this.state.song}`} song={song}/>}
                 </Pinch>
