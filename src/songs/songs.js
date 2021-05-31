@@ -4327,6 +4327,53 @@ Opuściłeś, a zstąpiłeś na te niskości ziemskie?
 Miłość moja to sprawiła, by człowieka wywyższyła
 Pod nieba Empirejskie.
  [Fis7] [G] [g6] [A7] [D]
+---
+{title:  Jakie piękne jest Imię Twe}
+{number: 227}
+
+1. Ty na początku byłeś Słowem     [C]
+tam, gdzie sam Najwyższy Pan       [F] [a] [G]
+Swą chwałę ukrył w tym co stworzył [a] [G/H] [C]
+Lecz objawił Ciebie nam            [F] [a] [G]
+
+Ref. Jakie piękne jest Imię Twe   [C]
+Jakie piękne jest Imię Twe        [G]
+Twe Imię, Jezu, Królu nasz        [a] [G] [F]
+Jakie piękne jest Imię Twe        [C/E] 
+Nic z nim nie równa się           [G]
+Jakie piękne jest Imię Twe        [a]
+Twe Imię Jezu                     [G] [F]
+
+2. Nie chciałeś mieszkać w niebie bez nas [C]
+Więc przyniosłeś niebo tu                 [F] [a] [G]
+Twa miłość, Jezu jest największa          [a] [G/H] [C]
+Nic nas nie rozłączy już                  [F] [a] [G]
+
+Ref. Jak cudowne jest Imię Twe    [C]
+Jak cudowne jest Imię Twe         [G]
+Twe Imię, Jezu, Królu nasz        [a] [G] [F]
+Jak cudowne jest Imię Twe         [C/E] 
+Nic z nim nie równa się           [G]
+Jak cudowne jest Imię Twe         [a]
+Twe Imię Jezu x2                  [G] [F]
+
+[F] [G] [a] [C/E]
+Śmierć pokonana zasłona rozdarta       [F] [G]
+Zamilkł już grzech i zamilkł grób      [a] [C/E]
+Głośno grzmi niebo chwałę Twą wielbiąc [F] [G]
+Bo zmartwychwstał nasz Pan i Bóg       [a] [C/E]
+Nie masz rywala sobie równego          [F] [G]
+Na zawsze rządzisz w mocy swej         [a] [C/E]
+Twoja jest chwała, Twoje królestwo     [F] [G]
+A Imię Twe najwyższe jest              [a] [C/E]
+
+Ref. Jak potężne jest Imię Twe    [C]
+Jak potężne jest Imię Twe         [G]
+Twe Imię, Jezu, Królu nasz        [a] [G] [F]
+Jak potężne jest Imię Twe         [C/E] 
+Nic z nim nie równa się           [G]
+Jak potężne jest Imię Twe         [a]
+Twe Imię Jezu x2                  [G] [F]
 `;
 
 const songbook = parseSongs(songs);
