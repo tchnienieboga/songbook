@@ -4374,6 +4374,34 @@ Jak potężne jest Imię Twe         [C/E]
 Nic z nim nie równa się           [G]
 Jak potężne jest Imię Twe         [a]
 Twe Imię Jezu x2                  [G] [F]
+---
+{title:  Mój Jezu, mój Zbawco}
+{number: 228}
+
+Mój Jezu, mój Zbawco,              [A] [E]
+Któż jest tak wielki jak Ty?       [fis] [cis] [D]
+Przez wszystkie dni wysławiać chcę [A] [E] 
+Wspaniałe dzieła Twoich rąk.       [G] [E]
+
+Mój Panie, Obrońco                 [A] [E] 
+Zródło mych natchnień i sił.       [fis] [cis] [D]
+Niech cały świat, wszystko co jest [A] [E]
+Zawsze wielbi Imię Twe.            [G] [E]
+
+Ref. Krzycz na cześć Pana      [A] [fis]
+Rozraduj się w Nim             [D] [E]
+Ogłaszaj wszędzie              [A] [fis]
+Że On Panem jest               [D] [E]  
+Góry ustąpią                   [A] [fis]
+na dźwięk Jego słów            [D]
+Gdy przemówi Stwórca ziem.     [E] [E7]
+
+Patrzę z podziwem              [A] [fis]
+Na dzieła Twych rąk            [D] [E]
+Zawsze chcę kochać Cię         [A] [fis] 
+Przy Tobie być                 [D] [E]
+Co może równać się             [A] [fis] 
+Z tym, co u Ciebie mam?        [D] [E] [A]
 `;
 
 const songbook = parseSongs(songs);
