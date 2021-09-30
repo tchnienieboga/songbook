@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/songbook/static/css/main.406fe9a1.chunk.css",
-    "main.js": "/songbook/static/js/main.e5e3ec69.chunk.js",
-    "main.js.map": "/songbook/static/js/main.e5e3ec69.chunk.js.map",
+    "main.js": "/songbook/static/js/main.0f319569.chunk.js",
+    "main.js.map": "/songbook/static/js/main.0f319569.chunk.js.map",
     "runtime-main.js": "/songbook/static/js/runtime-main.593b930d.js",
     "runtime-main.js.map": "/songbook/static/js/runtime-main.593b930d.js.map",
     "static/js/2.c8356132.chunk.js": "/songbook/static/js/2.c8356132.chunk.js",
     "static/js/2.c8356132.chunk.js.map": "/songbook/static/js/2.c8356132.chunk.js.map",
     "index.html": "/songbook/index.html",
-    "precache-manifest.7868213ecf17e635d8eea32608bc63cf.js": "/songbook/precache-manifest.7868213ecf17e635d8eea32608bc63cf.js",
+    "precache-manifest.df389f66be78345dacbe4f75cdad821b.js": "/songbook/precache-manifest.df389f66be78345dacbe4f75cdad821b.js",
     "service-worker.js": "/songbook/service-worker.js",
     "static/css/main.406fe9a1.chunk.css.map": "/songbook/static/css/main.406fe9a1.chunk.css.map",
     "static/js/2.c8356132.chunk.js.LICENSE.txt": "/songbook/static/js/2.c8356132.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.593b930d.js",
     "static/js/2.c8356132.chunk.js",
     "static/css/main.406fe9a1.chunk.css",
-    "static/js/main.e5e3ec69.chunk.js"
+    "static/js/main.0f319569.chunk.js"
   ]
 }
