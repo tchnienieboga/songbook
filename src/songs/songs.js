@@ -4402,6 +4402,38 @@ Zawsze chcę kochać Cię         [A] [fis]
 Przy Tobie być                 [D] [E]
 Co może równać się             [A] [fis] 
 Z tym, co u Ciebie mam?        [D] [E] [A]
+---
+{title:  Wykrzykujcie Bogu, wykrzykujcie Królowi}
+{number: 229}
+
+Ref. Wykrzykujcie Bogu,        [d] 
+wykrzykujcie Królowi,          [d]
+klaszczcie w dłonie            [g]
+i hymny śpiewajcie. /2x        [C] [d]
+
+1. Pan najwyższy, straszliwy,  [C] [a]  
+jest Królem całej ziemi.       [d]   
+On poddaje nam narody          [C] [a]
+jest Królem całej ziemi;       [d]   
+ludy rzuca pod stopy,          [C] [a]
+jest Królem całej ziemi.       [d]  
+Bóg Abrahama                   [d]    
+
+2. Wybrał dla nas dziedzictwo, [C] [a]
+jest Królem całej ziemi.       [d]    
+On nas bardzo miłuje,          [C] [a]
+jest Królem całej ziemi.       [d]    
+Śpiewajcie Mu, śpiewajcie,     [C] [a]
+jest Królem całej ziemi.       [d]    
+Bóg Abrahama                   [d]    
+
+3. On zasiada na tronie,       [C] [a]
+jest Królem całej ziemi.       [d]    
+możni świata hołd Mu złożą,    [C] [a]
+jest Królem całej ziemi,       [d]    
+bo do Niego należą,            [C] [a]
+jest Królem całej ziemi.       [d]    
+Bóg Abrahama                   [d]    
 `;
 
 const songbook = parseSongs(songs);
