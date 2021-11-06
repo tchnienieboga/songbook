@@ -21,7 +21,7 @@ class Menu extends React.Component {
     };
 
     render() {
-        const {songbook, songIndex, show, chooseSong, onClose} = this.props;
+        const {songs, songIndex, show, chooseSong, onClose} = this.props;
         const scrollIndex = songIndex < 3 ? 0 : songIndex - 3;
 
         return (
@@ -31,7 +31,7 @@ class Menu extends React.Component {
                     <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
                 </Modal.Header>
                 <Modal.Body>
-                    {songbook.songs.map((song, index) => {
+                    {songs.map((song, index) => {
                         const chosen = index === songIndex;
                         const clickSong = number => () => chooseSong(number);
                         return <React.Fragment key={index}>
@@ -55,7 +55,7 @@ class Menu extends React.Component {
 }
 
 Menu.propTypes = {
-    songbook: PropTypes.object.isRequired,
+    songs: PropTypes.array.isRequired,
     songIndex: PropTypes.number.isRequired,
     show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,

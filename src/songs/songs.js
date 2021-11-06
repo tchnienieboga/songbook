@@ -1,7 +1,7 @@
 import {parseSongs} from '../utils/parser';
 
 // language=TEXT
-const songs = `
+const rawSongs = `
 {title:  Panie, zmiłuj się}
 {number: 1}
  [Cadd9] [G] [e7] [D]
@@ -4436,5 +4436,5 @@ jest Królem całej ziemi.       [d]
 Bóg Abrahama                   [d]    
 `;
 
-const songbook = parseSongs(songs);
-export default songbook;
+const songs = parseSongs(rawSongs);
+export default songs;

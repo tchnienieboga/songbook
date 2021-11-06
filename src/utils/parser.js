@@ -37,8 +37,5 @@ const parseSong = (song) => {
 };
 
 export const parseSongs = (rawSongs) => {
-    const songs = rawSongs.split(/---\s*\n/).map(parseSong);
-    return {
-        songs
-    };
+    return rawSongs.split(/---\s*\n/).map(parseSong);
 };
