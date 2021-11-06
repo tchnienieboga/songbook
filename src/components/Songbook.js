@@ -3,26 +3,18 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import {useDrag, usePinch} from "react-use-gesture";
+import {useDrag} from "react-use-gesture";
+import usePinchZoomLevel from "../hooks/usePinchZoomLevel";
 
 const Songbook = ({songbook}) => {
     const defaultZoomLevel = 5;
-    const minimumZoomLevel = 1;
-    const maximumZoomLevel = 20;
 
     const songCount = songbook.songs.length;
     const [song, setSong] = useState(1);
     const [zoomLevel, setZoomLevel] = useState(defaultZoomLevel);
     const [menuShown, setMenuShown] = useState(false);
-    const [initialDistance, setInitialDistance] = useState(0);
-    const [initialZoomLevel, setInitialZoomLevel] = useState(0);
 
-    const bindPinch = usePinch(state => {
-        if (state.first) {
-            pinchStart(state.da[0]);
-        }
-        pinchContinue(state.da[0]);
-    })
+    const bindPinch = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
 
     const bind = useDrag(state => {
         const [swipeX] = state.swipe;
@@ -35,21 +27,6 @@ const Songbook = ({songbook}) => {
     // song: ls.chosenSong.get() || 1,
     // zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
     // };
-
-    const pinchStart = (distance) => {
-        setInitialDistance(distance);
-        setInitialZoomLevel(zoomLevel);
-    }
-
-    const pinchContinue = (distance) => {
-        if (!initialDistance) {
-            return;
-        }
-        const ratio = distance / initialDistance;
-        const change = Math.floor(Math.log10(ratio) * 10);
-        const newZoomLevel = Math.min(Math.max(minimumZoomLevel, initialZoomLevel + change), maximumZoomLevel);
-        setZoomLevel(newZoomLevel);
-    }
 
     const swipe = (swipeX) => {
         const newSong = song - swipeX;
