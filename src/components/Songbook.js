@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
-import Pinch from './Pinch';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
+import {useDrag, usePinch} from "react-use-gesture";
 
 const Songbook = ({songbook}) => {
     const defaultZoomLevel = 5;
@@ -16,6 +16,20 @@ const Songbook = ({songbook}) => {
     const [menuShown, setMenuShown] = useState(false);
     const [initialDistance, setInitialDistance] = useState(0);
     const [initialZoomLevel, setInitialZoomLevel] = useState(0);
+
+    const bindPinch = usePinch(state => {
+        if (state.first) {
+            pinchStart(state.da[0]);
+        }
+        pinchContinue(state.da[0]);
+    })
+
+    const bind = useDrag(state => {
+        const [swipeX] = state.swipe;
+        if (swipeX !== 0) {
+            swipe(swipeX);
+        }
+    })
 
     // this.state = {
     // song: ls.chosenSong.get() || 1,
@@ -65,11 +79,9 @@ const Songbook = ({songbook}) => {
             {/*<Observer value={this.state.zoomLevel} didUpdate={ls.zoomLevel.set}/>*/}
             {/*<Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>*/}
 
-            <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}
-                   onPinchStart={pinchStart} onPinchContinue={pinchContinue} onSwipeX={swipe}>
-
+            <div {...bind()} {...bindPinch()} className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
                 {chosenSong && <Song key={`song${song}`} song={chosenSong}/>}
-            </Pinch>
+            </div>
             <Menu songbook={songbook} songIndex={songIndex} show={menuShown}
                   chooseSong={chooseSong} onClose={closeMenu}/>
         </React.Fragment>
