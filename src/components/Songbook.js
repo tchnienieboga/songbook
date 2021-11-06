@@ -3,36 +3,22 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import {useDrag} from "react-use-gesture";
 import usePinchZoomLevel from "../hooks/usePinchZoomLevel";
+import useSwipeChangeSong from "../hooks/useSwipeChangeSong";
 
 const Songbook = ({songbook}) => {
-    const defaultZoomLevel = 5;
-
     const songCount = songbook.songs.length;
     const [song, setSong] = useState(1);
-    const [zoomLevel, setZoomLevel] = useState(defaultZoomLevel);
+    const [zoomLevel, setZoomLevel] = useState(5);
     const [menuShown, setMenuShown] = useState(false);
 
     const bindPinch = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
-
-    const bind = useDrag(state => {
-        const [swipeX] = state.swipe;
-        if (swipeX !== 0) {
-            swipe(swipeX);
-        }
-    })
+    const bindSwipe = useSwipeChangeSong(song, setSong, songCount);
 
     // this.state = {
     // song: ls.chosenSong.get() || 1,
     // zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
     // };
-
-    const swipe = (swipeX) => {
-        const newSong = song - swipeX;
-        const newSongRolled = newSong > songCount ? 1 : newSong < 1 ? songCount : newSong;
-        setSong(newSongRolled);
-    };
 
     const openMenu = () => {
         setMenuShown(true);
@@ -56,7 +42,8 @@ const Songbook = ({songbook}) => {
             {/*<Observer value={this.state.zoomLevel} didUpdate={ls.zoomLevel.set}/>*/}
             {/*<Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>*/}
 
-            <div {...bind()} {...bindPinch()} className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
+            <div {...bindSwipe()} {...bindPinch()}
+                 className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
                 {chosenSong && <Song key={`song${song}`} song={chosenSong}/>}
             </div>
             <Menu songbook={songbook} songIndex={songIndex} show={menuShown}
