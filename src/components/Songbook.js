@@ -1,99 +1,79 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 import Pinch from './Pinch';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import ls from '../utils/localStorage';
-import Observer from './Observer';
 
-class Songbook extends React.Component {
-    defaultZoomLevel = 5;
-    minimumZoomLevel = 1;
-    maximumZoomLevel = 20;
+const Songbook = ({songbook}) => {
+    const defaultZoomLevel = 5;
+    const minimumZoomLevel = 1;
+    const maximumZoomLevel = 20;
 
-    constructor(props) {
-        super(props);
-        this.songCount = props.songbook.songs.length;
-        this.state = {
-            song: ls.chosenSong.get() || 1,
-            zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
-            menuShown: false,
-        };
-        this.pinchStart = this.pinchStart.bind(this);
-        this.pinchContinue = this.pinchContinue.bind(this);
-        this.openMenu = this.openMenu.bind(this);
-        this.closeMenu = this.closeMenu.bind(this);
-        this.chooseSong = this.chooseSong.bind(this);
+    const songCount = songbook.songs.length;
+    const [song, setSong] = useState(1);
+    const [zoomLevel, setZoomLevel] = useState(defaultZoomLevel);
+    const [menuShown, setMenuShown] = useState(false);
+    const [initialDistance, setInitialDistance] = useState(0);
+    const [initialZoomLevel, setInitialZoomLevel] = useState(0);
+
+    // this.state = {
+    // song: ls.chosenSong.get() || 1,
+    // zoomLevel: ls.zoomLevel.get() || this.defaultZoomLevel,
+    // };
+
+    const pinchStart = (distance) => {
+        setInitialDistance(distance);
+        setInitialZoomLevel(zoomLevel);
     }
 
-    pinchStart(distance) {
-        this.setState(state => ({
-            initialDistance: distance,
-            initialZoomLevel: state.zoomLevel
-        }));
+    const pinchContinue = (distance) => {
+        if (!initialDistance) {
+            return;
+        }
+        const ratio = distance / initialDistance;
+        const change = Math.floor(Math.log10(ratio) * 10);
+        const newZoomLevel = Math.min(Math.max(minimumZoomLevel, initialZoomLevel + change), maximumZoomLevel);
+        setZoomLevel(newZoomLevel);
     }
 
-    pinchContinue(distance) {
-        this.setState(state => {
-            if (!state.initialDistance) {
-                return {};
-            }
-            const ratio = distance / state.initialDistance;
-            const change = Math.floor(Math.log10(ratio) * 10);
-            const newZoomLevel = Math.min(Math.max(this.minimumZoomLevel, state.initialZoomLevel + change), this.maximumZoomLevel);
-            return {
-                zoomLevel: newZoomLevel
-            };
-        });
-    }
-
-    swipe = (swipeX) => {
-        this.setState(state => {
-            const newSong = state.song - swipeX;
-            return {
-                song: newSong > this.songCount ? 1 : newSong < 1 ? this.songCount : newSong
-            };
-        });
+    const swipe = (swipeX) => {
+        const newSong = song - swipeX;
+        const newSongRolled = newSong > songCount ? 1 : newSong < 1 ? songCount : newSong;
+        setSong(newSongRolled);
     };
 
-    openMenu() {
-        this.setState({menuShown: true});
+    const openMenu = () => {
+        setMenuShown(true);
     }
 
-    closeMenu() {
-        this.setState({menuShown: false});
+    const closeMenu = () => {
+        setMenuShown(false);
     }
 
-    chooseSong(songNumber) {
-        const song = parseInt(songNumber);
-        this.setState(state => ({
-            song: isNaN(song) ? state.song : song,
-            menuShown: false
-        }));
+    const chooseSong = (songNumber) => {
+        const parsedSongNumber = parseInt(songNumber);
+        setSong(isNaN(parsedSongNumber) ? song : parsedSongNumber);
+        setMenuShown(false);
     }
 
-    render() {
-        const {songbook} = this.props;
-        const songIndex = this.state.song - 1;
-        const song = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
-        return (<React.Fragment>
-                {!this.state.menuShown && <MenuButton onClick={this.openMenu}/>}
+    const songIndex = song - 1;
+    const chosenSong = songbook.songs.length > songIndex ? songbook.songs[songIndex] : null;
+    return (<React.Fragment>
+            {!menuShown && <MenuButton onClick={openMenu}/>}
 
-                <Observer value={this.state.zoomLevel} didUpdate={ls.zoomLevel.set}/>
-                <Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>
+            {/*<Observer value={this.state.zoomLevel} didUpdate={ls.zoomLevel.set}/>*/}
+            {/*<Observer value={this.state.song} didUpdate={ls.chosenSong.set}/>*/}
 
-                <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${this.state.zoomLevel}`}
-                       onPinchStart={this.pinchStart} onPinchContinue={this.pinchContinue} onSwipeX={this.swipe}>
+            <Pinch className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}
+                   onPinchStart={pinchStart} onPinchContinue={pinchContinue} onSwipeX={swipe}>
 
-                    {song && <Song key={`song${this.state.song}`} song={song}/>}
-                </Pinch>
-                <Menu songbook={songbook} songIndex={songIndex} show={this.state.menuShown}
-                      chooseSong={this.chooseSong} onClose={this.closeMenu}/>
-            </React.Fragment>
-        );
-    }
-
+                {chosenSong && <Song key={`song${song}`} song={chosenSong}/>}
+            </Pinch>
+            <Menu songbook={songbook} songIndex={songIndex} show={menuShown}
+                  chooseSong={chooseSong} onClose={closeMenu}/>
+        </React.Fragment>
+    );
 }
 
 Songbook.propTypes = {
