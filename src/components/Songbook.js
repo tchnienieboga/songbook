@@ -17,18 +17,14 @@ const Songbook = ({songbook}) => {
     const bindPinch = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
     const bindSwipe = useSwipeChangeSong(song, setSong, songCount);
 
-    const openMenu = () => {
-        setMenuShown(true);
-    }
+    const openMenu = () => setMenuShown(true);
 
-    const closeMenu = () => {
-        setMenuShown(false);
-    }
+    const closeMenu = () => setMenuShown(false);
 
     const chooseSong = (songNumber) => {
         const parsedSongNumber = parseInt(songNumber);
         setSong(isNaN(parsedSongNumber) ? song : parsedSongNumber);
-        setMenuShown(false);
+        closeMenu();
     }
 
     const songIndex = song - 1;
