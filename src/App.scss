@@ -118,7 +118,7 @@ $cyan:    #17a2b8;
 }
 
 .sb-menu-button {
-  @include button-variant($teal, $teal);
+  @include button-variant($cyan, $cyan);
 
   position: fixed;
   width: 40px;
