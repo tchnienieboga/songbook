@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
 

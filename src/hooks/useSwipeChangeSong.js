@@ -1,4 +1,4 @@
-import {useDrag} from "react-use-gesture";
+import {useDrag} from 'react-use-gesture';
 
 const useSwipeChangeSong = (song, setSong, songCount) => {
 

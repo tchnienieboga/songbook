@@ -1,5 +1,5 @@
-import {usePinch} from "react-use-gesture";
-import {useState} from "react";
+import {usePinch} from 'react-use-gesture';
+import {useState} from 'react';
 
 const usePinchZoomLevel = (zoomLevel, setZoomLevel, min, max) => {
 

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import usePinchZoomLevel from "../hooks/usePinchZoomLevel";
-import useSwipeChangeSong from "../hooks/useSwipeChangeSong";
-import usePersistentState from "../hooks/usePersistentState";
+import usePinchZoomLevel from '../hooks/usePinchZoomLevel';
+import useSwipeChangeSong from '../hooks/useSwipeChangeSong';
+import usePersistentState from '../hooks/usePersistentState';
 
 const Songbook = ({songs}) => {
 
