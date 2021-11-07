@@ -9,12 +9,12 @@ import usePersistentState from "../hooks/usePersistentState";
 
 const Songbook = ({songs}) => {
 
-    const [song, setSong] = usePersistentState("chosenSong", 1);
+    const [chosenSong, setChosenSong] = usePersistentState("chosenSong", 1);
     const [zoomLevel, setZoomLevel] = usePersistentState("zoomLevel", 5);
     const [menuShown, setMenuShown] = useState(false);
 
-    const bindPinch = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
-    const bindSwipe = useSwipeChangeSong(song, setSong, songs.length);
+    const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
+    const swipeChangeSong = useSwipeChangeSong(chosenSong, setChosenSong, songs.length);
 
     const openMenu = () => setMenuShown(true);
 
@@ -22,20 +22,20 @@ const Songbook = ({songs}) => {
 
     const chooseSong = (songNumber) => {
         const parsedSongNumber = parseInt(songNumber);
-        setSong(isNaN(parsedSongNumber) ? song : parsedSongNumber);
+        setChosenSong(isNaN(parsedSongNumber) ? chosenSong : parsedSongNumber);
         closeMenu();
     }
 
-    const chosenSong = songs[song - 1];
+    const song = songs[chosenSong - 1];
     return (<React.Fragment>
             {!menuShown && <MenuButton onClick={openMenu}/>}
 
-            <div {...bindSwipe()} {...bindPinch()}
+            <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
-                {chosenSong && <Song key={`song${song}`} song={chosenSong}/>}
+                {!!song && <Song key={`song${chosenSong}`} song={song}/>}
             </div>
 
-            <Menu songs={songs} songIndex={song - 1} show={menuShown}
+            <Menu songs={songs} chosenSong={chosenSong} show={menuShown}
                   chooseSong={chooseSong} onClose={closeMenu}/>
 
         </React.Fragment>

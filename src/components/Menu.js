@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from "classnames";
 
-const Menu = ({songs, songIndex, show, chooseSong, onClose}) => {
+const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
 
     const songToScrollRef = useRef(null);
     const songToFocusRef = useRef(null);
@@ -16,7 +16,7 @@ const Menu = ({songs, songIndex, show, chooseSong, onClose}) => {
         songToFocusRef.current.focus();
     };
 
-    const scrollIndex = songIndex < 3 ? 0 : songIndex - 3;
+    const songToScroll = chosenSong < 4 ? 1 : chosenSong - 3;
 
     return (
         <Modal show={show} onShow={scrollToSong} onHide={onClose} scrollable={true} animation={false}>
@@ -26,17 +26,18 @@ const Menu = ({songs, songIndex, show, chooseSong, onClose}) => {
             </Modal.Header>
             <Modal.Body>
                 {songs.map((song, index) => {
-                    const chosen = index === songIndex;
+                    const songNumber = index + 1;
+                    const chosen = songNumber === chosenSong;
                     const clickSong = number => () => chooseSong(number);
                     return <React.Fragment key={index}>
                                <span className={classNames('sb-menu-songtitle', {'font-weight-bold': chosen})}>
-                                         {/* eslint-disable-next-line */}
+                                   {/* eslint-disable-next-line */}
                                    <a href="#"
                                       ref={chosen ? songToFocusRef : null}
                                       className="text-reset" onClick={clickSong(song.number)}>{song.number}. {song.title}
-                                         </a>
+                                   </a>
                                </span>
-                        <br ref={index === scrollIndex ? songToScrollRef : null}/>
+                               <br ref={songNumber === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 })}
             </Modal.Body>
@@ -49,7 +50,7 @@ const Menu = ({songs, songIndex, show, chooseSong, onClose}) => {
 
 Menu.propTypes = {
     songs: PropTypes.array.isRequired,
-    songIndex: PropTypes.number.isRequired,
+    chosenSong: PropTypes.number.isRequired,
     show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired
