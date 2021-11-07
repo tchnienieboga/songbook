@@ -21,12 +21,11 @@ const Songbook = ({songs}) => {
     const closeMenu = () => setMenuShown(false);
 
     const chooseSong = (songNumber) => {
-        const parsedSongNumber = parseInt(songNumber);
-        setChosenSong(isNaN(parsedSongNumber) ? chosenSong : parsedSongNumber);
+        setChosenSong(songNumber);
         closeMenu();
     }
 
-    const song = songs[chosenSong - 1];
+    const song = songs.find(song => song.number === chosenSong);
     return (<React.Fragment>
             {!menuShown && <MenuButton onClick={openMenu}/>}
 

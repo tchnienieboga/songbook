@@ -25,19 +25,18 @@ const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
                 <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
             </Modal.Header>
             <Modal.Body>
-                {songs.map((song, index) => {
-                    const songNumber = index + 1;
-                    const chosen = songNumber === chosenSong;
-                    const clickSong = number => () => chooseSong(number);
-                    return <React.Fragment key={index}>
+                {songs.map((song) => {
+                    const chosen = song.number === chosenSong;
+                    const clickSong = () => chooseSong(song.number);
+                    return <React.Fragment key={song.number}>
                                <span className={classNames('sb-menu-songtitle', {'font-weight-bold': chosen})}>
                                    {/* eslint-disable-next-line */}
                                    <a href="#"
                                       ref={chosen ? songToFocusRef : null}
-                                      className="text-reset" onClick={clickSong(song.number)}>{song.number}. {song.title}
+                                      className="text-reset" onClick={clickSong}>{song.number}. {song.title}
                                    </a>
                                </span>
-                               <br ref={songNumber === songToScroll ? songToScrollRef : null}/>
+                               <br ref={song.number === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 })}
             </Modal.Body>

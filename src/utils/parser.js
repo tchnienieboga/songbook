@@ -6,11 +6,10 @@ const parseLine = line => {
 
     const directiveMatch = line.match(directiveRegex);
     if (directiveMatch) {
-        return {
-            type: DIRECTIVE,
-            directive: directiveMatch[1].trim(),
-            value: directiveMatch[2].trim()
-        }
+        const directive = directiveMatch[1].trim();
+        const rawValue = directiveMatch[2].trim();
+        const value = directive === "number" ? parseInt(rawValue) : rawValue;
+        return {type: DIRECTIVE, directive, value}
     }
 
     const chordRegex = /\[.*?]/g;
