@@ -6,11 +6,10 @@ const parseLine = line => {
 
     const directiveMatch = line.match(directiveRegex);
     if (directiveMatch) {
-        return {
-            type: DIRECTIVE,
-            directive: directiveMatch[1].trim(),
-            value: directiveMatch[2].trim()
-        }
+        const directive = directiveMatch[1].trim();
+        const rawValue = directiveMatch[2].trim();
+        const value = directive === 'number' ? parseInt(rawValue) : rawValue;
+        return {type: DIRECTIVE, directive, value}
     }
 
     const chordRegex = /\[.*?]/g;
@@ -22,7 +21,7 @@ const parseLine = line => {
 };
 
 const parseSong = (song) => {
-    const parsedLines = song.split("\n").map(parseLine);
+    const parsedLines = song.split('\n').map(parseLine);
     const body = parsedLines.filter(line => line.type === BODY_LINE).map(line => line.bodyLine);
     const firstNotEmptyHead = body.findIndex(line => line.lyrics || line.chords.length);
     const firstEmptyTail = body.length - body.slice().reverse().findIndex(line => line.lyrics || line.chords.length);
@@ -37,8 +36,5 @@ const parseSong = (song) => {
 };
 
 export const parseSongs = (rawSongs) => {
-    const songs = rawSongs.split(/---\s*\n/).map(parseSong);
-    return {
-        songs
-    };
+    return rawSongs.split(/---\s*\n/).map(parseSong);
 };

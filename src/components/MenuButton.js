@@ -5,7 +5,7 @@ import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 
 const MenuButton = ({onClick}) => {
     const onKeyPress = e => {
-        const enterOrSpace = e.key === "Enter" || e.key === " " || e.key === "Spacebar" ||
+        const enterOrSpace = e.key === 'Enter' || e.key === " " || e.key === 'Spacebar' ||
             e.which === 13 || e.which === 32;
         if (enterOrSpace) {
             e.preventDefault();
