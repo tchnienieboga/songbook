@@ -9,8 +9,8 @@ import usePersistentState from '../hooks/usePersistentState';
 
 const Songbook = ({songs}) => {
 
-    const [chosenSong, setChosenSong] = usePersistentState("chosenSong", 1);
-    const [zoomLevel, setZoomLevel] = usePersistentState("zoomLevel", 5);
+    const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
+    const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', 5);
     const [menuShown, setMenuShown] = useState(false);
 
     const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
