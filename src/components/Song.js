@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
 
-const Song = ({song, starred, toggleStarred}) => {
+const Song = ({song, starredCount}) => {
 
     return <React.Fragment>
         <div className="row songtitle mt-1 mb-1">
-            <div className={classNames('col-12', {'sb-starred-song': starred.starred})} onClick={toggleStarred}>
-                {song.number}. {song.title} {starred.starred && ` (${starred.number}/${starred.count})`}
+            <div className={classNames('col-12', {'sb-starred-song': song.starred})} onClick={song.toggleStarred}>
+                {song.number}. {song.title} {song.starred && ` (${song.starredNumber}/${starredCount})`}
             </div>
         </div>
         {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
@@ -25,8 +25,7 @@ const Song = ({song, starred, toggleStarred}) => {
 
 Song.propTypes = {
     song: PropTypes.object.isRequired,
-    starred: PropTypes.object.isRequired,
-    toggleStarred: PropTypes.func.isRequired
+    starredCount: PropTypes.number.isRequired
 };
 
 export default Song;

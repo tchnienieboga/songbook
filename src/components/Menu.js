@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-const Menu = ({songs, getStarred, show, chooseSong, onClose}) => {
+const Menu = ({songs, chooseSong, starredCount, show, onClose}) => {
 
     const songToScrollRef = useRef(null);
     const songToFocusRef = useRef(null);
@@ -28,20 +28,18 @@ const Menu = ({songs, getStarred, show, chooseSong, onClose}) => {
             </Modal.Header>
             <Modal.Body>
                 {songs.map((song) => {
-                    const chosen = song.number === chosenSong;
-                    const starred = getStarred(song.number);
                     const clickSong = () => chooseSong(song.number);
                     return <React.Fragment key={song.number}>
                                <span className={classNames(
-                                   'sb-menu-songtitle', {'sb-chosen-song': chosen}, {'sb-starred-song': starred.starred})}>
+                                   'sb-menu-songtitle', {'sb-chosen-song': song.chosen}, {'sb-starred-song': song.starred})}>
                                    {/* eslint-disable-next-line */}
                                    <a href="#"
-                                      ref={chosen ? songToFocusRef : null}
+                                      ref={song.chosen ? songToFocusRef : null}
                                       className="text-reset" onClick={clickSong}>
-                                       {song.number}. {song.title} {starred.starred && ` (${starred.number}/${starred.count})`}
+                                       {song.number}. {song.title} {song.starred && ` (${song.starredNumber}/${starredCount})`}
                                    </a>
                                </span>
-                               <br ref={song.number === songToScroll ? songToScrollRef : null}/>
+                        <br ref={song.number === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 })}
             </Modal.Body>
@@ -54,9 +52,9 @@ const Menu = ({songs, getStarred, show, chooseSong, onClose}) => {
 
 Menu.propTypes = {
     songs: PropTypes.array.isRequired,
-    getStarred: PropTypes.func.isRequired,
-    show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,
+    starredCount: PropTypes.number.isRequired,
+    show: PropTypes.bool.isRequired,
     onClose: PropTypes.func.isRequired
 };
 

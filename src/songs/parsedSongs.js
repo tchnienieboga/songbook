@@ -4436,5 +4436,5 @@ jest Królem całej ziemi.       [d]
 Bóg Abrahama                   [d]    
 `;
 
-const songs = parseSongs(rawSongs);
-export default songs;
+const parsedSongs = parseSongs(rawSongs);
+export default parsedSongs;
