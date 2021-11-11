@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
+const Menu = ({songs, chosenSong, starredSongs, show, chooseSong, onClose}) => {
 
     const songToScrollRef = useRef(null);
     const songToFocusRef = useRef(null);
@@ -27,9 +27,10 @@ const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
             <Modal.Body>
                 {songs.map((song) => {
                     const chosen = song.number === chosenSong;
+                    const starred = !!starredSongs.find(songNumber => songNumber === song.number);
                     const clickSong = () => chooseSong(song.number);
                     return <React.Fragment key={song.number}>
-                               <span className={classNames('sb-menu-songtitle', {'font-weight-bold': chosen})}>
+                               <span className={classNames('sb-menu-songtitle', {'sb-chosen-song': chosen}, {'sb-starred-song': starred})}>
                                    {/* eslint-disable-next-line */}
                                    <a href="#"
                                       ref={chosen ? songToFocusRef : null}
@@ -50,6 +51,7 @@ const Menu = ({songs, chosenSong, show, chooseSong, onClose}) => {
 Menu.propTypes = {
     songs: PropTypes.array.isRequired,
     chosenSong: PropTypes.number.isRequired,
+    starredSongs: PropTypes.array.isRequired,
     show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired

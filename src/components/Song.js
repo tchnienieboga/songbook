@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Chord from './Chord';
+import classNames from 'classnames';
 
-const Song = ({song}) => {
+const Song = ({song, starred, toggleStarred}) => {
 
     return <React.Fragment>
         <div className="row songtitle mt-1 mb-1">
-            <div className="col-12">
+            <div className={classNames('col-12', {'sb-starred-song': starred})} onClick={toggleStarred}>
                 {song.number}. {song.title}
             </div>
         </div>
@@ -23,7 +24,9 @@ const Song = ({song}) => {
 }
 
 Song.propTypes = {
-    song: PropTypes.object.isRequired
+    song: PropTypes.object.isRequired,
+    starred: PropTypes.bool.isRequired,
+    toggleStarred: PropTypes.func.isRequired
 };
 
 export default Song;

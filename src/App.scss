@@ -138,3 +138,12 @@ $cyan:    #17a2b8;
   line-height: 1.8;
 }
 
+.sb-chosen-song {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sb-starred-song {
+  font-weight: bold;
+  color: $cyan;
+}

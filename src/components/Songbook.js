@@ -6,12 +6,14 @@ import MenuButton from './MenuButton';
 import usePinchZoomLevel from '../hooks/usePinchZoomLevel';
 import useSwipeChangeSong from '../hooks/useSwipeChangeSong';
 import usePersistentState from '../hooks/usePersistentState';
+import useStarredSongs from "../hooks/useStarredSongs";
 
 const Songbook = ({songs}) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', 5);
     const [menuShown, setMenuShown] = useState(false);
+    const [starredSongs, isStarred, toggleStarred] = useStarredSongs();
 
     const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
     const swipeChangeSong = useSwipeChangeSong(chosenSong, setChosenSong, songs.length);
@@ -31,10 +33,10 @@ const Songbook = ({songs}) => {
 
             <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
-                {!!song && <Song key={`song${chosenSong}`} song={song}/>}
+                {!!song && <Song song={song} starred={isStarred(song.number)} toggleStarred={toggleStarred(song.number)}/>}
             </div>
 
-            <Menu songs={songs} chosenSong={chosenSong} show={menuShown}
+            <Menu songs={songs} chosenSong={chosenSong} starredSongs={starredSongs} show={menuShown}
                   chooseSong={chooseSong} onClose={closeMenu}/>
 
         </React.Fragment>
