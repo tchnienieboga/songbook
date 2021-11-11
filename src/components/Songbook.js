@@ -9,7 +9,7 @@ import useSongs from '../hooks/useSongs';
 
 const Songbook = ({parsedSongs}) => {
 
-    const [songs, setChosenSong, starredCount] = useSongs(parsedSongs);
+    const [songs, setChosenSong, starredCount, swipeChangeSong] = useSongs(parsedSongs);
 
     const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', 5);
     const [menuShown, setMenuShown] = useState(false);
@@ -29,7 +29,7 @@ const Songbook = ({parsedSongs}) => {
     return (<React.Fragment>
             {!menuShown && <MenuButton onClick={openMenu}/>}
 
-            <div {/*{...swipeChangeSong()}*/...{}} {...pinchZoomLevel()}
+            <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
                 {!!chosenSong && <Song song={chosenSong} starredCount={starredCount}/>}
             </div>
