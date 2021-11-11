@@ -4,15 +4,22 @@ const useStarredSongs = () => {
 
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
 
-    const isStarred = (songNumber) => !!starredSongs.find(number => number === songNumber);
-
-    const toggleStarred = (songNumber) => () => {
-        setStarredSongs(current => {
-            return isStarred(songNumber) ? current.filter(v => v !== songNumber) : [...current, songNumber];
+    const getStarred = (songNumber) => {
+        const index = starredSongs.indexOf(songNumber);
+        return ({
+            starred: index !== -1,
+            number: index + 1,
+            count: starredSongs.length
         });
     };
 
-    return [starredSongs, isStarred, toggleStarred];
+    const toggleStarred = (songNumber) => () => {
+        setStarredSongs(current => {
+            return getStarred(songNumber).starred ? current.filter(v => v !== songNumber) : [...current, songNumber];
+        });
+    };
+
+    return [getStarred, toggleStarred];
 
 };
 

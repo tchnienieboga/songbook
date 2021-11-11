@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-const Menu = ({songs, chosenSong, starredSongs, show, chooseSong, onClose}) => {
+const Menu = ({songs, chosenSong, getStarred, show, chooseSong, onClose}) => {
 
     const songToScrollRef = useRef(null);
     const songToFocusRef = useRef(null);
@@ -27,14 +27,16 @@ const Menu = ({songs, chosenSong, starredSongs, show, chooseSong, onClose}) => {
             <Modal.Body>
                 {songs.map((song) => {
                     const chosen = song.number === chosenSong;
-                    const starred = !!starredSongs.find(songNumber => songNumber === song.number);
+                    const starred = getStarred(song.number);
                     const clickSong = () => chooseSong(song.number);
                     return <React.Fragment key={song.number}>
-                               <span className={classNames('sb-menu-songtitle', {'sb-chosen-song': chosen}, {'sb-starred-song': starred})}>
+                               <span className={classNames(
+                                   'sb-menu-songtitle', {'sb-chosen-song': chosen}, {'sb-starred-song': starred.starred})}>
                                    {/* eslint-disable-next-line */}
                                    <a href="#"
                                       ref={chosen ? songToFocusRef : null}
-                                      className="text-reset" onClick={clickSong}>{song.number}. {song.title}
+                                      className="text-reset" onClick={clickSong}>
+                                       {song.number}. {song.title} {starred.starred && ` (${starred.number}/${starred.count})`}
                                    </a>
                                </span>
                                <br ref={song.number === songToScroll ? songToScrollRef : null}/>
@@ -51,7 +53,7 @@ const Menu = ({songs, chosenSong, starredSongs, show, chooseSong, onClose}) => {
 Menu.propTypes = {
     songs: PropTypes.array.isRequired,
     chosenSong: PropTypes.number.isRequired,
-    starredSongs: PropTypes.array.isRequired,
+    getStarred: PropTypes.func.isRequired,
     show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired

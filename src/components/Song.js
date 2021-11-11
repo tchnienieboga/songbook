@@ -7,8 +7,8 @@ const Song = ({song, starred, toggleStarred}) => {
 
     return <React.Fragment>
         <div className="row songtitle mt-1 mb-1">
-            <div className={classNames('col-12', {'sb-starred-song': starred})} onClick={toggleStarred}>
-                {song.number}. {song.title}
+            <div className={classNames('col-12', {'sb-starred-song': starred.starred})} onClick={toggleStarred}>
+                {song.number}. {song.title} {starred.starred && ` (${starred.number}/${starred.count})`}
             </div>
         </div>
         {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
@@ -25,7 +25,7 @@ const Song = ({song, starred, toggleStarred}) => {
 
 Song.propTypes = {
     song: PropTypes.object.isRequired,
-    starred: PropTypes.bool.isRequired,
+    starred: PropTypes.object.isRequired,
     toggleStarred: PropTypes.func.isRequired
 };
 
