@@ -147,3 +147,7 @@ $cyan:    #17a2b8;
   font-weight: bold;
   color: $cyan;
 }
+
+.sb-starred-button {
+  @include button-variant($purple, $purple)
+}

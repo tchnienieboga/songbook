@@ -6,7 +6,7 @@ const useSongs = (parsedSongs) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
-    const [showOnlyStarred] = usePersistentState('showOnlyStarred', false);
+    const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
     const starredCount = starredSongs.length;
 
     const songState = (songNumber) => {
@@ -29,7 +29,7 @@ const useSongs = (parsedSongs) => {
     });
 
     const getParsedStarredSongs = () => starredSongs.map(number => parsedSongs.find(ps => ps.number === number));
-    const songs = (showOnlyStarred ? getParsedStarredSongs() : parsedSongs).map(mapSong);
+    const songs = (onlyStarred ? getParsedStarredSongs() : parsedSongs).map(mapSong);
 
     const swipe = (swipeX) => {
         const chosenIndex = songs.findIndex(song => song.chosen);
@@ -38,6 +38,8 @@ const useSongs = (parsedSongs) => {
         setChosenSong(songs[newIndexRolled].number);
     };
 
+    const toggleOnlyStarred = () => setOnlyStarred(current => !current);
+
     const swipeChangeSong = useDrag(state => {
         const [swipeX] = state.swipe;
         if (swipeX !== 0) {
@@ -45,7 +47,14 @@ const useSongs = (parsedSongs) => {
         }
     });
 
-    return [songs, setChosenSong, starredCount, swipeChangeSong];
+    return [
+        songs,
+        setChosenSong,
+        starredCount,
+        onlyStarred,
+        toggleOnlyStarred,
+        swipeChangeSong
+    ];
 
 };
 
