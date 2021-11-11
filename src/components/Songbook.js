@@ -15,7 +15,6 @@ const Songbook = ({parsedSongs}) => {
     const [menuShown, setMenuShown] = useState(false);
 
     const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
-    // const swipeChangeSong = useSwipeChangeSong(chosenSong, setChosenSong, shownSongs.length);
 
     const openMenu = () => setMenuShown(true);
 
