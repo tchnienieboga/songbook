@@ -6,6 +6,7 @@ const useSongs = (parsedSongs) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
+    const [showOnlyStarred] = usePersistentState('showOnlyStarred', false);
     const starredCount = starredSongs.length;
 
     const songState = (songNumber) => {
@@ -22,10 +23,13 @@ const useSongs = (parsedSongs) => {
         };
     };
 
-    const songs = [...parsedSongs].map(parsedSong => ({
+    const mapSong = parsedSong => ({
         ...parsedSong,
         ...songState(parsedSong.number)
-    }));
+    });
+
+    const getParsedStarredSongs = () => starredSongs.map(number => parsedSongs.find(ps => ps.number === number));
+    const songs = (showOnlyStarred ? getParsedStarredSongs() : parsedSongs).map(mapSong);
 
     const swipe = (swipeX) => {
         const chosenIndex = songs.findIndex(song => song.chosen);
