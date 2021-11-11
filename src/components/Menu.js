@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-const Menu = ({songs, chosenSong, getStarred, show, chooseSong, onClose}) => {
+const Menu = ({songs, getStarred, show, chooseSong, onClose}) => {
 
     const songToScrollRef = useRef(null);
     const songToFocusRef = useRef(null);
@@ -15,6 +15,8 @@ const Menu = ({songs, chosenSong, getStarred, show, chooseSong, onClose}) => {
         songToScrollRef.current.scrollIntoView();
         songToFocusRef.current.focus();
     };
+
+    const chosenSong = songs.find(song => song.chosen).number;
 
     const songToScroll = chosenSong < 4 ? 1 : chosenSong - 3;
 
@@ -52,7 +54,6 @@ const Menu = ({songs, chosenSong, getStarred, show, chooseSong, onClose}) => {
 
 Menu.propTypes = {
     songs: PropTypes.array.isRequired,
-    chosenSong: PropTypes.number.isRequired,
     getStarred: PropTypes.func.isRequired,
     show: PropTypes.bool.isRequired,
     chooseSong: PropTypes.func.isRequired,
