@@ -1,5 +1,6 @@
 import usePersistentState from './usePersistentState';
 import {useDrag} from 'react-use-gesture';
+import {useEffect} from 'react';
 
 
 const useSongs = (parsedSongs) => {
@@ -8,6 +9,16 @@ const useSongs = (parsedSongs) => {
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
     const starredCount = starredSongs.length;
+
+    useEffect(() => {
+        if (onlyStarred) {
+            if (!starredSongs.length) {
+                setOnlyStarred(false);
+            } else if (!starredSongs.find(song => song === chosenSong)) {
+                setChosenSong(starredSongs[0]);
+            }
+        }
+    }, [onlyStarred, setOnlyStarred, chosenSong, setChosenSong, starredSongs]);
 
     const songState = (songNumber) => {
         const chosen = chosenSong === songNumber;
