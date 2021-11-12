@@ -45,7 +45,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 })}
             </Modal.Body>
             <Modal.Footer>
-                {!!starredCount && <Button variant={onlyStarred ? 'light' : 'info'} onClick={toggleOnlyStarred}>
+                {!!starredCount && <Button variant={onlyStarred ? 'secondary' : 'info'} onClick={toggleOnlyStarred}>
                     {onlyStarred ? 'Wszystkie' : 'Wybrane'}
                 </Button>}
                 <Button variant="primary" onClick={onClose}>Zamknij</Button>
