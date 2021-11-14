@@ -3,18 +3,14 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import usePinchZoomLevel from '../hooks/usePinchZoomLevel';
-import useSwipeChangeSong from '../hooks/useSwipeChangeSong';
-import usePersistentState from '../hooks/usePersistentState';
+import useZoomLevel from '../hooks/useZoomLevel';
+import useSongs from '../hooks/useSongs';
 
-const Songbook = ({songs}) => {
+const Songbook = ({parsedSongs}) => {
 
-    const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
-    const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', 5);
+    const [songs, setChosenSong, starredCount, onlyStarred, toggleOnlyStarred, swipeChangeSong] = useSongs(parsedSongs);
+    const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
     const [menuShown, setMenuShown] = useState(false);
-
-    const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
-    const swipeChangeSong = useSwipeChangeSong(chosenSong, setChosenSong, songs.length);
 
     const openMenu = () => setMenuShown(true);
 
@@ -25,17 +21,18 @@ const Songbook = ({songs}) => {
         closeMenu();
     }
 
-    const song = songs.find(song => song.number === chosenSong);
+    const chosenSong = songs.find(song => song.chosen);
     return (<React.Fragment>
             {!menuShown && <MenuButton onClick={openMenu}/>}
 
             <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
-                {!!song && <Song key={`song${chosenSong}`} song={song}/>}
+                {!!chosenSong && <Song song={chosenSong} starredCount={starredCount}/>}
             </div>
 
-            <Menu songs={songs} chosenSong={chosenSong} show={menuShown}
-                  chooseSong={chooseSong} onClose={closeMenu}/>
+            <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount}
+                  onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
+                  show={menuShown} onClose={closeMenu}/>
 
         </React.Fragment>
     );
@@ -43,7 +40,7 @@ const Songbook = ({songs}) => {
 }
 
 Songbook.propTypes = {
-    songs: PropTypes.array.isRequired
+    parsedSongs: PropTypes.array.isRequired
 };
 
 export default Songbook;

@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
-import songs from './songs/songs';
+import parsedSongs from './songs/parsedSongs';
 import Songbook from './components/Songbook';
 
 const App = () => (
-    <Songbook songs={songs}/>
+    <Songbook parsedSongs={parsedSongs}/>
 );
 
 export default App;

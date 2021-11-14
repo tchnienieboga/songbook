@@ -38,23 +38,24 @@
 }
 
 $container-max-widths: (
-  sm: 540px,
-  lg: 720px
+        sm: 540px,
+        lg: 720px
 );
 
 $body-bg: #ced4da;
 $grid-gutter-width: 20px;
 
-$blue:    #007bff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #b9174f;
-$orange:  #fd7e14;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+$blue:   #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink:   #e83e8c;
+$red:    #b9174f;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green:  #28a745;
+$teal:   #20c997;
+$cyan:   #17a2b8;
+$gray:   #eae3d9;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -138,3 +139,26 @@ $cyan:    #17a2b8;
   line-height: 1.8;
 }
 
+.sb-chosen-song {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sb-starred-song {
+  font-weight: bold;
+  color: $cyan;
+}
+
+.sb-star-info {
+  color: $gray;
+  font-weight: normal;
+
+  &.sb-lyrics {
+    font-size: 1.00rem;
+    text-align: center;
+  }
+}
+
+.sb-star-yellow {
+  color: $yellow;
+}

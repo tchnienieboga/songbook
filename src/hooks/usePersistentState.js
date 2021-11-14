@@ -14,7 +14,8 @@ const setItem = (key, value) => {
 const usePersistentState = (key, defaultValue) => {
 
     const [value, setValue] = useState(() => {
-        return getItem(key) || defaultValue;
+        const value = getItem(key);
+        return (typeof value) !== 'undefined' ? value : defaultValue;
     });
 
     useEffect(() => {

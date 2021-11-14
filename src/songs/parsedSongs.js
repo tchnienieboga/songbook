@@ -165,7 +165,7 @@ Jezusowi śpiewają, Jezusowi śpiewają, śpiewają!
 ---
 {title:  Gdy śliczna Panna}
 {number: 10}
-1. Gdy śliczna Panna Syna kołysała [D] [A] [h] [e] [A7D]
+1. Gdy śliczna Panna Syna kołysała [D] [A] [h] [e] [A7] [D]
 Z wielkim weselem tak Jemu śpiewała:
 
 Ref. Li, li, li, li, laj, moje Dzieciąteczko [h] [e] [A] [G] [D]
@@ -1570,7 +1570,7 @@ mocy moja [e] [a] [C]
 Ty, Panie, jesteś mą nadzieją [F] [G] [C] [a]
 Tobie ufam i bać się nie będę [C] [d] [G] [C]
 ---
-{title:  Nadejdzie dzień}
+{title:  Wszyscy ludzie klaszczą w dłonie}
 {number: 80}
 Wszyscy ludzie klaszczą w dłonie [C] [G] [D] [e7]
 cała ziemia śpiewa, śpiewa
@@ -4497,5 +4497,5 @@ Wierzę Mu, bo On ma              [a]
 Właśnie taką moc. /x2            [D] [e]
 `;
 
-const songs = parseSongs(rawSongs);
-export default songs;
+const parsedSongs = parseSongs(rawSongs);
+export default parsedSongs;
