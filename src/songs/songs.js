@@ -4454,6 +4454,7 @@ Bóg Abrahama                   [d]
 ---
 {title: Duszo ma, Pana chwal}
 {number: 230}
+
 Ref. Duszo ma, Pana chwal,  [G] [D] 
 Oddaj Bogu cześć,           [A/Cis] [h]
 Świętemu śpiewaj pieśń.     [G] [D] [A]
@@ -4481,6 +4482,19 @@ Nadejdzie czas mego końca tu.
 Dusza moja będzie 
 Już na zawsze Cię uwielbiać,
 W wieczności z Tobą piękna zabrzmi pieśń.    
+---
+{title: Zaufałem Panu i już}
+{number: 231}
+
+Zaufałem Panu i już              [e] [D]
+Niczego nie muszę się lękać      [C] [G]
+Zaufałem Panu i już              [e] [D]
+Niczego nie muszę się trwożyć    [C] [G]
+
+Ref. Wierzę Mu, bo On ma moc     [a] [D]
+Przezwyciężyć w moim sercu zło.  [G] [C]
+Wierzę Mu, bo On ma              [a]
+Właśnie taką moc. /x2            [D] [e]
 `;
 
 const songs = parseSongs(rawSongs);
