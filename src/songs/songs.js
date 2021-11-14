@@ -813,7 +813,24 @@ Panie mój /2x [C] [c] [G]
 ---
 {title:  Swojego Ducha, Panie}
 {number: 38}
-Swojego Ducha Panie, wylej na nas dziś! [D] [h] [G] [D]
+Swojego Ducha, Panie,    [D]
+Wylej na nas dziś!       
+Swojego Ducha, Panie,    [h]
+Wylej na nas dziś!       
+Swojego Ducha, Panie,    [G]
+Wylej na nas dziś!       
+Swojego Ducha, Panie,    [D]
+Wylej na nas dziś!       
+
+Swojego Ducha, Panie,    [D]
+Wylej na nas dziś!       [cis7/5-] [Fis7]
+Swojego Ducha, Panie,    [h]
+Wylej na nas dziś!       [a] [D7]
+Swojego Ducha, Panie,    [G]
+Wylej na nas dziś!       [g]
+Swojego Ducha, Panie,    [e] [fis]
+Wylej na nas dziś!       [G] [A]
+
 ---
 {title:  Alleluja (Cohen)}
 {number: 39}
