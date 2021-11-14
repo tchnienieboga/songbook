@@ -165,7 +165,7 @@ Jezusowi śpiewają, Jezusowi śpiewają, śpiewają!
 ---
 {title:  Gdy śliczna Panna}
 {number: 10}
-1. Gdy śliczna Panna Syna kołysała [D] [A] [h] [e] [A7D]
+1. Gdy śliczna Panna Syna kołysała [D] [A] [h] [e] [A7] [D]
 Z wielkim weselem tak Jemu śpiewała:
 
 Ref. Li, li, li, li, laj, moje Dzieciąteczko [h] [e] [A] [G] [D]
