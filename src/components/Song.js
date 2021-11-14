@@ -9,10 +9,13 @@ const Song = ({song, starredCount}) => {
 
     return <React.Fragment>
         <div className="row songtitle mt-1 mb-1">
-            <div className={classNames('col-12', {'sb-starred-song': song.starred})} onClick={song.toggleStarred}>
-                {song.number}. {song.title} {song.starred && <React.Fragment>
-                    {' '}<FontAwesomeIcon icon={faStar}/>{` (${song.starredNumber}/${starredCount})`}
-                </React.Fragment>}
+            <div className={classNames('col-12', {'sb-starred-song': song.starred})}>
+                {song.number}. {song.title}
+                <br/>
+                <FontAwesomeIcon icon={faStar} onClick={song.toggleStarred} className={
+                    classNames('sb-song-title-star', {'starred': song.starred})
+                }/>
+                {song.starred && ` (${song.starredNumber}/${starredCount})`}
             </div>
         </div>
         {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>

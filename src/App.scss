@@ -55,6 +55,7 @@ $yellow:  #ffc107;
 $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$gray:    #ded8cf;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -145,6 +146,14 @@ $cyan:    #17a2b8;
 
 .sb-starred-song {
   font-weight: bold;
+  color: $cyan;
+}
+
+.sb-song-title-star {
+  color: $gray;
+}
+
+.sb-song-title-star.starred {
   color: $cyan;
 }
 
