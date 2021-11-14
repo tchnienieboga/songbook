@@ -1570,7 +1570,7 @@ mocy moja [e] [a] [C]
 Ty, Panie, jesteś mą nadzieją [F] [G] [C] [a]
 Tobie ufam i bać się nie będę [C] [d] [G] [C]
 ---
-{title:  Nadejdzie dzień}
+{title:  Wszyscy ludzie klaszczą w dłonie}
 {number: 80}
 Wszyscy ludzie klaszczą w dłonie [C] [G] [D] [e7]
 cała ziemia śpiewa, śpiewa

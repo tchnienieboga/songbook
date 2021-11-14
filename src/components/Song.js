@@ -11,8 +11,8 @@ const Song = ({song, starredCount}) => {
             <div className={classNames('col-10', {'sb-starred-song': song.starred})}>
                 {song.number}. {song.title}
             </div>
-            <div className="col-2 sb-song-title-star" onClick={song.toggleStarred}>
-                <FontAwesomeIcon icon={faStar} size="lg" className={classNames({'yellow-star': song.starred})}/>
+            <div className="col-2 sb-star-info sb-lyrics" onClick={song.toggleStarred}>
+                <FontAwesomeIcon icon={faStar} size="lg" className={classNames({'sb-star-yellow': song.starred})}/>
                 <br/>
                 {song.starred ? `${song.starredNumber}/${starredCount}` : <>&nbsp;</>}
             </div>

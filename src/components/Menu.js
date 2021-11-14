@@ -23,7 +23,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
     return (
         <Modal show={show} onShow={scrollToSong} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header>
-                <h5>Który numer?</h5>
+                <h5>{!onlyStarred ? 'Który numer?' : <>{'Wybrane '} <FontAwesomeIcon icon={faStar} className="sb-star-yellow"/> </>}</h5>
                 <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
             </Modal.Header>
             <Modal.Body>
@@ -38,9 +38,11 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                                ref={song.chosen ? songToFocusRef : null}>
                                 {`${song.number}. ${song.title}`}
                             </a>
-                            {!onlyStarred && song.starred && <React.Fragment>
-                                {' '}<FontAwesomeIcon icon={faStar}/>{` (${song.starredNumber}/${starredCount})`}
-                            </React.Fragment>}
+                            {!onlyStarred && song.starred && <span className={'sb-star-info'}>
+                                &nbsp;
+                                <FontAwesomeIcon icon={faStar} className={classNames({'sb-star-yellow': song.starred})}/>
+                                {` (${song.starredNumber}/${starredCount})`}
+                            </span>}
                         </span>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
@@ -48,7 +50,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
             </Modal.Body>
             <Modal.Footer>
                 {!!starredCount && <Button variant={onlyStarred ? 'secondary' : 'info'} onClick={toggleOnlyStarred}>
-                    {onlyStarred ? 'Wszystkie' : 'Wybrane'}
+                    {onlyStarred ? 'Wszystkie' : <><FontAwesomeIcon icon={faStar} className="sb-star-yellow" />{' Wybrane'}</>}
                 </Button>}
                 <Button variant="primary" onClick={onClose}>Zamknij</Button>
             </Modal.Footer>
