@@ -3,18 +3,14 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
-import usePinchZoomLevel from '../hooks/usePinchZoomLevel';
-import usePersistentState from '../hooks/usePersistentState';
+import useZoomLevel from '../hooks/useZoomLevel';
 import useSongs from '../hooks/useSongs';
 
 const Songbook = ({parsedSongs}) => {
 
     const [songs, setChosenSong, starredCount, onlyStarred, toggleOnlyStarred, swipeChangeSong] = useSongs(parsedSongs);
-
-    const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', 5);
+    const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
     const [menuShown, setMenuShown] = useState(false);
-
-    const pinchZoomLevel = usePinchZoomLevel(zoomLevel, setZoomLevel, 1, 20);
 
     const openMenu = () => setMenuShown(true);
 

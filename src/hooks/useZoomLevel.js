@@ -1,10 +1,12 @@
 import {usePinch} from 'react-use-gesture';
 import {useState} from 'react';
+import usePersistentState from './usePersistentState';
 
-const usePinchZoomLevel = (zoomLevel, setZoomLevel, min, max) => {
+const useZoomLevel = (min, max, def) => {
 
     const [initialDistance, setInitialDistance] = useState(null);
     const [initialZoomLevel, setInitialZoomLevel] = useState(null);
+    const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', def);
 
     const pinchStart = (distance) => {
         setInitialDistance(distance);
@@ -21,13 +23,15 @@ const usePinchZoomLevel = (zoomLevel, setZoomLevel, min, max) => {
         setZoomLevel(newZoomLevel);
     }
 
-    return usePinch(state => {
+    const pinchZoomLevel = usePinch(state => {
         if (state.first) {
             pinchStart(state.da[0]);
         }
         pinchContinue(state.da[0]);
     });
 
+    return [zoomLevel, pinchZoomLevel];
+
 };
 
-export default usePinchZoomLevel;
+export default useZoomLevel;
