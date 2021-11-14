@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faStar, faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
@@ -30,16 +30,18 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 {songs.map((song, index) => {
                     const clickSong = () => chooseSong(song.number);
                     return <React.Fragment key={song.number}>
-                               <span className={classNames(
-                                   'sb-menu-songtitle', {'sb-chosen-song': song.chosen}, {'sb-starred-song': song.starred})}>
-                                   {/* eslint-disable-next-line */}
-                                   <a href="#"
-                                      ref={song.chosen ? songToFocusRef : null}
-                                      className="text-reset" onClick={clickSong}>
-                                       {song.number}. {song.title}
-                                       {!onlyStarred && song.starred && ` (${song.starredNumber}/${starredCount})`}
-                                   </a>
-                               </span>
+                        <span className={classNames(
+                            'sb-menu-songtitle', {'sb-starred-song': song.starred})}>
+                            {/* eslint-disable-next-line */}
+                            <a href="#" onClick={clickSong}
+                               className={classNames('text-reset', {'sb-chosen-song': song.chosen})}
+                               ref={song.chosen ? songToFocusRef : null}>
+                                {`${song.number}. ${song.title}`}
+                            </a>
+                            {!onlyStarred && song.starred && <React.Fragment>
+                                {' '}<FontAwesomeIcon icon={faStar}/>{` (${song.starredNumber}/${starredCount})`}
+                            </React.Fragment>}
+                        </span>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 })}

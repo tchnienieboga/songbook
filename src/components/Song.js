@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faStar} from '@fortawesome/free-solid-svg-icons';
 
 const Song = ({song, starredCount}) => {
 
     return <React.Fragment>
         <div className="row songtitle mt-1 mb-1">
             <div className={classNames('col-12', {'sb-starred-song': song.starred})} onClick={song.toggleStarred}>
-                {song.number}. {song.title} {song.starred && ` (${song.starredNumber}/${starredCount})`}
+                {song.number}. {song.title} {song.starred && <React.Fragment>
+                    {' '}<FontAwesomeIcon icon={faStar}/>{` (${song.starredNumber}/${starredCount})`}
+                </React.Fragment>}
             </div>
         </div>
         {song.body.map(({lyrics, chords}, index) => <div className="row" key={`songline${index}`}>
