@@ -23,7 +23,13 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
     return (
         <Modal show={show} onShow={scrollToSong} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header>
-                <h5>{!onlyStarred ? 'Który numer?' : <>{'Wybrane '} <FontAwesomeIcon icon={faStar} className="sb-star-yellow"/> </>}</h5>
+                <h5>
+                    {!!starredCount && <FontAwesomeIcon icon={faStar} onClick={toggleOnlyStarred} className={classNames({
+                        'sb-star': true,
+                        'sb-star-yellow': onlyStarred
+                    })}/>}
+                    {!onlyStarred ? ' Który numer?' : ' Wybrane'}
+                </h5>
                 <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
             </Modal.Header>
             <Modal.Body>
@@ -38,9 +44,9 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                                ref={song.chosen ? songToFocusRef : null}>
                                 {`${song.number}. ${song.title}`}
                             </a>
-                            {!onlyStarred && song.starred && <span className={'sb-star-info'}>
+                            {!onlyStarred && song.starred && <span className="sb-star-info">
                                 &nbsp;
-                                <FontAwesomeIcon icon={faStar} className={classNames({'sb-star-yellow': song.starred})}/>
+                                <FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow"/>
                                 {` (${song.starredNumber}/${starredCount})`}
                             </span>}
                         </span>
@@ -49,10 +55,10 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 })}
             </Modal.Body>
             <Modal.Footer>
-                {!!starredCount && <Button variant={onlyStarred ? 'secondary' : 'info'} onClick={toggleOnlyStarred}>
-                    {onlyStarred ? 'Wszystkie' : <><FontAwesomeIcon icon={faStar} className="sb-star-yellow" />{' Wybrane'}</>}
+                {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
+                    {onlyStarred ? 'Wszystkie' : <><FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow" />{' Wybrane'}</>}
                 </Button>}
-                <Button variant="primary" onClick={onClose}>Zamknij</Button>
+                <Button variant="secondary" onClick={onClose}>Zamknij</Button>
             </Modal.Footer>
         </Modal>
     );

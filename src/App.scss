@@ -45,17 +45,18 @@ $container-max-widths: (
 $body-bg: #ced4da;
 $grid-gutter-width: 20px;
 
-$blue:   #007bff;
-$indigo: #6610f2;
-$purple: #6f42c1;
-$pink:   #e83e8c;
-$red:    #b9174f;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green:  #28a745;
-$teal:   #20c997;
-$cyan:   #17a2b8;
-$gray:   #eae3d9;
+$blue:       #007bff;
+$indigo:     #6610f2;
+$purple:     #6f42c1;
+$pink:       #e83e8c;
+$red:        #b9174f;
+$orange:     #fd7e14;
+$yellow:     #ffc107;
+$green:      #28a745;
+$teal:       #20c997;
+$cyan:       #17a2b8;
+$gray:       #c2bcb4;
+$lightgray:  #eae3d9;
 
 @import '~bootstrap/scss/bootstrap';
 
@@ -159,6 +160,10 @@ $gray:   #eae3d9;
   }
 }
 
-.sb-star-yellow {
-  color: $yellow;
+.sb-star {
+  color: $lightgray;
+
+  &.sb-star-yellow {
+    color: $yellow;
+  }
 }
