@@ -1409,14 +1409,22 @@ w Nim pokładam mą nadzieję. [h7] [cis7] [E] [Fis5]
 Wylewajcie przed Nim serca wasze.
 Ludzie lżejsi, niż tchnienie, tylko w Bogu jest zbawienie.
 
-Ref. x4 Sprawiedliwy jest nasz Pan [D7+] [E] [E7+] [Fis]
-Każdy zbierze to, co siał [fis] [A] [gis] [H]
-Kto uwierzy, nie zawiedzie się. [D7+] [E] [H] [E7+] [Fis] [Cis]
-Przychodzimy przed Twój tron, [D7+] [E] [E7+] [Fis]
-chcemy widzieć Twoją moc [fis] [A] [gis] [H]
-i doświadczyć, Panie, łaski Twej. [D7+] [E] [Fis5] [E7+] [Fis] [Gis5]
+Ref. Sprawiedliwy jest nasz Pan        [D7+] [E]
+Każdy zbierze to, co siał              [fis] [A]
+Kto uwierzy, nie zawiedzie się.        [D7+] [E] [H]
+Przychodzimy przed Twój tron,          [D7+] [E]
+chcemy widzieć Twoją moc               [fis] [A]
+i doświadczyć, Panie, łaski Twej. /x2  [D7+] [E] [Fis5]
 
-Tylko w Bogu moje jest zbawienie. [E7+] [Fis] [gis] [E7+] [Fis] [Gis]
+Sprawiedliwy jest nasz Pan             [E7+] [Fis]
+Każdy zbierze to, co siał              [gis] [H]
+Kto uwierzy, nie zawiedzie się.        [E7+] [Fis] [Cis]
+Przychodzimy przed Twój tron,          [E7+] [Fis]
+chcemy widzieć Twoją moc               [gis] [H]
+i doświadczyć, Panie, łaski Twej. /x2  [E7+] [Fis] [Gis5]
+
+Tylko w Bogu moje jest zbawienie.      [E7+] [Fis] [gis] 
+                                       [E7+] [Fis] [Gis]
 ---
 {title:  Więcej miłości, więcej mocy}
 {number: 69}
@@ -1924,12 +1932,22 @@ Moje światło niech świeci wśród was.
 ---
 {title:  Ofiaruję Tobie, Panie mój}
 {number: 102}
-Ofiaruję Tobie, Panie mój, [C] [G] [a] [D] [A] [h]
-Całe życie me, cały jestem Twój, [e] [F] [C] [d] [fis] [G] [D] [e]
-Aż na wieki. [G7] [A7]
-Oto moje serce, przecież wiesz, [C] [G] [a] [D] [A] [h]
-Tyś miłością mą jedyną jest [e] [F] [G] [C] [fis] [G] [g6]
- [(A7)] [D7+]
+
+Ofiaruję Tobie, Panie mój,              [C] [G] [a]
+Całe życie me,                          [e] [F]
+Cały jestem Twój,                       [C] [d]
+Aż na wieki.                            [G7]
+Oto moje serce, przecież wiesz,         [C] [G] [a]
+Tyś miłością mą jedyną jest             [e] [F] [G] [C]
+                                        [A7]
+Ofiaruję Tobie, Panie mój,              [D] [A] [h]
+Całe życie me,                          [fis] [G]
+Cały jestem Twój,                       [D] [e]
+Aż na wieki.                            [A7]
+Oto moje serce, przecież wiesz,         [D] [A] [h]
+Tyś miłością mą jedyną jest             [fis] [G] [g6]
+                                        [D7+]
+                                        
 ---
 {title:  Jestem tu, by wielbić}
 {number: 103}
@@ -2307,17 +2325,34 @@ naszego zawierzenia Panu. [F] [G] [E7]
 ---
 {title:  Chcę wywyższać Imię Twe}
 {number: 127}
-Chcę wywyższać Imię Twe, [F] [B] [C] [B] [G] [C] [D] [C]
-Chcę zaśpiewać Tobie chwałę. [F] [B] [C] [B] [G] [C] [D] [C]
-Panie, dziś raduję się, [F] [B] [C] [B] [G] [C] [D] [C]
-Bo przyszedłeś, by mnie zbawić. [F] [B] [C] [B] [G] [C] [D] [C]
 
-Ref. Z nieba zstąpiłeś i chcesz [F] [B] [C] [G] [C] [D]
-Prowadzić mnie [B] [C]
-Na krzyżu zmarłeś, by mój zapłacić dług [F] [B] [C] [B] [G] [C] [D] [C]
-Z grobu wstałeś i dziś [F] [B] [C] [G] [C] [D]
-Nieba Królem jesteś Ty [d7] [e7]
-Chcę wywyższać Imię Twe [B] [C] [F] [C] [D] [G]
+Chcę wywyższać Imię Twe,                [F] [B] [C] [B]
+Chcę zaśpiewać Tobie chwałę.            [F] [B] [C] [B]
+Panie, dziś raduję się,                 [F] [B] [C] [B]
+Bo przyszedłeś, by mnie zbawić.         [F] [B] [C] [B]
+
+Ref. Z nieba zstąpiłeś i chcesz         [F] [B] [C]
+Prowadzić mnie                          [B]
+Na krzyżu zmarłeś, by mój               [F] [B] [C]
+Zapłacić dług                           [B]
+Z grobu wstałeś i dziś                  [F] [B] [C]
+Nieba Królem jesteś Ty                  [d7]
+Chcę wywyższać Imię Twe                 [B] [C] [F]
+                                        [D7]
+Chcę wywyższać Imię Twe,                [G] [C] [D] [C]
+Chcę zaśpiewać Tobie chwałę.            [G] [C] [D] [C]
+Panie, dziś raduję się,                 [G] [C] [D] [C]
+Bo przyszedłeś, by mnie zbawić.         [G] [C] [D] [C]
+
+Ref. Z nieba zstąpiłeś i chcesz         [G] [C] [D]
+Prowadzić mnie                          [C]
+Na krzyżu zmarłeś, by mój               [G] [C] [D]
+Zapłacić dług                           [C]
+Z grobu wstałeś i dziś                  [G] [C] [D]
+Nieba Królem jesteś Ty                  [e7]
+Chcę wywyższać Imię Twe                 [C] [D] [G] [e]
+Chcę wywyższać Imię Twe                 [C] [D] [G] [e]
+Chcę wywyższać Imię Twe                 [C] [D] [G]
 ---
 {title:  Nadzieja nosi niebieską sukienkę}
 {number: 128}
@@ -3190,8 +3225,6 @@ Tak, Jemu chwała i cześć! [E] [H7] [E]
 ---
 {title:  Kocham Twoją wolę, Panie}
 {number: 179}
-h Fis D A h Fis h h Fis D A h Fis h H 7
-Ref.: e A D h E A 7 D D 7 e A D h E A 7 h
 
 1. Kocham Twoją wolę Panie, [h] [Fis]
 jeszcze bardziej drzazgi małe, [D] [A]
@@ -3715,12 +3748,17 @@ Ref. Bóg w łasce swej…
 {title:  Jestem tego pewien}
 {number: 201}
 
-Jestem tego pewien, nikt nie oddzieli nas [a7/9]
-Od Miłości Twojej Panie / x2 [F7+] [G/A]
-Ani śmierć, ani życie, ani aniołowie [F] [G] [a] [G] [C]
-Potęgi niebieskie, teraźniejszość, przyszłość, moce.
-Ani wysokość i głębokość, stworzenie też, [F] [G]
-nic nie oddzieli nas [a] [G] [C]
+Jestem tego pewien, nic nie oddzieli nas    [a7/9]
+Od Miłości Twojej Panie / x2                [F7+] [G/A]
+
+Ani śmierć,                         [F]
+Ani życie, ani aniołowie            [G]
+Potęgi niebieskie,                  [a]
+teraźniejszość, przyszłość, moce.   [G] [C]
+Ani wysokość                        [F]
+i głębokość, stworzenie też,        [G]
+nic nie oddzieli nas                [a] [G] [C]
+
 ---
 {title:  Powstań przyjaciółko ma}
 {number: 202}
@@ -3833,7 +3871,11 @@ Ref. Śpiewam… Dlatego śpiewam
 ---
 {title:  Panie Jezu, przyjdź}
 {number: 207}
-G D/Fis fis0 e Es e0 C c G/H A7 D7 G
+
+                                            [G] [D/Fis] [fis0] 
+                                            [e] [Es] [e0] 
+                                            [C] [c] 
+                                            [G/H] [A7] [D7] [G]
 1. Panie Jezu, przyjdź, serce swe otworzę [G] [D/Fis]
 Chcę, byś mieszkał w nim, [a] [C]
 ze mną zawsze był [D] [D7]
