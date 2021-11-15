@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faStar, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faGuitar, faStar, faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
@@ -56,7 +56,10 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
             </Modal.Body>
             <Modal.Footer>
                 {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
-                    {onlyStarred ? 'Wszystkie' : <><FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow" />{' Wybrane'}</>}
+                    {onlyStarred
+                        ? <><FontAwesomeIcon icon={faGuitar} size="lg" />{' Wszystkie'}</>
+                        : <><FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow" />{' Wybrane'}</>
+                    }
                 </Button>}
                 <Button variant="secondary" onClick={onClose}>Zamknij</Button>
             </Modal.Footer>

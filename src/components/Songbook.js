@@ -23,7 +23,7 @@ const Songbook = ({parsedSongs}) => {
 
     const chosenSong = songs.find(song => song.chosen);
     return (<React.Fragment>
-            {!menuShown && <MenuButton onClick={openMenu}/>}
+            {!menuShown && <MenuButton onlyStarred={onlyStarred} onClick={openMenu}/>}
 
             <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
