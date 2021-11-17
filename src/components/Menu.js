@@ -85,10 +85,10 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                                ref={song.chosen ? songToFocusRef : null}>
                                 {`${song.number}. ${song.title}`}
                             </a>
-                            {!onlyStarred && song.starred && <span className="sb-star-info">
+                            {!onlyStarred && (song.starred || !!searchPhrase) && <span className="sb-star-info" onClick={song.toggleStarred}>
                                 &nbsp;
-                                <FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow"/>
-                                {` (${song.starredNumber}/${starredCount})`}
+                                <FontAwesomeIcon icon={faStar} className={classNames('sb-star', {'sb-star-yellow': song.starred})}/>
+                                {` (${song.starred ? song.starredNumber : starredCount + 1}/${song.starred ? starredCount : starredCount + 1})`}
                             </span>}
                         </span>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
