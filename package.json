@@ -1,7 +1,7 @@
 {
   "name": "songbook",
   "version": "0.1.0",
-  "homepage": "http://spiewnik.tchnienieboga.pl",
+  "homepage": "https://spiewnik.tchnienieboga.pl",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.34",
