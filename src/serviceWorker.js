@@ -55,7 +55,7 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
-  navigator.serviceWorker.getRegistration('https://tchnienieboga.github.io/')
+  navigator.serviceWorker.getRegistration('https://spiewnik.tchnienieboga.pl/')
       .then(swReg => {
         if (swReg) {
           navigator.serviceWorker.addEventListener('controllerchange', () => {
