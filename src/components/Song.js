@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faStar} from '@fortawesome/free-solid-svg-icons';
+import Star from './Star';
 
 const Song = ({song, starredCount}) => {
     return <>
@@ -12,10 +11,7 @@ const Song = ({song, starredCount}) => {
                 {song.number}. {song.title}
             </div>
             <div className="col-2 sb-star-info sb-lyrics" onClick={song.toggleStarred}>
-                <FontAwesomeIcon icon={faStar} size="lg" className={classNames({
-                    'sb-star': true,
-                    'sb-star-yellow': song.starred
-                })}/>
+                <Star selected={song.starred} large={true}/>
                 <br/>
                 {song.starred ? `${song.starredNumber}/${starredCount}` : <>&nbsp;</>}
             </div>

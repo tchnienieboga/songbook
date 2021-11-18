@@ -2,8 +2,9 @@ import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGuitar, faStar, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faGuitar, faTimes} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
@@ -54,8 +55,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                     <div className="form-row">
                         {!!starredCount &&
                         <label className="col-1 col-form-label col-form-label-lg text-right">
-                            <FontAwesomeIcon icon={faStar} onClick={toggleOnlyStarred} className={
-                                classNames('sb-star', {'sb-star-yellow': onlyStarred})}/>
+                            <Star selected={onlyStarred} onClick={toggleOnlyStarred}/>
                         </label>
                         }
                         <div className="col-8 col-sm-6">
@@ -64,7 +64,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                                          value={searchText} onChange={changeSearchText}/>
                                 : <input type="text" readOnly={true}
                                          className="form-control-plaintext form-control-lg ml-2 font-weight-bold"
-                                         value="Wybrane"/>}
+                                         value={`Wybrane (${starredCount})`}/>}
                         </div>
                         <div className="col"/>
                         <div className="col-1 text-right">
@@ -85,10 +85,10 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                                ref={song.chosen ? songToFocusRef : null}>
                                 {`${song.number}. ${song.title}`}
                             </a>
-                            {!onlyStarred && (song.starred || !!searchPhrase) && <span className="sb-star-info" onClick={song.toggleStarred}>
+                            {(song.starred || !!searchPhrase) && <span className="sb-star-info">
                                 &nbsp;
-                                <FontAwesomeIcon icon={faStar} className={classNames('sb-star', {'sb-star-yellow': song.starred})}/>
-                                {` (${song.starred ? song.starredNumber : starredCount + 1}/${song.starred ? starredCount : starredCount + 1})`}
+                                <Star selected={song.starred} onClick={song.toggleStarred}/>
+                                {!onlyStarred && ` ${song.starred ? song.starredNumber : starredCount + 1}`}
                             </span>}
                         </span>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
@@ -99,7 +99,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
                     {onlyStarred
                         ? <><FontAwesomeIcon icon={faGuitar} size="lg"/>{' Wszystkie'}</>
-                        : <><FontAwesomeIcon icon={faStar} className="sb-star sb-star-yellow"/>{' Wybrane'}</>
+                        : <><Star selected={true}/>{` Wybrane (${starredCount})`}</>
                     }
                 </Button>}
                 <Button variant="secondary" onClick={onClose}>Zamknij</Button>
