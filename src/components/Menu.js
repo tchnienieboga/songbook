@@ -4,17 +4,14 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGuitar, faTimes} from '@fortawesome/free-solid-svg-icons';
+import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 import MenuSong from './MenuSong';
+import MenuHeader from './MenuHeader';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef(null);
-
-    const changeSearchText = (event) => {
-        setSearchText(event.target.value);
-    };
 
     useEffect(() => {
         if (!show || onlyStarred) {
@@ -57,27 +54,8 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
     return (
         <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header className="py-2">
-                <div className="container px-0">
-                    <div className="form-row">
-                        {!!starredCount &&
-                        <label className="col-1 col-form-label col-form-label-lg text-right">
-                            <Star selected={onlyStarred} onClick={toggleOnlyStarred}/>
-                        </label>
-                        }
-                        <div className="col-8 col-sm-6">
-                            {!onlyStarred
-                                ? <input type="text" className="form-control form-control-lg" placeholder="Który numer?"
-                                         value={searchText} onChange={changeSearchText}/>
-                                : <input type="text" readOnly={true}
-                                         className="form-control-plaintext form-control-lg ml-2 font-weight-bold"
-                                         value={`Wybrane (${starredCount})`}/>}
-                        </div>
-                        <div className="col"/>
-                        <div className="col-1 text-right">
-                            <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
-                        </div>
-                    </div>
-                </div>
+                <MenuHeader onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred} starredCount={starredCount}
+                            searchText={searchText} setSearchText={setSearchText} onClose={onClose}/>
             </Modal.Header>
             <Modal.Body>
                 {songs.filter(song => filterSong(song.number, song.title)).map((song, index) =>
