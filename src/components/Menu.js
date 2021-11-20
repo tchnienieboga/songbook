@@ -5,13 +5,12 @@ import Button from 'react-bootstrap/Button';
 import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGuitar, faTimes} from '@fortawesome/free-solid-svg-icons';
-import classNames from 'classnames';
+import MenuSong from './MenuSong';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef(null);
-    const songToFocusRef = useRef(null);
 
     const changeSearchText = (event) => {
         setSearchText(event.target.value);
@@ -21,16 +20,24 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         if (!show || onlyStarred) {
             setSearchText('');
         }
-    }, [show, onlyStarred])
-
-    const scrollToSong = () => {
-        songToScrollRef.current && songToScrollRef.current.scrollIntoView();
-        songToFocusRef.current && songToFocusRef.current.focus();
-    };
+        scrollToSong();
+    }, [show, onlyStarred]);
 
     const getSearchPhrase = () => !searchText.trim() ? undefined
         : !isNaN(searchText) ? parseInt(searchText)
             : searchText.toLowerCase();
+
+    const searchPhrase = getSearchPhrase();
+
+    useEffect(() => {
+        if (!searchPhrase) {
+            scrollToSong();
+        }
+    }, [searchPhrase]);
+
+    const scrollToSong = () => {
+        songToScrollRef.current && songToScrollRef.current.scrollIntoView();
+    };
 
     const filterSong = (number, title) => {
         if (!searchPhrase) {
@@ -42,14 +49,13 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         return title.toLowerCase().includes(searchPhrase);
     }
 
-    const searchPhrase = getSearchPhrase();
 
     const chosenSongIndex = songs.findIndex(song => song.chosen);
 
     const songToScroll = chosenSongIndex < 3 ? 0 : chosenSongIndex - 3;
 
     return (
-        <Modal show={show} onShow={scrollToSong} onHide={onClose} scrollable={true} animation={false}>
+        <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header className="py-2">
                 <div className="container px-0">
                     <div className="form-row">
@@ -74,26 +80,13 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 </div>
             </Modal.Header>
             <Modal.Body>
-                {songs.filter(song => filterSong(song.number, song.title)).map((song, index) => {
-                    const clickSong = () => chooseSong(song.number);
-                    return <React.Fragment key={song.number}>
-                        <span className={classNames(
-                            'sb-menu-songtitle', {'sb-starred-song': song.starred})}>
-                            {/* eslint-disable-next-line */}
-                            <a href="#" onClick={clickSong}
-                               className={classNames('text-reset', {'sb-chosen-song': song.chosen})}
-                               ref={song.chosen ? songToFocusRef : null}>
-                                {`${song.number}. ${song.title}`}
-                            </a>
-                            {(song.starred || !!searchPhrase) && <span className="sb-star-info">
-                                &nbsp;
-                                <Star selected={song.starred} onClick={song.toggleStarred}/>
-                                {!onlyStarred && ` ${song.starred ? song.starredNumber : starredCount + 1}`}
-                            </span>}
-                        </span>
+                {songs.filter(song => filterSong(song.number, song.title)).map((song, index) =>
+                    <React.Fragment key={song.number}>
+                        <MenuSong song={song} chooseSong={chooseSong} starredCount={starredCount}
+                                  showStar={song.starred || !!searchPhrase} showCount={!onlyStarred}/>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
-                })}
+                )}
             </Modal.Body>
             <Modal.Footer>
                 {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
