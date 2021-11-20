@@ -2129,16 +2129,22 @@ by mógł żyć na wieki. [e] [H7]
 ---
 {title:  W kruszynie chleba}
 {number: 114}
-1. W kruszynie chleba Panie jesteś [G] [h] [e]
-Schowany, wielki Ty Pan [C] [D] [G] [e]
-Przychodzisz do nas już od wieków [C] [D] [G] [e]
-By ofiarować Siebie nam [C] [a7] [D] [D7]
+1. W kruszynie chleba           [G] [h]
+Panie jesteś                    [e]
+Schowany, wielki Ty Pan         [C] [D] [G] [e]
+Przychodzisz do nas             [C] [D]
+Już od wieków                   [G] [e]
+By ofiarować Siebie nam         [C] [a7] [D] [D7]
 
-2. W tych kroplach wina Twoja krew, przelana za nas Panie mój.
-Tak wiele jej na krzyżu było by odkupić nas od win.
+2. W tych kroplach wina Twoja krew, 
+Przelana za nas Panie mój.
+Tak wiele jej na krzyżu było 
+By odkupić nas od win.
 
-3. Ty, Panie miłością jesteś, Ty Panie kochasz nas.
-I proszę Ciebie, by tak było, wciąż przez wiele lat.
+3. Ty, Panie miłością jesteś, 
+Ty Panie kochasz nas.
+I proszę Ciebie, by tak było, 
+Wciąż przez wiele lat.
 ---
 {title:  Spocznij na nas, Duchu Pana}
 {number: 115}
@@ -2737,9 +2743,9 @@ Ty wiesz, jak Cię miłuję [D] [A4-3]
 ---
 {title:  Ta krew z grzechu obmywa nas}
 {number: 149}
-Ta Krew z grzechu obmywa mnie [D] [G]
-Ta Krew czyni mnie bielszym od śniegu [A] [D] [fis]
-Ta Krew z grzechu obmywa mnie [h] [G]
+Ta Krew z grzechu obmywa nas [D] [G]
+Ta Krew czyni nas bielszych od śniegu [A] [D] [fis]
+Ta Krew z grzechu obmywa nas  [h] [G]
 To jest Baranka święta Krew [A7] [D]
 ---
 {title:  Przyodziałeś mnie, Panie}
@@ -2890,10 +2896,10 @@ Ze źródła wody życia.
 1. Zwykły chleb przemieniasz, Panie, [E]
 w Ciało Swe, [A] [E] [(A] [E)]
 Zwykły chleb przemieniasz, Panie, [E]
-w Ciało Swe, [H] [7]
+w Ciało Swe, [H7]
 Zwykły chleb przemieniasz, Panie, [E]
 By nasycić nim bez granic, [A] [E]
-By nasycić nim bez granic dzisiaj mnie. [A] [H] [7] [E] [(A] [E)]
+By nasycić nim bez granic dzisiaj mnie. [A] [H7] [E] [(A] [E)]
 
 2. Zwykłe wino w Swoją Krew przemienia Bóg, /x2
 Zwykłe wino w Krew przemienia, by ugasić serc pragnienia,
@@ -3104,11 +3110,17 @@ Ref. Lud Twój, Panie…
 ---
 {title:  Otwórz me oczy, chcę widzieć Jezusa}
 {number: 170}
-Otwórz me oczy, chcę widzieć Jezusa [e] [A] [G] [D] [(h)]
-i być bliżej Niego, i kochać goręcej. [e] [A7] [D] [D] [7]
-Otwórz me uszy i naucz mnie słuchać. [e] [A] [7] [G] [D] [(h)]
-Otwórz me oczy, chcę widzieć Jezusa [e] [A] [7] [G] [D]
- [G] [g] [D]
+
+Otwórz me oczy,         [e] [A] 
+Chcę widzieć Jezusa     [D] [h]
+I być bliżej Niego,     [e] [A7]      
+I kochać goręcej.       [D] [D7]
+Otwórz me uszy          [e] [A7]  
+I naucz mnie słuchać.   [D] [h]
+Otwórz me oczy,         [e] [A7] 
+chcę widzieć Jezusa     [D]
+                        [G] [g] [D]
+
 ---
 {title:  Duchu Święty, błagam nie zwlekaj!}
 {number: 171}
@@ -3502,8 +3514,8 @@ On dał Ci życie, On da ci wszystko
 
 Wszystkie narody klaskajcie w dłonie [D]
 Wykrzykujcie Bogu radosnym głosem, [h]
-Bo Pan najwyższym jest [G]
-królem nad całą ziemią. [A] [D] [(A)]
+Bo Pan Najwyższy jest [G]
+Królem nad całą ziemią. [A] [D] [(A)]
 
 Ref. Śpiewajcie, wszystkie narody [D]
 Śpiewajcie, radosnym głosem [h]
