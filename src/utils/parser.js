@@ -1,3 +1,5 @@
+import {smallLatinLetters} from './text';
+
 const DIRECTIVE = 'DIRECTIVE';
 const BODY_LINE = 'BODY_LINE';
 
@@ -31,6 +33,7 @@ const parseSong = (song) => {
 
     return {
         ...directives,
+        latinTitle: smallLatinLetters(directives['title'] || ''),
         body: trimmedBody
     };
 };

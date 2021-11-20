@@ -7,6 +7,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 import MenuSong from './MenuSong';
 import MenuHeader from './MenuHeader';
+import {smallLatinLetters} from '../utils/text';
 
 const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
 
@@ -22,7 +23,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
 
     const getSearchPhrase = () => !searchText.trim() ? undefined
         : !isNaN(searchText) ? parseInt(searchText)
-            : searchText.toLowerCase();
+            : smallLatinLetters(searchText.trim());
 
     const searchPhrase = getSearchPhrase();
 
@@ -32,20 +33,19 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         }
     }, [searchPhrase]);
 
-    const scrollToSong = () => {
-        songToScrollRef.current && songToScrollRef.current.scrollIntoView();
-    };
-
-    const filterSong = (number, title) => {
+    const filterSong = (song) => {
         if (!searchPhrase) {
             return true;
         }
         if (typeof searchPhrase === 'number') {
-            return number === searchPhrase;
+            return song.number === searchPhrase;
         }
-        return title.toLowerCase().includes(searchPhrase);
+        return song.latinTitle.includes(searchPhrase);
     }
 
+    const scrollToSong = () => {
+        songToScrollRef.current && songToScrollRef.current.scrollIntoView();
+    };
 
     const chosenSongIndex = songs.findIndex(song => song.chosen);
 
@@ -58,7 +58,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                             searchText={searchText} setSearchText={setSearchText} onClose={onClose}/>
             </Modal.Header>
             <Modal.Body>
-                {songs.filter(song => filterSong(song.number, song.title)).map((song, index) =>
+                {songs.filter(song => filterSong(song)).map((song, index) =>
                     <React.Fragment key={song.number}>
                         <MenuSong song={song} chooseSong={chooseSong} starredCount={starredCount}
                                   showStar={song.starred || !!searchPhrase} showCount={!onlyStarred}/>
