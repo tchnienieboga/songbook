@@ -1322,20 +1322,20 @@ Ja chcę być jak Ty. [A] [E] [H]
 ---
 {title:  Mów do mnie Panie}
 {number: 63}
-Mów do mnie, Panie, [c] [B] [h] [A]
-chcę słyszeć Cię, [As7+] [B] [G7+] [A]
-Przyjąć od Ciebie, [As7+] [B] [G7+] [A]
-co masz dla mnie. [f7] [e7]
-Nie chcę się chować, [c] [B] [h] [A]
-lecz w Tobie skryć. [As7+] [B] [G7+] [A]
-W cieniu Twym, Panie, [As7+] [B] [G7+] [A]
-chcę iść. [f7] [(f6)] [e7] [(e6)]
+Mów do mnie, Panie,     [c] [B]
+chcę słyszeć Cię,       [As7+] [B]
+Przyjąć od Ciebie,      [As7+] [B]
+co masz dla mnie.       [f7]
+Nie chcę się chować,    [c] [B]
+lecz w Tobie skryć.     [As7+] [B]
+W cieniu Twym, Panie,   [As7+] [B]
+chcę iść.               [f7] [(f6)]
 
-Ref. 2x Święty, [c] [h]
-potężny jesteś, Panie nasz, [B] [As] [c] [A] [G] [h]
-Przed Tobą dziś możemy stać [B] [As] [c] [A] [G] [h]
-Dzięki łasce, [B] [As] [A] [G]
-nie dzięki nam samym. [Es] [B] [D] [A]
+Ref. 2x Święty,             [c]
+potężny jesteś, Panie nasz, [B] [As] [c]
+Przed Tobą dziś możemy stać [B] [As] [c]
+Dzięki łasce,               [B] [As]
+nie dzięki nam samym.       [Es] [B]
 ---
 {title:  Dotknij, Panie, moich oczu}
 {number: 64}
