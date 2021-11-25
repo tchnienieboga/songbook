@@ -4549,6 +4549,14 @@ Ref. Wierzę Mu, bo On ma moc     [a] [D]
 Przezwyciężyć w moim sercu zło.  [G] [C]
 Wierzę Mu, bo On ma              [a]
 Właśnie taką moc. /x2            [D] [e]
+---
+{title: Przyjdź, o Jezu, Maranatha!}
+{number: 232}
+
+Przyjdź, o Jezu, Maranatha      [e]
+Przyjdź, o Jezu, Maranatha      [D]
+Przyjdź, o Jezu, Maranatha      [e]
+Przyjdź, o Jezu, Maranatha      [D] [e]
 `;
 
 const parsedSongs = parseSongs(rawSongs);
