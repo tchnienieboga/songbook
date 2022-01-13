@@ -165,11 +165,15 @@ Jezusowi śpiewają, Jezusowi śpiewają, śpiewają!
 ---
 {title:  Gdy śliczna Panna}
 {number: 10}
-1. Gdy śliczna Panna Syna kołysała [D] [A] [h] [e] [A7] [D]
-Z wielkim weselem tak Jemu śpiewała:
+1. Gdy śliczna Panna        [D] [A] [h] 
+Syna kołysała               [e] [G] [A7] [D]
+Z wielkim weselem           [D] [A] [h]
+tak Jemu śpiewała:          [e] [G] [A7] [D]
 
-Ref. Li, li, li, li, laj, moje Dzieciąteczko [h] [e] [A] [G] [D]
-Li, li, li, li, laj, śliczne Paniąteczko [h] [G] [g] [D] [e] [A] [D]
+Ref. Li, li, li, li, laj,   [h] [e] [G]
+moje Dzieciąteczko          [A] [G] [D]
+Li, li, li, li, laj,        [h] [G] [g] 
+śliczne Paniąteczko         [D] [e] [A] [D]
 
 2. Wszystko stworzenie śpiewaj Panu swemu
 Pomóż radości wielkiej sercu memu
@@ -302,19 +306,27 @@ Lulaj, Synku, lulaj, Syneczku [e] [fis] [h]
 ---
 {title:  Cicha noc}
 {number: 16}
-1. Cicha noc, święta noc, [A]
-Pokój niesie ludziom wszem [E] [E7] [A] [A7]
-A u żłobka Matka Święta [D] [A]
-Czuwa sama uśmiechnięta [D] [A]
-Nad Dzieciątka snem, nad Dzieciątka snem [h] [h0] [A] [A] [E] [A]
+1. Cicha noc, święta noc,   [G]
+Pokój niesie ludziom wszem  [D] [D7] [G] [G7]
+A u żłobka Matka Święta     [C] [G]
+Czuwa sama uśmiechnięta     [C] [G]
+Nad Dzieciątka              [a] [D] [dis0]  
+Snem...                     [e] [cis7/5-]
+Nad Dzieciątka snem         [G] [D] [G]
 
-2. Cicha noc, święta noc, pastuszkowie od swych trzód
-Biegną wielce zadziwieni za anielskim głosem pieni
-Gdzie się spełnił cud, gdzie się spełnił cud.
+2. Cicha noc, święta noc, 
+Pastuszkowie od swych trzód
+Biegną wielce zadziwieni
+Za anielskim głosem pieni
+Gdzie się spełnił cud...
+Gdzie się spełnił cud.
 
-3. Cicha noc, święta noc, narodzony Boży Syn
-Pan wielkiego majestatu niesie dziś całemu światu
-Odkupienie win, odkupienie win
+3. Cicha noc, święta noc, 
+Narodzony Boży Syn
+Pan wielkiego majestatu 
+Niesie dziś całemu światu
+Odkupienie win...
+Odkupienie win.
 ---
 {title:  Jezusa narodzonego}
 {number: 17}
