@@ -4569,6 +4569,31 @@ Przyjdź, o Jezu, Maranatha      [e]
 Przyjdź, o Jezu, Maranatha      [D]
 Przyjdź, o Jezu, Maranatha      [e]
 Przyjdź, o Jezu, Maranatha      [D] [e]
+---
+{title: Przywołaj mnie, Panie, na pustynię}
+{number: 233}
+
+1. Przywołaj mnie Panie         [e] [D]
+Przywołaj mnie Panie            [C7+] [h]
+Na pustynię.                    [a] [dis0] [e]
+I niech mój głód Ciebie         [e] [D]
+I moja tęsknota                 [C7+] [h]
+Przywoła Ciebie.                [a] [dis0] [e]
+
+Ref. 2x Mów do mego serca       [e] [D] [e]
+Mów do mego serca.              [e] [D] [e]
+Ty znasz jego ukryte doliny,    [C] [D] [C] [D]
+Tam gdzie usychają,             [e] [D] [e]
+Piękne winnice                  [e] [D] [e]
+Ty wiesz, gdzie otworzyć        [C] [D] [C] [h]
+Ukryte źródła.                  [e]
+
+2. Niech we mnie zamilkną       [e] [D]       
+Pragnienia i myśli              [C7+] [h]     
+Abyś mógł mówić Ty.             [a] [dis0] [e]
+Niech słowa miłości             [e] [D]       
+I przebaczenia                  [C7+] [h]     
+Ogarną duszę mą.                [a] [dis0] [e]
 `;
 
 const parsedSongs = parseSongs(rawSongs);
