@@ -4594,6 +4594,33 @@ Abyś mógł mówić Ty.             [a] [dis0] [e]
 Niech słowa miłości             [e] [D]       
 I przebaczenia                  [C7+] [h]     
 Ogarną duszę mą.                [a] [dis0] [e]
+---
+{title: Miłość przychodzi teraz (Jezus cię kocha)}
+{number: 234}
+                                      [e]
+Ref. 3x Jezus cię kocha, pragnie,     [C]
+leczy właśnie                         [D]
+dziś tu i teraz.                      [e]
+Chcę Go uwielbiać, bo jest            [C]
+ze mną właśnie                        [D]
+dziś.                                 [e]
+
+W Tobie ma nadzieja                   [C] [D]
+W Tobie życie me                      [C] [D]
+We mnie możesz wszystko               [C] [D]
+Jeśli chcesz                          [e]
+Moje nawrócenie                       [C] [D]
+Tylko w Tobie jest                    [C] [D]
+Oczyść moje serce                     [C] [D]
+Weź mój grzech                        [e]
+
+Ref. 4x Jezus cię kocha, pragnie,     [C]
+leczy właśnie                         [D]
+dziś tu i teraz.                      [e]
+Chcę Go uwielbiać, bo jest            [C]
+ze mną właśnie                        [D]
+dziś.                                 [e]
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
