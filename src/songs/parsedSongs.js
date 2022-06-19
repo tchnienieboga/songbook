@@ -4620,6 +4620,69 @@ dziś tu i teraz.                      [e]
 Chcę Go uwielbiać, bo jest            [C]
 ze mną właśnie                        [D]
 dziś.                                 [e]
+---
+{title: Taki jesteś Ty}
+{number: 235}
+
+1. Jesteś tu jesteś pośród nas     [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+Jesteś tu, działasz w każdym z nas [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+
+2. Jesteś tu i dotykasz serc       [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+Jesteś tu, leczysz każde z serc    [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+
+Ref. Jesteś Wszechmocny            [D] [A]
+Ty czynisz cuda                    [E] [fis]
+Jesteś drogą, światłem w ciemności [D] [A]
+O tak, taki jesteś Ty              [E] [fis]
+
+3. Jesteś tu zmieniasz życie       [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+Jesteś tu i odnawiasz mnie         [D] [A]
+Uwielbiam Cię, uwielbiam Cię       [E] [fis]
+
+Ref. Jesteś Wszechmocny..          
+
+Taki jesteś Ty, taki jesteś Ty,    [D] [A]
+taki jesteś Ty, taki jesteś Ty     [E] [fis]
+
+Bridge: Choć czasem tego           [D]
+nie widzę, Ty działasz
+Choć czasem tego                   [A]
+nie czuję, Ty działasz
+Nie zmieniasz się                  [E]
+i wiem, że wciąż działasz
+Nie zmieniasz się                  [fis]
+(i wiem, że wciąż działasz)
+
+Taki jesteś Ty...
+---
+{title: Pełen czci przed Tobą klękam}
+{number: 236}
+
+1. Pełen czci przed Tobą klękam    [G] [D]
+wszystko oddam by móc ujrzeć Cię   [e] [C]
+by z Tobą Panie być                [G] [D] [e] [C]
+
+2. Życie składam w Twoje ręce      [G] [D]
+Boże łaski cześć oddaję Ci         [e] [C]
+przed Twym tronem kłaniam się      [G] [D] [e] [C]
+
+Ref. Mój płacz słyszałeś           [G] [D] [e]
+i z pomocą przyszedłeś od dziś     [C]
+chcę być zawsze tam gdzie Ty       [G] [D] [e] [C]
+
+1. Pełen czci przed Tobą klękam...
+2. Życie składam w Toje ręce...
+
+Ref 2x. Mój płacz słyszałeś...
+                                       [e] [D/Fis] [G] [D/Fis]
+Bridge 4x: Życiem swym wywyższam Cię   [e] [D/Fis]
+miłość ma wywyższa Cię                 [G] [D/Fis]
+chcę by świat wywyższał Cię            [e] [D/Fis] [C] [D] 
 
 `;
 
