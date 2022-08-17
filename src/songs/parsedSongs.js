@@ -4683,6 +4683,37 @@ Ref 2x. Mój płacz słyszałeś...
 Bridge 4x: Życiem swym wywyższam Cię   [e] [D/Fis]
 miłość ma wywyższa Cię                 [G] [D/Fis]
 chcę by świat wywyższał Cię            [e] [D/Fis] [C] [D] 
+---
+{title: Dom na skale}
+{number: 237}
+
+1. Ktoś zbudował dom na piasku,     [h]
+wymarzony wspaniały dom,            [D] [h]
+ale przyszła burza,                 [e]
+runął z wielkim trzaskiem,          [h]
+zbudowany na piasku dom.            [Fis] [h]
+Ktoś zbudował dom na skale,
+wymarzony wspaniały dom,
+przyszły chmury ciemne, uderzyły fale, 
+dom na skale ani drgnął.
+
+Ref. Trzeba miłość budować na skale,    [h] [Fis]
+swoje szczęście oprzeć o głaz.          [Fis] [h]
+Gdy w godzinę złą                       [e]
+wiatr powieje prosto w dom,             [h]
+mój dom na skale będzie stał.           [Fis] [h]
+
+2. Na to nasze budowanie,
+Boże połóż wszechmocną dłoń.
+Kto Ci ufa Panie, mocny jest jak granit,
+i szczęśliwie zbuduje dom.
+Nie wiem co przyniesie życie,
+za godzinę za dzień za rok.
+Ale wiem to jedno, Bóg jest skałą wierną,
+nie odstąpisz Go na krok.
+
+Ref.x2 Trzeba miłość budować na skale...
+...mocno stał, zawsze stał.
 
 `;
 
