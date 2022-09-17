@@ -6,7 +6,7 @@ const getItem = (key) => {
 };
 
 const setItem = (key, value) => {
-    if ((typeof value) !== 'undefined') {
+    if (value) {
         localStorage.setItem(key, JSON.stringify(value));
     }
 };
@@ -15,7 +15,7 @@ const usePersistentState = (key, defaultValue) => {
 
     const [value, setValue] = useState(() => {
         const value = getItem(key);
-        return (typeof value) !== 'undefined' ? value : defaultValue;
+        return value ? value : defaultValue;
     });
 
     useEffect(() => {
