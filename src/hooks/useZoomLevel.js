@@ -1,4 +1,4 @@
-import {usePinch} from 'react-use-gesture';
+import {usePinch} from '@use-gesture/react';
 import {useState} from 'react';
 import usePersistentState from './usePersistentState';
 

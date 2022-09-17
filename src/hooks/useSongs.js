@@ -1,5 +1,5 @@
 import usePersistentState from './usePersistentState';
-import {useDrag} from 'react-use-gesture';
+import {useDrag} from '@use-gesture/react';
 import {useEffect} from 'react';
 
 
