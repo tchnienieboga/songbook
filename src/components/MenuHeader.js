@@ -17,7 +17,7 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
             <div className="col-8 col-sm-6">
                 {!onlyStarred
                     ? <input type="text" className="form-control form-control-lg" placeholder="Który numer?"
-                             autoFocus={true} autoCapitalize="none" autoCorrect="off"
+                             autoCapitalize="none" autoCorrect="off"
                              value={searchText} onChange={changeSearchText}/>
                     : <input type="text" readOnly={true}
                              className="form-control-plaintext form-control-lg ml-2 font-weight-bold"
