@@ -4715,6 +4715,159 @@ nie odstąpisz Go na krok.
 Ref.x2 Trzeba miłość budować na skale...
 ...mocno stał, zawsze stał.
 
+---
+{title: Maryjo, chcę zamieszkać z Tobą}
+{number: 238}
+
+Maryjo, chcę zamieszkać z Tobą,     [F] [C]
+Naucz mnie kochać jak Ty.           [B] [C]
+Maryjo, chcę zamieszkać z Tobą,     [F] [C]
+Naucz mnie kochać od dziś.          [B] [C]
+
+Zachwycasz mnie prostotą            [F] [a7]
+I pięknem Twego serca.              [B] [C4/3]
+Pociągasz mnie, abym żyła w świetle [F] [a7]
+Maryjo!                             [B] [C]
+
+Razem z Tobą powiedzieć chcę Panu       [F] [a7]
+Słowa, co zmieniły świat.               [B9/g] [C4/3]
+Razem z Tobą powiedzieć chcę: Panie!    [F] [a7]
+Niech będzie tak, jak chcesz Ty.        [B9/g] [C]
+
+---
+{title: Dzięki Ci, Maryjo}
+{number: 239}
+
+Dzięki Ci Maryjo,           [E] [H7] [A] [E] 
+Maryjo dzięki Ci. x2        [Fis] [A] [E]
+
+1.Za błękitu nieba toń,     [gis] [cis] 
+za pomocną Twoją dłoń,      [gis] [A]
+Maryjo, dzięki Ci.          [Fis] [H7] 
+Za nadziei Syna twarz,      [gis] [cis] 
+że matczyną miłość masz,    [gis] [A]
+Maryjo, dzięki Ci.          [Fis] [A] [E]
+
+Ref. Maryjo                     [D] [A]
+Tyś wiarą, nadzieją, miłością,  [E]
+Maryjo                          [D] [A]
+bądź Matką, Królową, bliskością [E]
+Maryjo!                         [D] [A] [E]
+
+Dzięki Ci ...
+2.Za radości życia me, za pociechy słowa Twe
+Za troskliwą przy nas straż, że obfite łaski dasz
+
+3.Za ufności wielkiej znak, za służebne Twoje "Tak"
+Za łaskawość, w której trwasz, że potrzeby nasze znasz
+
+---
+{title: Duchu Święty, Boże przyjdź}
+{number: 240}
+
+Ref. Duchu Święty, Boże przyjdź,    [g] [d]
+przyjdź Duchu Światło,              [g] [F]
+Duchu Ogniu przyjdź,                [B] [F]
+przyjdź i rozpal nas.               [d] [g]
+
+1.Przyjdź Duchu Ojca,   [g] [d] [g] 
+bądź naszym światłem,   [d] [g]
+Niech promienieje       [F] [B]
+Twej chwały blask.      [F] [d] [g]
+
+
+2.O, Świadku prawdziwy umocnij nas,
+Chcemy rozgłaszać: Zmartwychwstał Pan!
+
+3.Przyjdź Źródło niebieskie, przyjdź zdroju życia,
+Bądź nam uzdrowieniem, moc sercom daj.
+
+4.O, Duchu Radości, rozraduj Kościół,
+Niech płynie z serc naszych Baranka pieśń.
+
+5.Ty daj nam doświadczyć miłości Ojca,
+Oblicze Chrystusa objawiaj nam.
+
+---
+{title: Dziś jest czas, by oddać Bogu chwałę}
+{number: 241}
+
+1. Dziś jest czas, by oddać Bogu chwałę	    [D] [G] [D] [G]
+W tej świątyni, którą my jesteśmy sami.	    [D] [G] [A7]
+Ref. Więc otwórz serce swe 		            [G] [D]
+i zacznij wielbić Go		                [G] [D]
+Jego chwała wnet wypełni miejsce to.		[G] [C] [A7]
+Chwała cześć, chwalimy Go! /x2		        [D] [G] [A] [G]
+
+2. Bóg przebywa w chwale swego ludu	        [D] [G] [D] [G]
+On pragnie, aby wielbić Jego Imię		    [D] [G] [A7]
+---
+{title: Chlebie najcichszy}
+{number: 242}
+
+Ref. Chlebie najcichszy,	    [G] [D]
+otul mnie swym milczeniem.	    [C] [D]
+Ukryj mnie w Twojej bieli,	    [G] [D]
+wchłoń moją ciemność.	        [a] [e]
+
+1. Przemień mnie w siebie,	    [e] [C]
+bym jak Ty stał się chlebem /x2 [G] [D]
+Pobłogosław mnie, połam,        [e] [C]
+rozdaj łaknącym braciom /x2     [G] [D]
+
+2. A ułomki chleba, które zostaną
+Rozdaj tym, którzy nie wierzą w swój głód
+---
+{title: Przyjacielu, chcę zostać z Tobą}
+{number: 243}
+
+Przyjacielu, przyjacielu    [G] [e]
+chcę zostać z tobą          [C]
+Przy tobie chcę być         [D]  
+I nie trzeba, i nie trzeba  [G] [e]
+byś mówił coś               [C]
+Wystarczy byś był. /x2      [D]
+
+Ref.x2 Bo nie ma            [G]
+większej miłości niż ta,    [e]
+Gdy ktoś życie oddaje       [C] 
+bym ja mógł żyć             [D]
+
+2. Chcę być z tobą, chcę być z Tobą 
+Gdy jest mi dobrze i kiedy mi źle
+Przyjacielu, przyjacielu 
+Otwieram przed Tobą serce me /x2
+---
+{title: O Matko, z Częstochowskiego wizerunku}
+{number: 244}
+
+Ref. O, Matko       [D] 
+z Częstochowskiego  [A] [G]
+Wizerunku,          [A]
+Pani Jasnogórska,   [G] [fis]
+Jutrzenko Wolności, [e] [A]
+Źródło Światła      [Fis] [h]
+i Życia dla nas,    [D] [e] [G] [Fis]
+Bądź Matką,         [h] [G] 
+bądź Matką          [fis] [h] 
+naszego zawierzenia [e] [h]
+
+1.Wraz z Tobą, Matko,       [D] [A] 
+chcemy dziś się zanurzyć    [h] [A]
+W jedynym świetle,          [G] [fis] 
+którym jest Jezus,          [e] [A]
+Aby moc Zmartwychwstałego   [D] [A] [h] [D]
+była uzdrowieniem.          [e] [G] [A]
+
+2.Spraw, aby w sercach Twoich synów i córek,
+Dotkniętych ogniem Bożego światła,
+Wytrysnęło źródło życia, dar miłości Ojca.
+
+3.Pomóż nam, Matko, przyjąć całą prawdę
+I za Jezusem pójść drogą krzyża,
+By w ciemności nikt nie chodził, 
+lecz miał światło życia. 
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
