@@ -2146,7 +2146,7 @@ Panie jesteś                    [e]
 Schowany, wielki Ty Pan         [C] [D] [G] [e]
 Przychodzisz do nas             [C] [D]
 Już od wieków                   [G] [e]
-By ofiarować Siebie nam         [C] [a7] [D] [D7]
+By ofiarować Siebie nam         [C] [a7] [D] [D+]
 
 2. W tych kroplach wina Twoja krew, 
 Przelana za nas Panie mój.
@@ -2597,30 +2597,25 @@ przez wszystkie wieki wieków. Amen!
 ---
 {title:  Barka}
 {number: 141}
-1. Pan kiedyś stanął nad brzegiem, [C] [G7] [a] [a7]
-szukał ludzi, gotowych pójść za Nim, [d] [F] [G] [G7]
-by łowić serca Słów Bożych prawdą. [C] [G7] [C] [C7]
+1. Pan kiedyś stanął nad brzegiem, [D] [A7] [h] [h7]
+szukał ludzi, gotowych pójść za Nim, [e] [G] [A] [A7]
+by łowić serca Słów Bożych prawdą. [D] [A7] [D] [D7]
 
-Ref. O Panie, to Ty na mnie spojrzałeś, [F] [G] [C] [A7]
-Twoje usta dziś wyrzekły me imię. [d] [G7] [C] [C7]
-Swoją barkę pozostawiam na brzegu, [F] [G] [C] [A7]
-razem z Tobą nowy zacznę dziś łów. [d] [G7] [C]
+Ref. O Panie, to Ty na mnie spojrzałeś, [G] [A] [D] [H7]
+Twoje usta dziś wyrzekły me imię. [e] [A7] [D] [D7]
+Swoją barkę pozostawiam na brzegu, [G] [A] [D] [H7]
+razem z Tobą nowy zacznę dziś łów. [e] [A7] [D]
 
 2. Jestem ubogim człowiekiem, moim skarbem są ręce gotowe
 do pracy z Tobą i czyste serce.
 
-Ref. O Panie...
-
 3. Ty potrzebujesz mych dłoni, mego serca młodego zapałem,
 mych kropli potu i samotności.
-
-Ref. O Panie...
 
 4. Dziś wypłyniemy już razem,
 łowić serca na morzach dusz ludzkich
 Twej prawdy siecią i Słowem Życia.
 
-Ref. O Panie…
 ---
 {title:  Ja Jestem}
 {number: 142}
@@ -2927,16 +2922,22 @@ W naszych sercach brak wdzięczności za ten cud.
 ---
 {title:  Abba Ojcze}
 {number: 161}
-1. Ty wyzwoliłeś nas Panie [A] [D] [E] [E7]
-Z kajdan i samych siebie [Cis] [fis] [D]
-A Chrystus stając się bratem [A] [D] [E] [E7]
-Nauczył nas wołać do Ciebie. [A] [D] [A] [E] [A] [D] [A] [E]
-Ref.: Abba Ojcze, Abba Ojcze! Abba Ojcze, Abba Ojcze! (Ojcze!)
+1. Ty wyzwoliłeś nas Panie      [A] [D] [E] [A]
+Z kajdan i samych siebie        [A] [D] [E] [E7]
+A Chrystus stając się bratem    [Cis] [fis] [D]
+Nauczył nas wołać do Ciebie.    [A] [D] [E] [E7]
+
+Ref.: Abba Ojcze,               [A] [D] [A] [E]
+Abba Ojcze!                     [A] [D] [A] [E]
+Abba, Abba Ojcze                [A] [Cis] [fis] [D]                      
+Abba Ojcze! (Ojcze!)            [A] [E] [A] [E7]
 
 2. Bo Kościół jak drzewo życia w wieczności zapuszcza korzenie
 Przenika naszą codzienność i pokazuje nam Ciebie.
+
 3. Bóg hojnym Dawcą jest życia, On wyswobodził nas z śmierci
 I przygarniając do siebie uczynił Swoimi dziećmi.
+
 4. Wszyscy jesteśmy braćmi, jesteśmy jedną rodziną.
 Tej prawdy nic już nie zaćmi, i teraz jest jej godzina.
 ---
