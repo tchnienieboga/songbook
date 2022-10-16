@@ -4731,9 +4731,9 @@ Pociągasz mnie, abym żyła w świetle [F] [a7]
 Maryjo!                             [B] [C]
 
 Razem z Tobą powiedzieć chcę Panu       [F] [a7]
-Słowa, co zmieniły świat.               [B9/g] [C4/3]
+Słowa, co zmieniły świat.               [B6/9] [C4/3]
 Razem z Tobą powiedzieć chcę: Panie!    [F] [a7]
-Niech będzie tak, jak chcesz Ty.        [B9/g] [C]
+Niech będzie tak, jak chcesz Ty.        [B6/9] [C]
 
 ---
 {title: Dzięki Ci, Maryjo}
@@ -4868,6 +4868,32 @@ Wytrysnęło źródło życia, dar miłości Ojca.
 I za Jezusem pójść drogą krzyża,
 By w ciemności nikt nie chodził, 
 lecz miał światło życia. 
+---
+{title: Koronka do Miłosierdzia Bożego}
+{number: 245}
+
+Ojcze nasz, Zdrowaś Maryjo, Wierzę w Boga
+
+Ojcze przedwieczny, ofiaruję Ci     [a] [G]
+Ciało i Krew, Duszę i Bóstwo        [F] [E7]
+Najmilszego Syna Twojego,           [a] [G]
+A Pana naszego                      [F] 
+Jezusa Chrystusa                    [E7]
+Na przebłaganie                     [F]
+za grzechy nasze                    [C] 
+i świata całego                     [F] [E7]
+Na przebłaganie                     [F]
+za grzechy nasze                    [C] 
+i świata całego                     [F] [E7]
+
+Dla Jego bolesnej męki              [a] [G] [a]
+Miej miłosierdzie                   [a] [G]
+Dla nas i świata całego             [C] [E7] [a]
+
+Święty Boże, Święty Mocny           [G] [a] [G] [a]
+Święty Nieśmiertelny                [G] [a]
+zmiłuj się nad nami                 [a] [G] [C]
+i nad całym światem                 [E7] [a]
 
 `;
 
