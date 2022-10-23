@@ -19,7 +19,7 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
                     </Button>
                 </div>
                 : null}
-            <div className="col-7 px-1">
+            <div className="col px-1">
                 {!onlyStarred
                     ? <input type="search" className="form-control" placeholder="Szukaj..."
                         autoCapitalize="none" autoCorrect="off"
@@ -28,14 +28,14 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
                         className="form-control-plaintext ml-2 font-weight-bold"
                         value={`Wybrane`} />}
             </div>
-            <div className="col px-1">
-                {!!starredCount
-                    ? <input type="text" readOnly={true}
+            {!!starredCount
+            ? <div className="col-2 px-1">
+                    <input type="text" readOnly={true}
                         className="form-control-plaintext ml-2 font-weight-bold"
-                        value={`(${starredCount})`} />
-                    : null}
+                        value={`(${starredCount})`} /> 
             </div>
-            <div className="col-1 px-1">
+            :null}
+            <div className="col-2 px-1">
                 <Button className="float-right" variant={'light'} onClick={onClose}>
                     <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose} />
                 </Button>
