@@ -57,7 +57,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 {songs.filter(song => filterSong(song)).map((song, index) =>
                     <React.Fragment key={song.number}>
                         <MenuSong song={song} chooseSong={chooseSong} starredCount={starredCount}
-                                  showStar={song.starred || !!searchPhrase} showCount={!onlyStarred}/>
+                                  showStar={true} showCount={false}/>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 )}
