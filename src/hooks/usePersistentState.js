@@ -6,7 +6,7 @@ const getItem = (key) => {
 };
 
 const setItem = (key, value) => {
-    if (value) {
+    if (value !== undefined) {
         localStorage.setItem(key, JSON.stringify(value));
     }
 };
