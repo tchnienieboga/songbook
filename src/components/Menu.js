@@ -66,7 +66,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                     </React.Fragment>
                 )}
             </Modal.Body>
-            <Modal.Footer>
+            <Modal.Footer className="py-1">
                 {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
                     {onlyStarred
                         ? <><FontAwesomeIcon icon={faGuitar} size="lg"/>{' Wszystkie'}</>

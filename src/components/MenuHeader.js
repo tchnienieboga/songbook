@@ -9,18 +9,18 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
         setSearchText(event.target.value);
     };
 
-    return <div className="container px-0">
+    return <div className="container px-0 py-0">
         <div className="form-row">
-            {!!starredCount && <label className="col-1 col-form-label col-form-label-lg text-right">
+            {!!starredCount && <label className="col-1 col-form-label text-right">
                 <Star selected={onlyStarred} onClick={toggleOnlyStarred}/>
             </label>}
             <div className="col-8 col-sm-6">
                 {!onlyStarred
-                    ? <input type="text" className="form-control form-control-lg" placeholder="Który numer?"
+                    ? <input type="search" className="form-control" placeholder="Szukaj..."
                              autoCapitalize="none" autoCorrect="off"
                              value={searchText} onChange={changeSearchText}/>
                     : <input type="text" readOnly={true}
-                             className="form-control-plaintext form-control-lg ml-2 font-weight-bold"
+                             className="form-control-plaintext ml-2 font-weight-bold"
                              value={`Wybrane (${starredCount})`}/>}
             </div>
             <div className="col"/>
