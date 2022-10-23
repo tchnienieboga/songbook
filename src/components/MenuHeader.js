@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from 'react-bootstrap/Button';
 import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTimes} from '@fortawesome/free-solid-svg-icons';
@@ -11,10 +12,14 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
 
     return <div className="container px-0 py-0">
         <div className="form-row">
-            {!!starredCount && <label className="col-1 col-form-label text-right">
-                <Star selected={onlyStarred} onClick={toggleOnlyStarred}/>
-            </label>}
-            <div className="col-8 col-sm-6">
+            {!!starredCount
+                ? <div className="col-2">
+                    <Button variant={'info'} onClick={toggleOnlyStarred}>
+                        <Star selected={onlyStarred} />
+                    </Button>
+                </div>
+                : null}
+            <div className="col-7 col-sm-5">
                 {!onlyStarred
                     ? <input type="search" className="form-control" placeholder="Szukaj..."
                              autoCapitalize="none" autoCorrect="off"
@@ -24,8 +29,10 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
                              value={`Wybrane (${starredCount})`}/>}
             </div>
             <div className="col"/>
-            <div className="col-1 text-right">
-                <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
+            <div className="col-2">
+                <Button className="float-right" variant={'light'} onClick={onClose}>
+                    <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
+                </Button>
             </div>
         </div>
     </div>;

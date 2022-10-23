@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 import Star from './Star';
 
 const MenuButton = ({onlyStarred, onClick}) => {
@@ -18,10 +16,7 @@ const MenuButton = ({onlyStarred, onClick}) => {
              tabIndex="0"
              role="button" onClick={onClick} onKeyPress={onKeyPress}>
             <div className="sb-menu-button-icon d-flex justify-content-center align-items-center my-auto">
-                {!onlyStarred
-                    ? <FontAwesomeIcon icon={faGuitar} size="lg"/>
-                    : <Star selected={true}/>
-                }
+                <Star selected={onlyStarred}/>
             </div>
         </div>
     );

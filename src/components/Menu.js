@@ -1,10 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Star from './Star';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGuitar} from '@fortawesome/free-solid-svg-icons';
 import MenuSong from './MenuSong';
 import MenuHeader from './MenuHeader';
 import {smallLatinLetters} from '../utils/text';
@@ -66,15 +62,6 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                     </React.Fragment>
                 )}
             </Modal.Body>
-            <Modal.Footer className="py-1">
-                {!!starredCount && <Button variant={'info'} onClick={toggleOnlyStarred}>
-                    {onlyStarred
-                        ? <><FontAwesomeIcon icon={faGuitar} size="lg"/>{' Wszystkie'}</>
-                        : <><Star selected={true}/>{` Wybrane (${starredCount})`}</>
-                    }
-                </Button>}
-                <Button variant="secondary" onClick={onClose}>Zamknij</Button>
-            </Modal.Footer>
         </Modal>
     );
 }
