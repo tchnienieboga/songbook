@@ -10,28 +10,34 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
         setSearchText(event.target.value);
     };
 
-    return <div className="container px-0 py-0">
-        <div className="form-row">
+    return <div className="container px-0 py-0 no-gutters">
+        <div className="row">
             {!!starredCount
-                ? <div className="col-2">
+                ? <div className="col-2 px-1">
                     <Button variant={'info'} onClick={toggleOnlyStarred}>
                         <Star selected={onlyStarred} />
                     </Button>
                 </div>
                 : null}
-            <div className="col-7 col-sm-5">
+            <div className="col-7 px-1">
                 {!onlyStarred
                     ? <input type="search" className="form-control" placeholder="Szukaj..."
-                             autoCapitalize="none" autoCorrect="off"
-                             value={searchText} onChange={changeSearchText}/>
+                        autoCapitalize="none" autoCorrect="off"
+                        value={searchText} onChange={changeSearchText} />
                     : <input type="text" readOnly={true}
-                             className="form-control-plaintext ml-2 font-weight-bold"
-                             value={`Wybrane (${starredCount})`}/>}
+                        className="form-control-plaintext ml-2 font-weight-bold"
+                        value={`Wybrane`} />}
             </div>
-            <div className="col"/>
-            <div className="col-2">
+            <div className="col px-1">
+                {!!starredCount
+                    ? <input type="text" readOnly={true}
+                        className="form-control-plaintext ml-2 font-weight-bold"
+                        value={`(${starredCount})`} />
+                    : null}
+            </div>
+            <div className="col-1 px-1">
                 <Button className="float-right" variant={'light'} onClick={onClose}>
-                    <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
+                    <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose} />
                 </Button>
             </div>
         </div>
