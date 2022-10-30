@@ -49,7 +49,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
 
     return (
         <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
-            <Modal.Header className="py-2">
+            <Modal.Header className="py-2 px-1">
                 <MenuHeader onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred} starredCount={starredCount}
                             searchText={searchText} setSearchText={setSearchText} onClose={onClose}/>
             </Modal.Header>
