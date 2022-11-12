@@ -162,9 +162,13 @@ $lightgray:  #eae3d9;
 }
 
 .sb-star {
-  color: $lightgray;
 
-  &.sb-star-yellow {
+  &.sb-star-plain {
+    color: $lightgray;
+  }
+
+  &.sb-star-chosen {
     color: $yellow;
   }
+
 }

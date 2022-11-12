@@ -9,7 +9,7 @@ const MenuSong = ({song, chooseSong}) => {
         'sb-menu-songtitle', {'sb-starred-song': song.starred})}>
         {/* eslint-disable-next-line */}
         <span className="sb-star-info">
-            <Star selected={song.starred} onClick={song.toggleStarred} />
+            <Star mode={song.starred ? 'chosen' : 'plain'} onClick={song.toggleStarred} />
             &nbsp;&nbsp;
         </span>
         <a href="#" onClick={clickSong}

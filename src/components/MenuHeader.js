@@ -16,7 +16,7 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, searchText, s
             <div className="form-row px-1">
                 {!!starredCount
                     ? <Button className="mx-1" variant={'info'} onClick={toggleOnlyStarred}>
-                        <Star selected={onlyStarred} />
+                        <Star mode={onlyStarred ? 'chosen' : 'plain'} />
                         <span className={classNames({'font-weight-bold': onlyStarred})}>&nbsp;{starredCount}</span>
                     </Button>
                     : null}
