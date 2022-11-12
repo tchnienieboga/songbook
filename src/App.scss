@@ -167,8 +167,12 @@ $lightgray:  #eae3d9;
     color: $lightgray;
   }
 
-  &.sb-star-chosen {
+  &.sb-star-starred {
     color: $yellow;
+  }
+
+  &.sb-star-selected {
+    color: $red;
   }
 
 }

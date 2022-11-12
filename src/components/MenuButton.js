@@ -16,7 +16,7 @@ const MenuButton = ({onlyStarred, onClick}) => {
              tabIndex="0"
              role="button" onClick={onClick} onKeyPress={onKeyPress}>
             <div className="sb-menu-button-icon d-flex justify-content-center align-items-center my-auto">
-                <Star mode={onlyStarred ? 'chosen' : 'plain'}/>
+                <Star mode={onlyStarred ? 'starred' : 'plain'}/>
             </div>
         </div>
     );

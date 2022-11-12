@@ -11,7 +11,7 @@ const Song = ({song, starredCount}) => {
                 {song.number}. {song.title}
             </div>
             <div className="col-2 sb-star-info sb-lyrics" onClick={song.toggleStarred}>
-                <Star mode={song.starred ? 'chosen' : 'plain'} large={true}/>
+                <Star mode={song.starred ? 'starred' : 'plain'} large={true}/>
                 <br/>
                 {song.starred ? `${song.starredNumber}/${starredCount}` : <>&nbsp;</>}
             </div>

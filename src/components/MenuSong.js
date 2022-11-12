@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Star from './Star';
 
-const MenuSong = ({song, chooseSong}) => {
+const MenuSong = ({song, chooseSong, selected, onClickStar}) => {
     const clickSong = () => chooseSong(song.number);
     return <span className={classNames(
         'sb-menu-songtitle', {'sb-starred-song': song.starred})}>
         {/* eslint-disable-next-line */}
         <span className="sb-star-info">
-            <Star mode={song.starred ? 'chosen' : 'plain'} onClick={song.toggleStarred} />
+            <Star mode={selected ? 'selected' : song.starred ? 'starred' : 'plain'} onClick={onClickStar} />
             &nbsp;&nbsp;
         </span>
         <a href="#" onClick={clickSong}
@@ -21,7 +21,9 @@ const MenuSong = ({song, chooseSong}) => {
 
 MenuSong.propTypes = {
     song: PropTypes.object.isRequired,
-    chooseSong: PropTypes.func.isRequired
+    chooseSong: PropTypes.func.isRequired,
+    selected: PropTypes.bool.isRequired,
+    onClickStar: PropTypes.func.isRequired
 }
 
 export default MenuSong;
