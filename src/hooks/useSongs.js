@@ -24,8 +24,9 @@ const useSongs = (parsedSongs) => {
 
     const songState = (songNumber) => {
         const chosen = chosenSong === songNumber;
-        const starredNumber = starredSongs.indexOf(songNumber) + 1;
-        const starred = !!starredNumber;
+        const starredSongsIndex = starredSongs.indexOf(songNumber);
+        const starredNumber = starredSongsIndex + 1;
+        const starred = !!(starredNumber);
         const selected = selectedSong === songNumber;
         return {
             chosen,
@@ -33,7 +34,17 @@ const useSongs = (parsedSongs) => {
             starred,
             toggleStarred: () => {
                 if (starred) {
-                    setSelectedSong(current => current === songNumber ? null : current);
+                    setSelectedSong(current => {
+                        if (current === songNumber) {
+                            return starredSongs.length <= 1
+                                ? null
+                                : starredSongs.length > starredSongsIndex + 1
+                                    ? starredSongs[starredSongsIndex + 1]
+                                    : starredSongs[starredSongsIndex - 1]
+                        } else {
+                            return current;
+                        }
+                    });
                 }
                 setStarredSongs(current => starred
                     ? current.filter(v => v !== songNumber)
