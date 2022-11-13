@@ -10,6 +10,7 @@ const useSongs = (parsedSongs) => {
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
     const [selectedSong, setSelectedSong] = usePersistentState('selectedSong', null);
     const starredCount = starredSongs.length;
+    const selectionDefined = !!selectedSong;
 
     useEffect(() => {
         if (onlyStarred) {
@@ -39,9 +40,7 @@ const useSongs = (parsedSongs) => {
                     : [...current, songNumber]);
             },
             selected,
-            toggleSelected: () => setSelectedSong(current => selected
-                ? null
-                : songNumber)
+            toggleSelected: () => setSelectedSong(selected ? null : songNumber)
         };
     };
 
@@ -73,6 +72,7 @@ const useSongs = (parsedSongs) => {
         songs,
         setChosenSong,
         starredCount,
+        selectionDefined,
         onlyStarred,
         toggleOnlyStarred,
         swipeChangeSong
