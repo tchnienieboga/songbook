@@ -9,8 +9,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef(null);
-    const [selectedSong, setSelectedSong] = useState(null);
-
+ 
     useEffect(() => {
         if (!show || onlyStarred) {
             setSearchText('');
@@ -48,14 +47,6 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
 
     const songToScroll = chosenSongIndex < 3 ? 0 : chosenSongIndex - 3;
 
-    const songStarClicked = (song) => {
-        if (onlyStarred) {
-            return () => setSelectedSong(current => song.number === current ? null : song.number);
-        } else {
-            return song.toggleStarred
-        }
-    }
-
     return (
         <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header className="py-2 px-1">
@@ -65,10 +56,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
             <Modal.Body>
                 {songs.filter(song => filterSong(song)).map((song, index) =>
                     <React.Fragment key={song.number}>
-                        <MenuSong song={song} 
-                            chooseSong={chooseSong} 
-                            selected={onlyStarred && selectedSong === song.number} 
-                            onClickStar={songStarClicked(song)} />
+                        <MenuSong song={song} chooseSong={chooseSong} onlyStarred={onlyStarred}/>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
                     </React.Fragment>
                 )}

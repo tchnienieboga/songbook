@@ -8,6 +8,7 @@ const useSongs = (parsedSongs) => {
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
+    const [selectedSong, setSelectedSong] = usePersistentState('selectedSong', null);
     const starredCount = starredSongs.length;
 
     useEffect(() => {
@@ -24,13 +25,23 @@ const useSongs = (parsedSongs) => {
         const chosen = chosenSong === songNumber;
         const starredNumber = starredSongs.indexOf(songNumber) + 1;
         const starred = !!starredNumber;
+        const selected = selectedSong === songNumber;
         return {
             chosen,
             starredNumber,
             starred,
-            toggleStarred: () => setStarredSongs(current => starred
-                ? current.filter(v => v !== songNumber)
-                : [...current, songNumber])
+            toggleStarred: () => {
+                if (starred) {
+                    setSelectedSong(current => current === songNumber ? null : current);
+                }
+                setStarredSongs(current => starred
+                    ? current.filter(v => v !== songNumber)
+                    : [...current, songNumber]);
+            },
+            selected,
+            toggleSelected: () => setSelectedSong(current => selected
+                ? null
+                : songNumber)
         };
     };
 
