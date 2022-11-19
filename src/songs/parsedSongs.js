@@ -2176,11 +2176,11 @@ i w miłość Twoją wtopić się. [G] [A] [D]
 ---
 {title:  Pan jest mocą swojego ludu}
 {number: 117}
-Pan jest mocą Swojego ludu [E] [A] [H7]
-Pieśnią moją jest Pan [E] [A] [H7]
-Moja tarcza i moja moc [A] [gis] [cis]
-On jest mym Bogiem, nie jestem sam [H7] [E] [A] [H7]
-W Nim moja siła, nie jestem sam [gis] [A] [H7] [E]
+Pan jest mocą Swojego ludu          [F] [B] [C7]
+Pieśnią moją jest Pan               [F] [B] [C7]
+Moja tarcza i moja moc              [B] [a] [d]
+On jest mym Bogiem, nie jestem sam  [C7] [F] [B] [C7]
+W Nim moja siła, nie jestem sam     [e] [B] [C7] [F]
 ---
 {title:  Ty masz moc uzdrowienia}
 {number: 118}
@@ -2691,10 +2691,13 @@ Ref.x3 Niepojęty, niezmierzony... [D] [A] [G] [h] [A] [G]
 ---
 {title:  Witaj, Pokarmie}
 {number: 146}
-1. Witaj Pokarmie, w którym niezmierzony
-nieba i ziemi Twórca jest zamkniony,
-Witaj napoju zupełnie gaszący
-Umysł pragnący.
+1. Witaj Pokarmie,                  [e] [hsus4] 
+W którym niezmierzony               [C] [a/C]
+Nieba i ziemie                      [e] [hsus4]
+Twórca jest zamkniony,              [C] [a/C]
+Witaj napoju                        [G] [Dsus4] 
+Zupełnie gaszący                    [a] [Dsus4] [D]
+Umysł pragnący.                     [G] [hsus4] [e]
 
 2. Witaj Krynico wszystkiego dobrego
 Gdy bowiem w sobie masz Boga samego
@@ -3859,12 +3862,15 @@ Ref. Oto ja - służebnica Pańska...
 {title:  Memu Bogu, królowi}
 {number: 205}
 
-Ref. Alleluja, alleluja, alleluja amen [B] [C] [a] [B] [g] [a] [G]
-Alleluja, alleluja, alleluja amen. [B] [C] [a] [B] [B] [C] [d]
+Ref. Alleluja, alleluja,            [B] [C] [a] [B]
+Alleluja amen                       [g] [a] [G]
+Alleluja, alleluja,                 [B] [C] [a] [B]
+Alleluja amen.                      [B] [C] [d]
 
-Memu Bogu, Królowi, [d] [C]
-będę śpiewał tę pieśń [a] [d]
-Teraz zawsze na wieki amen. / x2 [B] [C] [d]
+Memu Bogu, Królowi,                 [d] [C]
+będę śpiewał tę pieśń               [a] [d]
+Teraz zawsze na wieki amen. /x2     [B] [C] [d]
+
 ---
 {title:  Miłość uzdalnia mnie}
 {number: 206}
