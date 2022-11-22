@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButton from './MenuButton';
 import useZoomLevel from '../hooks/useZoomLevel';
 import useSongs from '../hooks/useSongs';
+import usePersistentState from '../hooks/usePersistentState';
 
 const Songbook = ({parsedSongs}) => {
 
@@ -18,7 +19,7 @@ const Songbook = ({parsedSongs}) => {
         swipeChangeSong
     } = useSongs(parsedSongs);
     const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
-    const [menuShown, setMenuShown] = useState(false);
+    const [menuShown, setMenuShown] = usePersistentState('menuShown', false);
 
     const openMenu = () => setMenuShown(true);
 
