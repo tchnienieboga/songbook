@@ -5,7 +5,7 @@ import MenuSong from './MenuSong';
 import MenuHeader from './MenuHeader';
 import {smallLatinLetters} from '../utils/text';
 
-const Menu = ({songs, chooseSong, starredCount, selectionDefined, onlyStarred, toggleOnlyStarred, show, onClose}) => {
+const Menu = ({ songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose }) => {
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef(null);
@@ -44,14 +44,14 @@ const Menu = ({songs, chooseSong, starredCount, selectionDefined, onlyStarred, t
     };
 
     const chosenSongIndex = songs.findIndex(song => song.chosen);
-
+    const selectedSong = songs.find(song => song.selected);
     const songToScroll = chosenSongIndex < 3 ? 0 : chosenSongIndex - 3;
 
     return (
         <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
             <Modal.Header className="py-2 px-1">
                 <MenuHeader onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred} 
-                            starredCount={starredCount} selectionDefined={selectionDefined}
+                            starredCount={starredCount} selectedSong={selectedSong}
                             searchText={searchText} setSearchText={setSearchText} onClose={onClose}/>
             </Modal.Header>
             <Modal.Body>
@@ -70,7 +70,6 @@ Menu.propTypes = {
     songs: PropTypes.array.isRequired,
     chooseSong: PropTypes.func.isRequired,
     starredCount: PropTypes.number.isRequired,
-    selectionDefined: PropTypes.bool.isRequired,
     onlyStarred: PropTypes.bool.isRequired,
     toggleOnlyStarred: PropTypes.func.isRequired,
     show: PropTypes.bool.isRequired,

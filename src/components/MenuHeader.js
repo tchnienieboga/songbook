@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faCaretUp, faTimes, faTrash} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
-const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectionDefined, searchText, setSearchText, onClose}) => {
+const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong, searchText, setSearchText, onClose}) => {
     const changeSearchText = (event) => {
         setSearchText(event.target.value);
     };
@@ -24,22 +24,22 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectionDefi
                     ? <input type="search" className="form-control col-8 mx-2" placeholder="Szukaj..."
                         autoCapitalize="none" autoCorrect="off"
                         value={searchText} onChange={changeSearchText} />
-                    : !selectionDefined
-                        ? <input type="text" readOnly={true}
-                            className="form-control-plaintext col-8 ml-1 font-weight-bold"
-                            value={`Wybrane`} />
-                        : <>
-                            <Button className="ml-3" variant={'success'}>
-                                <FontAwesomeIcon icon={faCaretUp} role="button" size={"lg"}/>
+                    : !!selectedSong
+                        ? <>
+                            <Button className="ml-3" variant={'success'} disabled={true}>
+                                <FontAwesomeIcon icon={faCaretUp} role="button" size={"lg"} />
                             </Button>
-                            <Button className="ml-1" variant={'success'}>
-                                <FontAwesomeIcon icon={faCaretDown} role="button" size={"lg"}/>
+                            <Button className="ml-1" variant={'success'} disabled={true}>
+                                <FontAwesomeIcon icon={faCaretDown} role="button" size={"lg"} />
                             </Button>
-                            <Button className="ml-4" variant={'danger'}>
-                                <FontAwesomeIcon icon={faTrash} role="button" size={"lg"}/>
+                            <Button className="ml-4" variant={'danger'} onClick={selectedSong.toggleStarred}>
+                                <FontAwesomeIcon icon={faTrash} role="button" size={"lg"} />
                             </Button>
                         </>
-                }
+                        : <input type="text" readOnly={true}
+                            className="form-control-plaintext col-8 ml-1 font-weight-bold"
+                            value={`Wybrane`} />
+            }
             </div>
         </div>
         <div className="col-2 px-1">
@@ -54,7 +54,7 @@ MenuHeader.propTypes = {
     onlyStarred: PropTypes.bool.isRequired,
     toggleOnlyStarred: PropTypes.func.isRequired,
     starredCount: PropTypes.number.isRequired,
-    selectionDefined: PropTypes.bool.isRequired,
+    selectedSong: PropTypes.object,
     searchText: PropTypes.string.isRequired,
     setSearchText: PropTypes.func.isRequired,
     onClose: PropTypes.func.isRequired

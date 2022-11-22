@@ -8,15 +8,15 @@ import useSongs from '../hooks/useSongs';
 
 const Songbook = ({parsedSongs}) => {
 
-    const [
-        songs, 
-        setChosenSong, 
-        starredCount, 
-        selectionDefined, 
-        onlyStarred, 
-        toggleOnlyStarred, 
+    const { 
+        songs,
+        setChosenSong,
+        starredCount,
+        onlyStarred,
+        selectedSong,
+        toggleOnlyStarred,
         swipeChangeSong
-    ] = useSongs(parsedSongs);
+    } = useSongs(parsedSongs);
     const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
     const [menuShown, setMenuShown] = useState(false);
 
@@ -38,9 +38,9 @@ const Songbook = ({parsedSongs}) => {
                 {!!chosenSong && <Song song={chosenSong} starredCount={starredCount}/>}
             </div>
 
-            <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount} selectionDefined={selectionDefined}
-                  onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
-                  show={menuShown} onClose={closeMenu}/>
+        <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount} selectedSong={selectedSong}
+            onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
+            show={menuShown} onClose={closeMenu} />
 
         </React.Fragment>
     );
