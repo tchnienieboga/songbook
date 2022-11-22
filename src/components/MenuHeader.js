@@ -26,10 +26,10 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong,
                         value={searchText} onChange={changeSearchText} />
                     : !!selectedSong
                         ? <>
-                            <Button className="ml-3" variant={'success'} disabled={true}>
+                            <Button className="ml-3" variant={'success'} disabled={!selectedSong.moveUp} onClick={selectedSong.moveUp}>
                                 <FontAwesomeIcon icon={faCaretUp} role="button" size={"lg"} />
                             </Button>
-                            <Button className="ml-1" variant={'success'} disabled={true}>
+                            <Button className="ml-1" variant={'success'} disabled={!selectedSong.moveDown} onClick={selectedSong.moveDown}>
                                 <FontAwesomeIcon icon={faCaretDown} role="button" size={"lg"} />
                             </Button>
                             <Button className="ml-4" variant={'danger'} onClick={selectedSong.toggleStarred}>

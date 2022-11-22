@@ -2,7 +2,6 @@ import usePersistentState from './usePersistentState';
 import {useDrag} from 'react-use-gesture';
 import {useEffect} from 'react';
 
-
 const useSongs = (parsedSongs) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
@@ -52,7 +51,21 @@ const useSongs = (parsedSongs) => {
                     : [...current, songNumber]);
             },
             selected,
-            toggleSelected: () => setSelectedSong(selected ? null : songNumber)
+            toggleSelected: () => setSelectedSong(selected ? null : songNumber),
+            moveUp: starredSongsIndex < 1
+                ? undefined
+                : () => setStarredSongs(current => {
+                    const newStarredSongs = current.filter(number => number !== songNumber);
+                    newStarredSongs.splice(starredSongsIndex - 1, 0, songNumber);
+                    return newStarredSongs;
+                }),
+            moveDown: starredSongsIndex > starredSongs.length - 2
+                ? undefined
+                : () => setStarredSongs(current => {
+                    const newStarredSongs = current.filter(number => number !== songNumber);
+                    newStarredSongs.splice(starredSongsIndex + 1, 0, songNumber);
+                    return newStarredSongs;
+                }),
         };
     };
 
