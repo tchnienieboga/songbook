@@ -44,6 +44,8 @@ const useSongs = (parsedSongs) => {
                             return current;
                         }
                     });
+                } else {
+                    setSelectedSong(songNumber);
                 }
                 setStarredSongs(current => starred
                     ? current.filter(v => v !== songNumber)
