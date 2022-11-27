@@ -9,16 +9,18 @@ const MenuSong = ({song, chooseSong, onlyStarred}) => {
         ? (song.selected ? 'selected' : 'starred')
         : (song.starred ? 'starred' : 'plain');
     const onClickStar = onlyStarred ? song.toggleSelected : song.toggleStarred;
-    return <span className={classNames(
-        'sb-menu-songtitle', {'sb-starred-song': song.starred})}>
-        {/* eslint-disable-next-line */}
-        <span className="sb-star-info">
-            <Star mode={starMode} onClick={onClickStar}/>
-            &nbsp;&nbsp;
+    return <span className={classNames('sb-menu-songtitle', { 'sb-starred-song': song.starred })}>
+        <span>
+            <Star mode={starMode} onClick={onClickStar} />
+            &nbsp;
+            <span className={classNames({ 'sb-chosen-song': song.chosen })}>
+                {song.number}.&nbsp;
+            </span>
         </span>
+        {/* eslint-disable-next-line */}
         <a href="#" onClick={onClickSong}
-           className={classNames('text-reset', {'sb-chosen-song': song.chosen})}>
-            {`${song.number}. ${song.title}`}
+            className={classNames('text-reset', { 'sb-chosen-song': song.chosen })}>
+            {song.title}
         </a>
     </span>;
 }
