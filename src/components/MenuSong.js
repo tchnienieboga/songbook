@@ -10,8 +10,8 @@ const MenuSong = ({song, chooseSong, onlyStarred}) => {
         : (song.starred ? 'starred' : 'plain');
     const onClickStar = onlyStarred ? song.toggleSelected : song.toggleStarred;
     return <span className={classNames('sb-menu-songtitle', { 'sb-starred-song': song.starred })}>
-        <span>
-            <Star mode={starMode} onClick={onClickStar} />
+        <span onClick={onClickStar}>
+            <Star mode={starMode}/>
             &nbsp;
             <span className={classNames({ 'sb-chosen-song': song.chosen })}>
                 {song.number}.&nbsp;
