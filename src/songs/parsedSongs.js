@@ -4901,6 +4901,40 @@ Dla nas i świata całego             [C] [E7] [a]
 zmiłuj się nad nami                 [a] [G] [C]
 i nad całym światem                 [E7] [a]
 
+---
+{title: Otwórzcie bramy}
+{number: 246}
+
+1. Pańska jest ziemia       [d] [C]
+I co jest na ziemi          [a] [d]
+Jej długi okrąg z mieszkańcami swymi
+On ją na morzach utrzymuje stale,           
+I miękkie wody chciał dać za grunt skale. 
+
+Ref.: Otwórzcie bramy,      [d] [C] 
+Co nietknione stały.        [a] [d]
+Bramy wieczyste! Bo idzie Król chwały.
+Któż ten Król chwały? I kto jest ten mężny?
+Pan mocny w boju i Bóg nasz potężny.
+Otwórzcie bramy,            [d] [g] 
+Co nietknione stały.        [C] [d]
+Bramy wieczyste,            [d] [g] 
+Bo idzie Król chwały.       [C] [d]
+Któż ten Król chwały?       [F] [g]
+Pan o cnoty dbały.          [C] [d]
+On w te drzwi wnijdzie,     [F] [g] 
+On jest Królem chwały.      [C] [d] [C] [d]
+
+2. Któż na Twą górę może wstąpić, Panie?
+Albo na miejscu poświęconym stanie?
+Ten, który krzywdą rąk swych nie oszpeci,
+Ten, co ma serce czyste, Bożych dzieci.
+
+3. Kto dba o duszę, nie przysiągł kłamliwie,
+Z Pańskiej litości pójdzie mu szczęśliwie.
+Oto jest rodzaj i taka rachuba,
+Tych, co chcą znaleźć twarz Boga Jakuba.
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
