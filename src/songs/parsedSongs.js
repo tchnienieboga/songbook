@@ -4935,6 +4935,108 @@ Z Pańskiej litości pójdzie mu szczęśliwie.
 Oto jest rodzaj i taka rachuba,
 Tych, co chcą znaleźć twarz Boga Jakuba.
 
+---
+{title:  Przybieżeli do Betlejem (żydowskie)}
+{number: 247}
+                                        [C5] [B5] [C5] 
+                                        [C5] [Cis5] [C5]
+                                        [C5] [B5] [C5] [Cis5]
+                                        [C5] [B5] [C5]
+1. Przybieżeli do Betlejem pasterze,    [C5] [Cis5] [C5]
+Grając skocznie Dzieciąteczku na lirze. [C5] [Cis5] [C5]
+
+Ref. x2 Chwała na wysokości,            [C5]
+chwała na wysokości,                    [B5] [Cis5]
+A pokój na ziemi!                       [C5] [B5] [C5]
+
+2. Oddawali swe ukłony w pokorze
+Tobie z serca ochotnego, o Boże!
+
+3. Anioł Pański sam ogłosił te dziwy,
+Których oni nie słyszeli, jak żywi.
+
+4. Dziwili się napowietrznej muzyce
+i myśleli, co to będzie za Dziecię?
+---
+{title:  Wśród nocnej ciszy}
+{number: 248}
+
+1. Wśród nocnej ciszy           [D] [A] [D] [A7] 
+głos się rozchodzi:             [h] [e] [A7] [D]
+Wstańcie, pasterze,             [D] [A] [D] [A7]
+Bóg się wam rodzi               [h] [e] [A7] [D]
+Czem prędzej się wybierajcie,   [D] [h] [e] [A7]
+Do Betlejem pospieszajcie,      [D] [h] [e] [A7]
+Przywitać Pana,                 [D] [A] [D]
+Przywitać Pana.                 [h] [e] [A7] [D]
+ 
+2. Poszli, znaleźli Dzieciątko w żłobie
+Z wszystkimi znaki danymi sobie.
+Jako Bogu cześć Mu dali,
+A witając zawołali
+Z wielkiej radości, z wielkiej radości.
+
+3. Ach, witaj Zbawco z dawna żądany,
+Cztery tysiące lat wyglądany
+Na Ciebie króle, prorocy
+Czekali, a Tyś tej nocy
+Nam się objawił, nam się objawił.
+
+4. I my czekamy na Ciebie, Pana,
+A skoro przyjdziesz na głos kapłana,
+Padniemy na twarz przed Tobą,
+Wierząc, żeś jest pod osłoną
+Chleba i wina, chleba i wina.
+
+---
+{title:  Jezus malusieńki}
+{number: 249}
+
+1. Jezus malusieńki     [e] [H7]
+Leży wśród stajenki     [e] [H7]
+Płacze z zimna          [a] [D7] 
+Nie dała mu             [G] [E7]
+Matula sukienki.        [a] [D7] [G] 
+Płacze z zimna          [a] [D7]
+Nie dała mu             [G] [E7] 
+Matula sukienki.        [a] [D7] [G] [es0]
+
+2. Bo uboga była, rąbek z głowy zdjęła,
+w który Dziecię owinąwszy, siankiem Je okryła
+w który Dziecię owinąwszy, siankiem Je okryła
+
+3. Nie ma kolebeczki, ani poduszeczki,
+We żłobie Mu położyła sianka pod główeczki.
+We żłobie Mu położyła sianka pod główeczki.
+
+---
+{title:  Gore gwiazda Jezusowi}
+{number: 250}
+
+1. Gore gwiazda Jezusowi        [h] [D]
+W obłoku, w obłoku              [e] [Fis]
+Józef z Panną asystują          [h] [D]
+Przy boku, przy boku            [e] [Fis]
+
+Ref. x2 Hejże ino dyna, dyna,   [D] [A]
+Narodził się Bóg dziecina       [D] [A]
+W Betlejem, w Betlejem.         [D] [e] [Fis] [h]
+
+2. Wół i osioł w parze służą przy żłobie, przy żłobie
+Huczą, buczą delikatnej osobie, osobie.
+
+3. Pastuszkowie z podarunki przybiegli, przybiegli
+W koło szopę o północy obiegli, obiegli.
+
+4. Anioł Pański sam ogłosił te dziwy, te dziwy
+Których oni nie słyszeli jak żywi, jak żywi.
+
+5. Anioł Pański kuranciki wycina, wycina
+Stąd pociech dla człowieka jedyna, jedyna.
+
+6. Już Maryja Jezuleńka powiła, powiła
+Stąd wesele i pociecha nam miła, nam miła.
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
