@@ -4020,40 +4020,58 @@ Podaj mi dłoń, uwolnij mnie [a] [F] [C] [G]
 {title:  Jak w Betlejem}
 {number: 213}
 
-Ref. Jak w Betlejem cud zdarzył się [d] [C]
-Tak od Juraty po Zakopane [G] [a] [d]
-Od Sejn po Cieszyn niech blaskiem lśni [d] [C]
-Nad całą Polską nam niebo dziś [G] [a] [d]
-Niech każdy kto usłyszy dźwięk [B] [C]
-Niebiańskiej muzyki aniołów śpiew [a] [B] [C]
-Jaśnieje światłem gwiazdy tej [d] [C]
-Co narodziła się w Betlejem [G] [a] [d]
+Ref. Jak w Betlejem cud zdarzył się     [d] [C]
+Tak od Juraty po Zakopane               [G] [a] [d]
+Od Sejn po Cieszyn niech blaskiem lśni  [d] [C]
+Nad całą Polską nam niebo dziś          [G] [a] [d]
+Niech każdy kto usłyszy dźwięk          [B] [C]
+Niebiańskiej muzyki aniołów śpiew       [a] [B] [C]
+Jaśnieje światłem gwiazdy tej           [d] [C]
+Co narodziła się w Betlejem             [G] [a] [d]
 
-2x Solo skrzypce [d] [C] [G] [a]
+2x Solo skrzypce                        [d] [C] [G] [a]
 
-1. Choć płoną miasta wkoło [d] [d7/11]
-Świątecznych promocji zgiełk [d6] [d]
-Chodźcie tu wokoło [d] [d7/11]
-Odnajdźmy nawzajem się [d6] [d]
-Niech nie zabraknie [d] [G]
-miłości w świąteczny czas [B] [F] [C/E]
-Głodnych nakarmimy, [d] [d7/11]
-Wystarczy dla wszystkich nas [d6] [d]
+1. Choć płoną miasta wkoło              [d] [d7/11]
+Świątecznych promocji zgiełk            [d6] [d]
+Chodźcie tu wokoło                      [d] [d7/11]
+Odnajdźmy nawzajem się                  [d6] [d]
+Niech nie zabraknie                     [d] [G]
+miłości w świąteczny czas               [B] [F] [C]
+Głodnych nakarmimy,                     [d] [d7/11]
+Wystarczy dla wszystkich nas            [d6] [d]
 
-Ref. Jak w Betlejem cud zdarzył się...
+Ref. Jak w Betlejem cud zdarzył się     [d] [C]
+Tak od Juraty po Zakopane               [G] [a] [d]
+Od Sejn po Cieszyn niech blaskiem lśni  [d] [C]
+Nad całą Polską nam niebo dziś          [G] [a] [d]
+Niech każdy kto usłyszy dźwięk          [B] [C]
+Niebiańskiej muzyki aniołów śpiew       [a] [B] [C]
+Jaśnieje światłem gwiazdy tej           [d] [C]
+Co narodziła się w Betlejem             [G] [a] [d]
 
-2. Choć rośnie miasto w koło, lombardów i banków tłok
-I miejsca wciąż tak mało na zwykłą, pomocną dłoń
-2x Niech nie zabraknie miłości w świąteczny czas
-Głodnych nakarmimy, wystarczy dla wszystkich nas
+2. Choć rośnie miasto w koło,           [d] [d7/11] 
+Lombardów i banków tłok                 [d6] [d]
+I miejsca wciąż tak mało                [d] [d7/11] 
+Na zwykłą, pomocną dłoń                 [d6] [d]
+2x Niech nie zabraknie                  [d] [G] 
+Miłości w świąteczny czas               [B] [F] [C]
+Głodnych nakarmimy,                     [d] [d7/11] 
+Wystarczy dla wszystkich nas            [d6] [d]
 
-Ref. Jak w Betlejem cud zdarzył się...
-2x Niech każdy kto usłyszy dźwięk...
+Ref. Jak w Betlejem cud zdarzył się     [d] [C]
+Tak od Juraty po Zakopane               [G] [a] [d]
+Od Sejn po Cieszyn niech blaskiem lśni  [d] [C]
+Nad całą Polską nam niebo dziś          [G] [a] [d]
+2x Niech każdy kto usłyszy dźwięk       [B] [C]
+Niebiańskiej muzyki aniołów śpiew       [a] [B] [C]
+Jaśnieje światłem gwiazdy tej           [d] [C]
+Co narodziła się w Betlejem             [G] [a] [d]
 
-3x Solo skrzypce [d]
-Ło ło ło ło, ło ło ło, ło ło... [d] [C] [G] [a] [d] [C] [G] [a]
-Ło ło ło ło, ło ło ło ło [B] [C] [a] [B] [C] [d] [C] [G] [a]
-Ło ło ło ło, ło ło ło, ło ło [d]
+3x Solo skrzypce                        [d]
+Ło ło ło ło, ło ło ło, ło ło...         [d] [C] [G] [a] [d] [C] [G] [a]
+Ło ło ło ło, ło ło ło ło, ło ło         [B] [C] [a] [B] [C] 
+Ło ło ło ło, ło ło ło, ło ło            [d] [C] [G] [a]
+Ło ło, ło ło ło ło                      [d]
 ---
 {title:  Otwórz me oczy, o Panie}
 {number: 214}
@@ -4368,28 +4386,34 @@ Być bliżej Ciebie chcę, o Boże mój.
 {title:  Śpiewaj Jemu}
 {number: 225}
 
-1. Światłość świata rozjaśnia mrok [c] [As] [B] [f]
-przedwieczny Pan Bóg objawia swą moc [c] [As] [B] [f]
-dziś w Betlejem zdarzył się cud [c] [Es] [B] [f]
-Jezus Chrystus zbawia swój lud [c] [As] [B] [f]
+1. Światłość świata rozjaśnia mrok      [c] [As] [B] [f]
+przedwieczny Pan Bóg objawia swą moc    [c] [As] [B] [f]
+dziś w Betlejem zdarzył się cud         [c] [Es] [B] [f]
+Jezus Chrystus zbawia swój lud          [c] [As] [B] [f]
 
-Ref. Śpiewaj, śpiewaj, Jemu ziemio [c] [Es] [F]
-I wychwalaj miłości dar [f] [Es] [c]
-Stwórca twój odnawia Ciebie [c] [As]
-Pokój dziś przynosząc nam. /x2 [B] [F]
+Ref. Śpiewaj, śpiewaj, Jemu ziemio      [c] [Es] [F]
+I wychwalaj miłości dar                 [f] [Es] [c]
+Stwórca twój odnawia Ciebie             [c] [As]
+Pokój dziś przynosząc nam. /x2          [B] [F]
 
-2. Pokłon, chwałę, oddajmy Mu [c] [As] [B] [f]
-Swoje troski złóżmy u Jego stóp [c] [As] [B] [f]
-Przebaczenie przynosi nam [c] [Es] [B] [f]
-Jezus Chrystus zbawił świat [c] [As] [B] [f]
+2. Pokłon, chwałę, oddajmy Mu           [c] [As] [B] [f]
+Swoje troski złóżmy u Jego stóp         [c] [As] [B] [f]
+Przebaczenie przynosi nam               [c] [Es] [B] [f]
+Jezus Chrystus zbawił świat             [c] [As] [B] [f]
 
-Ref. Śpiewaj, śpiewaj... /x2
+Ref. Śpiewaj, śpiewaj, Jemu ziemio      [c] [Es] [F]
+I wychwalaj miłości dar                 [f] [Es] [c]
+Stwórca twój odnawia Ciebie             [c] [As]
+Pokój dziś przynosząc nam. /x2          [B] [F]
 
-solo [c] [As] [B] [f] [/x2]
+solo skrzypce                           [As] [B] [c] [Es] 
+                                        [As] [B] [F]
 
-Oooo... /x2 [As] [B] [c] [Es] [As] [B] [F]
-
-Ref. Śpiewaj, śpiewaj... /x3
+Ref. Śpiewaj, śpiewaj, Jemu ziemio      [c] [Es] [F]
+I wychwalaj miłości dar                 [f] [Es] [c]
+Stwórca twój odnawia Ciebie             [c] [As]
+Pokój dziś przynosząc nam. /x3          [B] [F]
+                                        
 ---
 {title:  W żłobie leży}
 {number: 226}
@@ -5001,13 +5025,23 @@ Płacze z zimna          [a] [D7]
 Nie dała mu             [G] [E7] 
 Matula sukienki.        [a] [D7] [G] [es0]
 
-2. Bo uboga była, rąbek z głowy zdjęła,
-w który Dziecię owinąwszy, siankiem Je okryła
-w który Dziecię owinąwszy, siankiem Je okryła
+2. Bo uboga była,       [e] [H7]    
+Rąbek z głowy zdjęła,   [e] [H7]      
+W który Dziecię         [a] [D7]  
+Owinąwszy,              [G] [E7]   
+Siankiem Je okryła      [a] [D7] [G]           
+W który Dziecię         [a] [D7]
+Owinąwszy,              [G] [E7] 
+Siankiem Je okryła      [a] [D7] [G] [es0]
 
-3. Nie ma kolebeczki, ani poduszeczki,
-We żłobie Mu położyła sianka pod główeczki.
-We żłobie Mu położyła sianka pod główeczki.
+3. Nie ma kolebeczki,   [e] [H7]    
+Ani poduszeczki,        [C] [H7]      
+We żłobie Mu            [a] [D7]   
+Położyła                [G] [E7]    
+Sianka pod główeczki.   [a] [D7] [G]      
+We żłobie Mu            [a] [D7] 
+Położyła                [G] [E7] 
+sianka pod główeczki.   [a] [D7] [G]
 
 ---
 {title:  Gore gwiazda Jezusowi}
