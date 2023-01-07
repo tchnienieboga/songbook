@@ -407,13 +407,13 @@ Gloria, gloria, gloria, in excelsis Deo!
 ---
 {title:  Pójdźmy wszyscy do stajenki}
 {number: 20}
-1. Pójdźmy wszyscy do stajenki, [F]
-Do Jezusa i Panienki! [F]
-Powitajmy Maleńkiego, [g] [C7] [F] [d]
-I Maryję Matkę Jego. [C7] [F] [F7]
-Powitajmy Maleńkiego, [g] [C7] [A] [d]
-I Maryję Matkę Jego. [g] [C7] [F] [B] [F]
-
+1. Pójdźmy wszyscy do stajenki,     [F]
+Do Jezusa i Panienki!               [F]
+Powitajmy Maleńkiego,               [g] [C7] [F] [d]
+I Maryję Matkę Jego.                [C7] [F] [F7]
+Powitajmy Maleńkiego,               [g] [C7] [A] [d]
+I Maryję Matkę Jego.                [g] [C7] [F] [B] [F]
+                                    [g] [C7] [F]
 2. Witaj, Jezu ukochany, od Patriarchów czekany,
 Od Proroków ogłoszony, od narodów upragniony.
 
@@ -3397,12 +3397,12 @@ Ref. Wyśpiewajmy nową pieśń Panu...
 1. Mizerna, cicha, stajenka licha, [a] [h7/5-] [a] [E7]
 Pełna niebieskiej chwały. [F] [d] [a] [E7]
 Oto leżący, przed nami śpiący [a] [h7/5-] [a] [E7]
-W promieniach Jezus mały. [F] [E7] [a] [F7]
+W promieniach Jezus mały. [F] [E+] [a] [F7]
 
 2. Nad nim anieli w locie stanęli [b] [c7/5-] [b] [F7]
 I pochyleni klęczą [Ges] [es] [b] [F7]
 Z włosy złotymi, skrzydły białymi, [b] [c7/5-] [b] [F7]
-Pod malowaną tęczą. [Ges] [F7] [b] [Fis7]
+Pod malowaną tęczą. [Ges] [F+] [b] [Fis7]
 
 3. Wielkie zdziwienie, wszelkie stworzenie [h] [cis7/5-] [h] [Fis7]
 Cały świat orzeźwiony. [G] [e] [h] [Fis7]
