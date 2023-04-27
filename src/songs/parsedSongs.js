@@ -5071,6 +5071,34 @@ Stąd pociech dla człowieka jedyna, jedyna.
 6. Już Maryja Jezuleńka powiła, powiła
 Stąd wesele i pociecha nam miła, nam miła.
 
+---
+{title:  Jezu jesteś tu (Chwała)}
+{number: 251}
+
+Jezu jesteś tu                  [A] [E/Gis] [fis] [fis/E]
+świat odszedł w cień            [D] [A/Cis] [h] [Esus4]
+Mam tylko Ciebie                [A] [E/Gis] [D/Fis] [h7]
+Moje życie to Ty                [D] [E] [A]
+Każdy dzień Twoim darem         [cis7] [D/Fis] [Esus4] [A]
+Nocą jesteś schronieniem mym    [D/Fis] [h] [E4-3]
+
+Ref. Chwała, chwała!            [D] [cis]
+Jezu wielbię Cię                [fis] [D/Fis] [A]
+
+---
+{title:  Modlitwa o pokój}
+{number: 252}
+
+Przymnóż nam wiary, Panie       [fis] [E/Gis] [fis/A] [hsus2]
+Zmiłuj się nad nami             [fis] [E/Gis] [fis/A] [hsus2]
+Rozlej swój pokój               [D/Fis] [E] [fis]
+Boże ochroń nas                 [D] [h] [E]
+
+Ref. Maryjo, Królowo Pokoju     [A/Cis] [D] [E4-3]
+Módl się za nami                [fis] [D7+] [E4-3]
+Maryjo, Królowo Pokoju          [A/Cis] [D] [E4-3]
+Wspieraj nas                    [fis] [D7+] [E] [A]
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
