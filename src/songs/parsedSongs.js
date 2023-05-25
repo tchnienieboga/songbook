@@ -91,8 +91,10 @@ Alleluja, alleluja, alleluja, alleluuuuja!   |2x
 ---
 {title:  O usłysz mój głos - modlitwa wiernych}
 {number: 5}
-O usłysz mój głos! O usłysz mój głos! [c] [B6]
-Przyjdź i wysłuchaj mnie. [As] [G7] [c]
+                            [G7]
+O usłysz mój głos!          [c] 
+O usłysz mój głos!          [B]
+Przyjdź i wysłuchaj mnie.   [As] [G7] [c]
 ---
 {title:  Święty, święty}
 {number: 6}
@@ -1922,15 +1924,15 @@ Ref. Każdy wschód słońca…
 ---
 {title:  Nie lękajcie się}
 {number: 101}
-Nie lękajcie się, Ja jestem z wami. [C] [F] [G] [C] [F] [G]
-Nie lękajcie się, Ja jestem z wami. [a] [e] [F] [d] [B] [G]
-Nie lękajcie się, Bóg jest miłością. [C] [F] [G] [C] [F] [G]
-Nie lękajcie się, trwajcie mocni w wierze. [a] [e] [F] [d] [B] [G]
+Nie lękajcie się, Ja jestem z wami.         [C] [F] [G] [C] [F] [G]
+Nie lękajcie się, Ja jestem z wami.         [a] [e] [F] [d] [B] [G]
+Nie lękajcie się, Bóg jest miłością.        [C] [F] [G] [C] [F] [G]
+Nie lękajcie się, trwajcie mocni w wierze.  [a] [e] [F] [d] [B] [G]
 
-1. Ty jesteś Skałą Zbawienia, [C] [F] [G]
-Jedyną naszą ostoją. [C] [F] [G] [a]
-Przychodzimy do Ciebie po światło. [a] [e] [F] [C]
-Ulecz nasze serca, zmartwychwstać daj. [d] [F] [G]
+1. Ty jesteś Skałą Zbawienia,           [C] [F] [G] [F]
+Jedyną naszą ostoją.                    [C] [F] [G] [a]
+Przychodzimy do Ciebie po światło.      [a] [e] [F] [C]
+Ulecz nasze serca, zmartwychwstać daj.  [d] [F] [G] [G7]
 
 2. Pomóż nam wytrwać przy Tobie,
 Być wiernym w wierze przez życia czas.
@@ -1993,21 +1995,24 @@ by udźwignęły świat (ku Tobie). [e] [A] [D] [A7]
 ---
 {title:  Jezus daje nam zbawienie}
 {number: 105}
-1. Jezus daje nam zbawienie [d] [C] [a] [d]
-Jezus daje pokój nam [d] [C] [a] [d]
-Jemu składam dziękczynienie [d] [C] [a] [d]
-Chwałę z serca mego dam [d] [C] [a] [d]
+1. Jezus daje nam zbawienie     [d] [C] [a] [d]
+Jezus daje pokój nam            [d] [C] [a] [d]
+Jemu składam dziękczynienie     [d] [C] [a] [d]
+Chwałę z serca mego dam         [d] [C] [a] [d]
 
-Ref. Jezus siłą mą, Jezus pieśnią mego życia [F] [C] [a] [d]
-Królem wiecznym On [F] [C]
-niepojęty w mocy Swej [a] [d]
-W Nim znalazłem to czego [F] [C]
-szukałem do dzisiaj [a] [d]
-Sam mi podał dłoń [F] [C]
-bym zwyciężał każdy dzień [a] [d]
+Ref. Jezus siłą mą,             [F] [C] 
+Jezus pieśnią mego życia        [a] [d]
+Królem wiecznym On              [F] [C]
+niepojęty w mocy Swej           [a] [d]
+W Nim znalazłem to, czego       [F] [C]
+szukałem do dzisiaj             [a] [d]
+Sam mi podał dłoń               [F] [C]
+bym zwyciężał każdy dzień       [a] [d]
 
-2. W Jego ranach uzdrowienie, w Jego śmierci życia dar.
-Jego krew to oczyszczenie, Jego życie chwałą nam.
+2. W Jego ranach uzdrowienie, 
+w Jego śmierci życia dar.
+Jego krew to oczyszczenie, 
+Jego życie chwałą nam.
 
 Ref. Jezus siłą mą…
 ---
@@ -2236,10 +2241,12 @@ Ref: Kiedyś wino i chleb…
 ---
 {title:  Duchu Święty ogarnij mnie}
 {number: 121}
-Duchu Święty ogarnij mnie [D] [A] [Fis] [h]
-Otwórz oczy mego serca, napełnij miłością [G] [e] [A7sus4] [A7]
-Duchu święty ja kocham Cię [D] [A] [Fis] [h]
-Niech Twa święta wola spełni się [e] [A7] [D]
+Duchu Święty ogarnij mnie           [C] [G] [E] [a]
+Otwórz oczy mego serca,             [F] [d] 
+Napełnij miłością                   [G] [G7]
+Duchu święty ja kocham Cię          [C] [G] [E] [a]
+Niech Twa święta wola spełni się    [d] [G7] [C]
+
 ---
 {title:  Fundamentem jest miłość}
 {number: 122}
@@ -2568,12 +2575,15 @@ Jezus jest z nami tu. [B] [C] [F]
 ---
 {title:  Niech zabrzmi Panu chwała w niebiosach}
 {number: 140}
-Ref. x2 Alleluja, Alleluja, Alleluja, Alleluja! [fis] [E] [D] [cis] [fis]
+Ref. x2 Alleluja, Alleluja,     [fis] [E] 
+Alleluja, Alleluja!             [D] [cis] [fis]
 
-1. Niech zabrzmi Panu chwała w niebiosach, fis E fis
-na wysokościach cześć niech oddadzą, [cis] [D] [E] [fis]
-wielbijcie Pana, duchy niebieskie, [fis] [E] [D] [fis]
-wielbicie Pana, Jego zastępy [fis] [E] [cis] [fis]
+1. Niech zabrzmi Panu               [fis] 
+chwała w niebiosach,                [E] [fis]
+na wysokościach                     [cis] [D] 
+cześć niech oddadzą,                [E] [fis]
+wielbijcie Pana, duchy niebieskie,  [fis] [E] [D] [fis]
+wielbicie Pana, Jego zastępy        [fis] [E] [cis] [fis]
 
 2. Słońce, księżycu, wielbijcie Pana,
 gwiazdy świecące wielbijcie Pana,
@@ -2597,19 +2607,21 @@ przez wszystkie wieki wieków. Amen!
 ---
 {title:  Barka}
 {number: 141}
-1. Pan kiedyś stanął nad brzegiem, [D] [A7] [h] [h7]
-szukał ludzi, gotowych pójść za Nim, [e] [G] [A] [A7]
-by łowić serca Słów Bożych prawdą. [D] [A7] [D] [D7]
+1. Pan kiedyś stanął nad brzegiem,      [D] [A7] [h] [h7]
+szukał ludzi, gotowych pójść za Nim,    [e] [G] [A] [A7]
+by łowić serca Słów Bożych prawdą.      [D] [A7] [D] [D7]
 
 Ref. O Panie, to Ty na mnie spojrzałeś, [G] [A] [D] [H7]
-Twoje usta dziś wyrzekły me imię. [e] [A7] [D] [D7]
-Swoją barkę pozostawiam na brzegu, [G] [A] [D] [H7]
-razem z Tobą nowy zacznę dziś łów. [e] [A7] [D]
+Twoje usta dziś wyrzekły me imię.       [e] [A7] [D] [D7]
+Swoją barkę pozostawiam na brzegu,      [G] [A] [D] [H7]
+razem z Tobą nowy zacznę dziś łów.      [e] [A7] [D] [G] [D]
 
-2. Jestem ubogim człowiekiem, moim skarbem są ręce gotowe
+2. Jestem ubogim człowiekiem, 
+moim skarbem są ręce gotowe
 do pracy z Tobą i czyste serce.
 
-3. Ty potrzebujesz mych dłoni, mego serca młodego zapałem,
+3. Ty potrzebujesz mych dłoni, 
+mego serca młodego zapałem,
 mych kropli potu i samotności.
 
 4. Dziś wypłyniemy już razem,
@@ -3977,24 +3989,31 @@ Boże, więcej Ciebie chcę [G]
 {title:  Duchu Święty, Tchnienie Ojca}
 {number: 210}
 
-Duchu Święty, Tchnienie Ojca, Dawco życia. [F] [B] [F]
-Duchu Święty, Źródło wody żywej w nas. [F] [B] [F]
+Duchu Święty, Tchnienie Ojca,   [F] [B] 
+Dawco życia.                    [F]
+Duchu Święty, Źródło wody       [F] [B] 
+żywej w nas.                    [F]
 
-Ref. Tak pragniemy Ciebie Panie, [d] [a]
-jak spękana ziemia deszczu, [B] [F/A]
-jak pustynia kropli wody, [B] [F/A]
-Duchu, przyjdź. [C]
+Ref. Tak pragniemy Ciebie Panie,    [d] [a]
+jak spękana ziemia deszczu,         [B] [F/A]
+jak pustynia kropli wody,           [B] [F/A]
+Duchu, przyjdź.                     [C]
 
-Duchu Święty, Tyś Mądrością niezmierzoną. [F] [B] [F]
-Duchu Święty, Ty oświetlasz drogi nam. [F] [B] [F]
+Duchu Święty, Tyś Mądrością     [F] [B] 
+niezmierzoną.                   [F]
+Duchu Święty, Ty oświetlasz     [F] [B] 
+drogi nam.                      [F]
 
-Ref. I prowadzisz nas do domu, gdzie mieszkanie przed wiekami
+Ref. I prowadzisz nas do domu, 
+gdzie mieszkanie przed wiekami
 przygotował dla nas Ojciec, Duchu, przyjdź.
-Tak pragniemy Ciebie Panie, jak spękana ziemia deszczu,
+Tak pragniemy Ciebie Panie, 
+jak spękana ziemia deszczu,
 jak pustynia kropli wody, Duchu, przyjdź.
 
-Prowadź mnie, prowadź mnie. [F] [C/E] [B/D] [B]
-Prowadź nas, prowadź nas. [F] [C/E] [B/D] [B]
+Prowadź mnie, prowadź mnie.     [F] [C/E] [B/D] [B]
+Prowadź nas, prowadź nas.       [F] [C/E] [B/D] [B]
+
 ---
 {title:  Yeshua (Jedno jest Imię pod niebem)}
 {number: 211}
@@ -4806,7 +4825,6 @@ bądź naszym światłem,   [d] [g]
 Niech promienieje       [F] [B]
 Twej chwały blask.      [F] [d] [g]
 
-
 2.O, Świadku prawdziwy umocnij nas,
 Chcemy rozgłaszać: Zmartwychwstał Pan!
 
@@ -4960,7 +4978,7 @@ Oto jest rodzaj i taka rachuba,
 Tych, co chcą znaleźć twarz Boga Jakuba.
 
 ---
-{title:  Przybieżeli do Betlejem (żydowskie)}
+{title: Przybieżeli do Betlejem (żydowskie)}
 {number: 247}
                                         [C5] [B5] [C5] 
                                         [C5] [Cis5] [C5]
@@ -5013,7 +5031,7 @@ Wierząc, żeś jest pod osłoną
 Chleba i wina, chleba i wina.
 
 ---
-{title:  Jezus malusieńki}
+{title: Jezus malusieńki}
 {number: 249}
 
 1. Jezus malusieńki     [e] [H7]
@@ -5044,7 +5062,7 @@ Położyła                [G] [E7]
 sianka pod główeczki.   [a] [D7] [G]
 
 ---
-{title:  Gore gwiazda Jezusowi}
+{title: Gore gwiazda Jezusowi}
 {number: 250}
 
 1. Gore gwiazda Jezusowi        [h] [D]
@@ -5072,7 +5090,7 @@ Stąd pociech dla człowieka jedyna, jedyna.
 Stąd wesele i pociecha nam miła, nam miła.
 
 ---
-{title:  Jezu jesteś tu (Chwała)}
+{title: Jezu jesteś tu (Chwała)}
 {number: 251}
 
 Jezu jesteś tu                  [A] [E/Gis] [fis] [fis/E]
@@ -5086,7 +5104,7 @@ Ref. Chwała, chwała!            [D] [cis]
 Jezu wielbię Cię                [fis] [D/Fis] [A]
 
 ---
-{title:  Modlitwa o pokój}
+{title: Modlitwa o pokój}
 {number: 252}
 
 Przymnóż nam wiary, Panie       [fis] [E/Gis] [fis/A] [hsus2]
@@ -5098,6 +5116,79 @@ Ref. Maryjo, Królowo Pokoju     [A/Cis] [D] [E4-3]
 Módl się za nami                [fis] [D7+] [E4-3]
 Maryjo, Królowo Pokoju          [A/Cis] [D] [E4-3]
 Wspieraj nas                    [fis] [D7+] [E] [A]
+
+---
+{title: Sekwencja - Przybądź Duchu Święty}
+{number: 253}
+
+1. Przybądź, Duchu Święty,
+Spuść z niebiosów wzięty
+Światła Twego strumień.
+Przyjdź, Ojcze ubogich,
+Dawco darów mnogich,
+Przyjdź Światłości sumień!
+
+2. O najmilszy z Gości,
+Słodka serc radości,
+Słodkie orzeźwienie.
+W pracy Tyś ochłodą,
+W skwarze żywą wodą,
+W płaczu utulenie.
+
+3. Światłości najświętsza!
+Serc wierzących wnętrza
+Poddaj swej potędze!
+Bez Twojego tchnienia
+Cóż jest wśród stworzenia?
+Jeno cierń i nędze!
+
+4. Obmyj, co nieświęte,
+Oschłym wlej zachętę,
+Ulecz serca ranę!
+Nagnij, co jest harde,
+Rozgrzej serca twarde,
+Prowadź zabłąkane.
+
+5. Daj Twoim wierzącym,
+W Tobie ufającym,
+Siedmiorakie dary!
+Daj zasługę męstwa,
+Daj wieniec zwycięstwa,
+Daj szczęście bez miary!
+
+---
+{title: Zjednoczeni w Duchu}
+{number: 254}
+
+1. Zjednoczeni w Duchu,     [e] 
+Zjednoczeni w Nim,          [e]
+Zjednoczeni w Duchu,        [a] 
+Zjednoczeni w Nim,          [e]
+Módlmy się, aby jedność     [a] 
+Była odnowiona w nas,       [e]
+Aby świat cały poznał       [C]
+Uczniów Chrystusa w nas,    [e] [a]
+Aby świat cały              [C]
+Ujrzał miłość w nas.        [D] [e]
+[H7]
+
+2. Wraz z innymi pójdziemy, 
+Podaj mi swoją dłoń. /x2
+Wszystkim głosić będziemy tę radosną dla nas wieść,
+Że nasz Pan kroczy z nami, że nasz Pan z nami jest,
+Że nasz Pan zawsze z nami wszędzie jest.
+
+3. Chcemy razem pracować, 
+Chcemy złączyć swój trud. /x2
+By nie stracić godności, którą Pan obdarzył nas,
+Aby strzec ludzką dumę, aby strzec dumę swą, 
+Żeby człowiek zachował godność swą.
+
+4. Niechaj chwała brzmi Ojcu, 
+Który stworzył ten świat. /x2 
+Chwała też Chrystusowi, który Synem Jego jest
+I Duchowi też chwała, który jednoczy nas,
+I Duchowi też, który łączy nas.
 
 `;
 
