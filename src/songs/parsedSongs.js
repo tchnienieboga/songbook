@@ -5190,6 +5190,53 @@ Chwała też Chrystusowi, który Synem Jego jest
 I Duchowi też chwała, który jednoczy nas,
 I Duchowi też, który łączy nas.
 
+---
+{title: Życie trzeba umieć oddać}
+{number: 255}
+                                    [d] [B] [g] 
+                                    [Asus4] [A7]
+                                    [d] [B] [g] 
+                                    [Asus4] [A7]
+Ref. Życie trzeba umieć oddać       [D] [B]
+Zawierzyć na Miłość Wieczystą       [d]
+Życie trzeba umieć oddać            [D] [B]
+Zaufać, że źródła wytrysną          [d]
+Że z każdej pustyni,                [g]
+Kamienia i skały                    [g]
+Bóg wywiedzie życie                 [A]
+O znanym mu świcie                  [B] [g] [A7]
+
+1. Idziemy za Tobą w nieznane       [d] [g]
+Z lampami mądrymi czuwaniem         [C] [A] [d] [A7]
+Rytm kroków                         [d]
+Drabiną psalmową się zdaje          [d7] [g]
+Czy sosny to szumią?                [B]
+Czy oliwne gaje?                    [A]
+
+Ref Życie trzeba umieć oddać...
+
+2. Na ziemi to jutrznia ostatnia
+Lecz pierwszą w niebiosach się stanie
+Za Mistrzem, co kiedyś opuścił Nazaret
+Wziął krzyż na ramiona i my pójdźmy dalej
+                                    [D] [A]
+Ref. Życie trzeba umieć oddać...
+
+3. I poszły na samą głębinę
+W toń morza czerwoną ofiarą
+I życie oddały, by życie ocalić
+W nas miłość ratować, w nas wiarę zapalić
+
+Ref. Życie swe umiały oddać
+Zawierzyć na Miłość Wieczystą
+Życie swe umiały oddać
+Ufały, że źródła wytrysną
+Że z każdej pustyni,
+Kamienia i skały
+Bóg wywiedzie życie
+Jak wtedy o świcie
+
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
