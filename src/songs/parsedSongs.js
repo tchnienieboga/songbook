@@ -5235,7 +5235,44 @@ Ufały, że źródła wytrysną
 Kamienia i skały
 Bóg wywiedzie życie
 Jak wtedy o świcie
+---
+{title: Uwierz Polsko}
+{number: 256}
 
+[b] [C+] [f] [f/C]
+[h0] [G7] [C7]
+1. Moja Ojczyzna, moja Polska,  [b] [C+] [f] [f/C]
+Moja Ojczyzna to mój dom,       [b] [C+] [f] [f/C]
+Którego strzeże Ojciec, Matka   [b] [Es] [As4-3]
+I wiara od lat.                 [b] [Des] [C4-3]
+
+2. Moja Ojczyzna to historia    [b] [C+] [f] [f/C]
+Pamięć o poległych za nasz kraj [b] [C+] [f] [f/C]
+Pamięć o tysiącach bohaterów    [b] [Es] [As4-3]
+Niezłomnych jak stal!           [b] [Des] [C4-3]
+
+Ref. Uwierz, Polsko!            [As]
+Naszej wiary nie zabraknie nam! [g0] [f]
+Żaden wróg                      [b] 
+Nie zwycięży Boga w nas!        [Des] [C7]
+Z Bogiem zawsze                 [f] [f/Es]
+Pokonamy każde zło.             [Des] [Es] [As] [f]
+Dopomóż, Boże, nam,             [b] [Des/As]
+Dopomóż nam.                    [g7/5-] [C4-3]
+
+3. Kraju mój piękny, mój Wiślany, 
+Kraju mej nadziei w lepszy los. 
+Z wiarą Ojców tak niepokonany, 
+Bo wiara - to broń! 
+
+Ref. Uwierz, Polsko!... 
+
+4. Śladem naszych przodków iść będziemy, 
+Za Ojczyznę walczyć - to nasz cel! 
+Do lepszego jutra iść pragniemy. 
+Wznieś w górę swą skroń! 
+
+Ref. Uwierz, Polsko!... 
 
 `;
 
