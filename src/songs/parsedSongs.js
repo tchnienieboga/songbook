@@ -5195,8 +5195,6 @@ I Duchowi też, który łączy nas.
 {number: 255}
                                     [d] [B] [g] 
                                     [Asus4] [A7]
-                                    [d] [B] [g] 
-                                    [Asus4] [A7]
 Ref. Życie trzeba umieć oddać       [D] [B]
 Zawierzyć na Miłość Wieczystą       [d]
 Życie trzeba umieć oddać            [D] [B]
@@ -5239,27 +5237,27 @@ Jak wtedy o świcie
 {title: Uwierz Polsko}
 {number: 256}
 
-[b] [C+] [f]
-[h0] [G7] [C7]
-1. Moja Ojczyzna, moja Polska,  [b] [C+] [f]
-Moja Ojczyzna to mój dom,       [b] [C+] [f]
-Którego strzeże Ojciec, Matka   [b] [Es] [As]
-I wiara od lat.                 [b] [Des] [C4-3]
+[a] [H7] [e]
+[e0] [Fis7] [H7]
+1. Moja Ojczyzna, moja Polska,  [a] [H7] [e]
+Moja Ojczyzna to mój dom,       [a] [H7] [e]
+Którego strzeże Ojciec, Matka   [a] [D] [G]
+I wiara od lat.                 [a] [C] [H7]
 
-2. Moja Ojczyzna to historia    [b] [C+] [f]
-Pamięć o poległych za nasz kraj [b] [C+] [f]
-Pamięć o tysiącach bohaterów    [b] [Es] [As]
-Niezłomnych jak stal!           [b] [Des] [C4-3]
+2. Moja Ojczyzna to historia    [a] [H7] [e]
+Pamięć o poległych za nasz kraj [a] [H7] [e]
+Pamięć o tysiącach bohaterów    [a] [D] [G]
+Niezłomnych jak stal!           [a] [C] [H7]
 
-Ref. Uwierz, Polsko!            [As]
-Naszej wiary nie zabraknie nam! [g0] [f]
-Żaden wróg                      [b] 
-Nie zwycięży                    [Des] 
-Boga w nas!                     [C7]
-Z Bogiem zawsze                 [f]
-Pokonamy każde zło.             [Des] [Es] [As] [f]
-Dopomóż, Boże, nam,             [b] [b7] [b6]
-Dopomóż nam.                    [C4-3]
+Ref. Uwierz, Polsko!            [G]
+Naszej wiary nie zabraknie nam! [dis0] [e]
+Żaden wróg                      [a] 
+Nie zwycięży                    [C] 
+Boga w nas!                     [H7]
+Z Bogiem zawsze                 [e]
+Pokonamy każde zło.             [C] [D] [G] [e]
+Dopomóż, Boże, nam,             [a] [a7] [a6]
+Dopomóż nam.                    [H7]
 
 3. Kraju mój piękny, mój Wiślany, 
 Kraju mej nadziei w lepszy los. 
