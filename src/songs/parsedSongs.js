@@ -714,17 +714,28 @@ Ref. To dzień, dzień, dzień zmartwychwstania…
 ---
 {title:  Wody nie ugaszą jej}
 {number: 34}
-Wody nie ugaszą jej, [C] [G] [a7] [D] [A] [h7]
-nie da zdławić się [F] [G] [G] [A]
-przez wiatr. [C] [G7] [D] [A7]
-Rzeki nie zatopią jej, [C] [G] [a7] [D] [A] [h7]
-a jej żar to ognia żar. [F] [G] [C] [G] [A] [D]
-Jak śmierć jest miłość, [G] [a7] [A] [h7]
-tak potężna jest, [F] [G] [C] [G] [A] [D]
-jak śmierć jest miłość, [G] [a7] [A] [h7]
-potężniejsza jest. [F] [G] [C] [G] [A] [D]
- [(A7)]
----
+Wody nie ugaszą jej,    [C] [G] [a7]
+nie da zdławić się      [F] [G]
+przez wiatr.            [C] [G7]
+Rzeki nie zatopią jej,  [C] [G] [a7]
+a jej żar to ognia żar. [F] [G] [C]
+Jak śmierć jest miłość, [G] [a7]
+tak potężna jest,       [F] [G] [C]
+jak śmierć jest miłość, [G] [a7]
+potężniejsza jest.      [F] [G] [C]
+
+                        [(A7)]
+Wody nie ugaszą jej,    [D] [A] [h7]
+nie da zdławić się      [G] [A]
+przez wiatr.            [D] [A7]
+Rzeki nie zatopią jej,  [D] [A] [h7]
+a jej żar to ognia żar. [G] [A] [D]
+Jak śmierć jest miłość, [A] [h7]
+tak potężna jest,       [G] [A] [D]
+jak śmierć jest miłość, [A] [h7]
+potężniejsza jest.      [G] [A] [D]
+
+ ---
 {title:  Zmartwychwstał Pan i żyje dziś}
 {number: 35}
 Ref. Zmartwychwstał Pan i żyje dziś, [e] [C] [G]
@@ -5211,16 +5222,21 @@ Drabiną psalmową się zdaje          [d7] [g]
 Czy sosny to szumią?                [B]
 Czy oliwne gaje?                    [A]
 
+2. Spoczniemy w dolinie cienistej,
+w paprociach, we mchach rosa błyśnie.
+Jak ptaki zranione wysoko wzlecimy, 
+Bóg życie wywiedzie ze śmierci doliny.
+
 Ref Życie trzeba umieć oddać...
 
-2. Na ziemi to jutrznia ostatnia
+3. Na ziemi to jutrznia ostatnia
 Lecz pierwszą w niebiosach się stanie
 Za Mistrzem, co kiedyś opuścił Nazaret
 Wziął krzyż na ramiona i my pójdźmy dalej
                                     [D] [A]
 Ref. Życie trzeba umieć oddać...
 
-3. I poszły na samą głębinę
+4. I poszły na samą głębinę
 W toń morza czerwoną ofiarą
 I życie oddały, by życie ocalić
 W nas miłość ratować, w nas wiarę zapalić
