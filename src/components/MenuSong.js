@@ -1,9 +1,10 @@
 import React from 'react';
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Star from './Star';
 
-const MenuSong = ({song, chooseSong, onlyStarred}) => {
+const MenuSong = memo(({song, chooseSong, onlyStarred}) => {
     const onClickSong = () => chooseSong(song.number);
     const starMode = onlyStarred
         ? (song.selected ? 'selected' : 'starred')
@@ -23,7 +24,7 @@ const MenuSong = ({song, chooseSong, onlyStarred}) => {
             {song.title}
         </a>
     </span>;
-}
+});
 
 MenuSong.propTypes = {
     song: PropTypes.object.isRequired,

@@ -21,7 +21,7 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong,
                     </Button>
                     : null}
                 {!onlyStarred
-                    ? <input type="search" className="form-control col-8 mx-2" placeholder="Szukaj..."
+                    ? <input type="search" className="form-control col-8 mx-2" placeholder="Szukaj"
                         autoCapitalize="none" autoCorrect="off"
                         value={searchText} onChange={changeSearchText} />
                     : !!selectedSong
