@@ -5288,6 +5288,38 @@ Do lepszego jutra iść pragniemy.
 Wznieś w górę swą skroń! 
 
 Ref. Uwierz, Polsko!... 
+---
+{title:  Niech Ci błogosławi Pan}
+{number: 257}
+1. Niech Ci błogosławi Pan          [H] [E] [H] [E]
+Niechaj Cię strzeże                 [cis] [H] [Fis]
+Niech rozjaśni                      [cis] [dis]
+oblicze Swe nad Tobą                [gis]
+I niech miłościw Ci będzie          [cis] [H] [Fis]
+
+2. Niech Ci błogosławi Pan          [H] [E] [H] [E]
+Niechaj Cię strzeże                 [cis] [H] [Fis]
+Niech obróci                        [cis] [dis] 
+twarz Swoją ku Tobie                [gis]
+I niech da Ci Swój pokój            [cis] [H] [Fis]
+
+Ref. Niech Ci błogosławi Pan        [H] [E] [H] [E]
+Niech Ci błogosławi Pan             [H] [E] [Fis]
+Niech Ci błogosławi Pan             [H] [E] [H] [E]
+Niech Ci błogosławi Pan             [gis] [Fis] [H]
+
+Bridge x2:
+Niech Ci błogosławi     [E] [H]
+Niech Ci błogosławi     [E] [H]
+Niech Ci błogosławi Pan [E] [H] [Fis]
+                        [(G)]
+
+Ref. Niech Ci błogosławi Pan        [C] [F] [C] [F]
+Niech Ci błogosławi Pan             [C] [F] [G]
+Niech Ci błogosławi Pan             [C] [F] [C] [F]
+Niech Ci błogosławi Pan             [a] [G] [C] [F]
+                                    [a] [G] [C] [F]
+                                    [a] [G] [F]
 
 `;
 
