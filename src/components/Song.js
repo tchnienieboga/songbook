@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
-import Star from './Star';
 
 const Song = ({song, starredCount}) => {
     return <>
@@ -10,9 +9,7 @@ const Song = ({song, starredCount}) => {
             <div className={classNames('col-10', {'sb-starred-song': song.starred})}>
                 {song.number}. {song.title}
             </div>
-            <div className="col-2 sb-star-info sb-lyrics" onClick={song.toggleStarred}>
-                <Star mode={song.starred ? 'starred' : 'plain'} large={true}/>
-                <br/>
+            <div className="col-2 sb-star-info sb-lyrics">
                 {song.starred ? `${song.starredNumber}/${starredCount}` : <>&nbsp;</>}
             </div>
         </div>

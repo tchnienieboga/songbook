@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const Star = ({mode, large, onClick}) => {
-    const size = !!large ? 'lg' : undefined;
     return <i className={classNames('fas', 'fa-star', 'sb-star', `sb-star-${mode}`, {'fa-lg': !!large})} onClick={onClick}></i>;
 }
 

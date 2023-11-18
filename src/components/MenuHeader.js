@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCaretDown, faCaretUp, faTimes, faTrash} from '@fortawesome/free-solid-svg-icons';
+import {faCaretDown, faCaretUp, faListUl, faTimes, faTrash} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 
 const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong, searchText, setSearchText, onClose}) => {
@@ -16,8 +16,14 @@ const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong,
             <div className="form-row px-1">
                 {!!starredCount
                     ? <Button className="mx-1" variant={'info'} onClick={toggleOnlyStarred}>
-                        <Star mode={onlyStarred ? 'starred' : 'plain'} />
-                        <span className={classNames({'font-weight-bold': onlyStarred})}>&nbsp;{starredCount}</span>
+                        {onlyStarred
+                            ? <>
+                                <FontAwesomeIcon icon={faListUl} role="button" size={"lg"} />
+                            </>
+                            : <>
+                                <Star mode="starred" />
+                                <span className={classNames({ 'font-weight-bold': onlyStarred })}>&nbsp;{starredCount}</span>
+                            </>}
                     </Button>
                     : null}
                 {!onlyStarred
