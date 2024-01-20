@@ -4448,13 +4448,13 @@ Pokój dziś przynosząc nam. /x3          [B] [F]
 {title:  W żłobie leży}
 {number: 226}
 
-1. W żłobie leży, któż pobieży [D] [e] [A7]
-Kolędować Małemu? [D] [e7] [A7] [D]
-Jezusowi, Chrystusowi [D] [e] [A7]
-Dziś nam narodzonemu? [D] [D7] [G] [A7] [D]
-Pastuszkowie, przybywajcie [D] [H7] [e]
-Jemu wdzięcznie przygrywajcie, [A7] [D]
-Jako Panu naszemu. [Fis7] [G] [e] [A7] [D]
+1. W żłobie leży, któż pobieży          [D] [e] [A7]
+Kolędować Małemu?                       [D] [e7] [A7] [D]
+Jezusowi, Chrystusowi                   [D] [e] [A7]
+Dziś nam narodzonemu?                   [D] [D7] [G] [A7] [D]
+Pastuszkowie, przybywajcie              [D] [H7] [e]
+Jemu wdzięcznie przygrywajcie,          [A7] [D]
+Jako Panu naszemu.                      [Fis7] [G] [e] [A7] [D]
 
 2. My zaś sami z piosneczkami za wami pospieszymy,
 I tak tego, maleńkiego, niech wszyscy zobaczymy.
@@ -4470,7 +4470,7 @@ Chwała na wysokości!
 Opuściłeś, a zstąpiłeś na te niskości ziemskie?
 Miłość moja to sprawiła, by człowieka wywyższyła
 Pod nieba Empirejskie.
- [Fis7] [G] [g6] [A7] [D]
+                                        [Fis7] [G] [g6] [A7] [D]
 ---
 {title:  Jakie piękne jest Imię Twe}
 {number: 227}
@@ -5320,6 +5320,31 @@ Niech Ci błogosławi Pan             [C] [F] [C] [F]
 Niech Ci błogosławi Pan             [a] [G] [C] [F]
                                     [a] [G] [C] [F]
                                     [a] [G] [F]
+---
+{title:  W żłobie leży (wersja 2)}
+{number: 258}
+
+1. W żłobie leży, któż pobieży          [D] [A]
+Kolędować Małemu?                       [G] [A] [D]
+Jezusowi, Chrystusowi                   [D] [A]
+Dziś nam narodzonemu?                   [G] [A] [D]
+Pastuszkowie, przybywajcie              [G] [A]
+Jemu wdzięcznie przygrywajcie,          [h] [C]
+Jako Panu naszemu.                      [G] [A] [h]
+Jako Panu naszemu.                      [G] [A] [D]
+
+2. My zaś sami z piosneczkami za wami pospieszymy,
+I tak tego, maleńkiego, niech wszyscy zobaczymy.
+Jak ubogo narodzony, płacze w stajni położony,
+Więc go dziś ucieszymy. /x2
+
+3. Naprzód tedy, niechaj wszędy zabrzmi świat w wesołości,
+Że posłany nam jest dany, Emmanuel w niskości.
+Jego tedy przywitajmy, z aniołami zaśpiewajmy
+Chwała na wysokości! /x2
+
+Solo skrzypce                           [G] [A] [h]
+                                        [G] [A] [D]
 
 `;
 
