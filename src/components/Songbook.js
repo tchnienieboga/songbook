@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
-import MenuButton from './MenuButton';
+import MenuButtons from './MenuButtons';
 import useZoomLevel from '../hooks/useZoomLevel';
 import useSongs from '../hooks/useSongs';
 import usePersistentState from '../hooks/usePersistentState';
@@ -20,10 +20,15 @@ const Songbook = ({parsedSongs}) => {
     } = useSongs(parsedSongs);
     const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
     const [menuShown, setMenuShown] = usePersistentState('menuShown', false);
+    const [chordsShown, setChordsShown] = usePersistentState('chordsShown', true);
 
     const openMenu = () => setMenuShown(true);
 
     const closeMenu = () => setMenuShown(false);
+
+    const showChords = () => setChordsShown(true);
+
+    const hideChords = () => setChordsShown(false);
 
     const chooseSong = (songNumber) => {
         setChosenSong(songNumber);
@@ -32,11 +37,12 @@ const Songbook = ({parsedSongs}) => {
 
     const chosenSong = songs.find(song => song.chosen);
     return (<React.Fragment>
-            {!menuShown && <MenuButton onlyStarred={onlyStarred} onClick={openMenu}/>}
+            {!menuShown && <MenuButtons onlyStarred={onlyStarred} chordsShown={chordsShown}
+                                        onClickMenu={openMenu} onClickGuitar={chordsShown ? hideChords : showChords}/>}
 
             <div {...swipeChangeSong()} {...pinchZoomLevel()}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
-                {!!chosenSong && <Song song={chosenSong} starredCount={starredCount}/>}
+                {!!chosenSong && <Song song={chosenSong} starredCount={starredCount} chordsShown={chordsShown}/>}
             </div>
 
         <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount} selectedSong={selectedSong}

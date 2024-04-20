@@ -119,20 +119,36 @@ $lightgray:  #eae3d9;
   font-weight: 500;
 }
 
-.sb-menu-button {
-  @include button-variant($cyan, $cyan);
-
+.sb-menu-buttons-container {
   position: fixed;
-  width: 50px;
-  height: 50px;
   bottom: 10px;
   right: 10px;
   z-index: 100;
+  display: flex;
+  flex-direction: row;
 
-  .sb-menu-button-icon {
+  .sb-menu-button {
+    &.sb-menu-button-cyan {
+      @include button-variant($cyan, $cyan);
+    }
+
+    &.sb-menu-button-gray {
+      @include button-variant($gray, $gray);
+    }
+
+    &.sb-menu-button-red {
+      @include button-variant($red, $red);
+    }
+  
     width: 50px;
     height: 50px;
-    font-size: 1.3em;
+    margin-left: 5px;
+  
+    .sb-menu-button-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 1.3em;
+    }
   }
 }
 

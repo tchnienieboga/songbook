@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
 
-const Song = ({song, starredCount}) => {
+const Song = ({song, chordsShown, starredCount}) => {
     return <>
         <div className="row songtitle mt-1 mb-1">
             <div className={classNames('col-10', {'sb-starred-song': song.starred})}>
@@ -17,7 +17,7 @@ const Song = ({song, starredCount}) => {
             <div className="col">
                 {lyrics || <br/>}
             </div>
-            {chords.length > 0 && <div className="col-4">
+            {chordsShown && chords.length > 0 && <div className="col-4">
                 {chords.map((chord, index) => <Chord key={index} chord={chord}/>)}
             </div>}
         </div>)}
@@ -27,6 +27,7 @@ const Song = ({song, starredCount}) => {
 
 Song.propTypes = {
     song: PropTypes.object.isRequired,
+    chordsShown: PropTypes.bool.isRequired,
     starredCount: PropTypes.number.isRequired
 };
 
