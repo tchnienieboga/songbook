@@ -4354,18 +4354,22 @@ Ref. I będę wzywać Imię Twe [G] [D] [A]
 I ponad fale patrzeć chcę, gdy burzą się [G] [D] [A]
 Dla duszy pokój w Tobie jest [G] [D] [A]
 Gdzie pójdziesz Ty, ja pójdę też [G] [A]
- [h] [A/Cis] [D] [A] [G]
+[h] [A/Cis] [D] [A] [G]
+
 2. Mój strach utonie w Twojej łasce [h] [A/Cis] [D]
 Bo ręka Twa prowadzi mnie [A] [G]
 I Ty mnie nigdy nie zawiodłeś [h] [A/Cis] [D]
 Wiem teraz też nie zawiedziesz mnie [A] [G]
 
-Ref. I będę wzywać Imię Twe...
- 
+Ref. I będę wzywać Imię Twe [G] [D] [A]
+I ponad fale patrzeć chcę, gdy burzą się [G] [D] [A]
+Dla duszy pokój w Tobie jest [G] [D] [A]
+Gdzie pójdziesz Ty, ja pójdę też [G] [A]
+
 Więc daj mi odwagę [h] [A/Cis] [D] [A] [G] [/x2]
 I prowadź mnie
 Chcę ufać Tobie
-solo…
+
 Duchu prowadź mnie [h] [G] [D] [A] [/x4]
 Gdzie wiara nie ma granic [G] [D] [A] [e] [/x2]
 Daj mi chodzić nad wodami [h] [A/Cis] [D] [A] [e] [/x6]
@@ -4378,7 +4382,10 @@ W Twej obecności Boże /x5
 Ja chcę iść za Tobą więc prowadź mnie [h] [A/Cis] [D] [A] [G]
 Dokądkolwiek pójdziesz [h] [A/Cis] [D] [A] [G]
 
-Ref. I będę wzywać Imię Twe…
+Ref. I będę wzywać Imię Twe [G] [D] [A]
+I ponad fale patrzeć chcę, gdy burzą się [G] [D] [A]
+Dla duszy pokój w Tobie jest [G] [D] [A]
+Gdzie pójdziesz Ty, ja pójdę też [G] [A]
 ---
 {title:  Być bliżej Ciebie chcę}
 {number: 224}
