@@ -2410,8 +2410,22 @@ Ref. Nadzieja nosi niebieską sukienkę…
 ---
 {title:  Ubi caritas}
 {number: 129}
-Ubi caritas et amor, ubi caritas Deus ibi est.
-Tam gdzie miłość jest i dobroć, tam gdzie miłość jest
+
+Ubi caritas             [D] [A] [h]
+Et amor,                [G] [A4-3]
+Ubi caritas             [D] [A] [h]
+Deus ibi est.           [G] [A] [D]
+
+Tam gdzie miłość jest   [D] [A] [h]
+I dobroć,               [G] [A4-3]
+Tam gdzie miłość jest   [D] [A] [h]
+Tam mieszka Bóg.        [G] [A] [D]
+
+Solo skrzypiec          [D] [A] [h]
+                        [G] [D] [G] [A7]
+                        [D] [A] [h]
+                        [G] [D] [G] [A7]
+                        [D]
 ---
 {title:  Kocham, więc nie muszę się bać}
 {number: 130}
@@ -5423,6 +5437,24 @@ Spraw aby Kościół żywy              [h] [G] [D/Fis]
 Stał się żywy we mnie               [h] [G] [A]
 
 Ref. Żywy jest Kościół Twój…
+
+---
+{title:  Panie mój, przychodzę dziś}
+{number: 260}
+
+Panie mój, przychodzę dziś,     [D] [G]
+Serce me skruszone przyjm,      [D] [G]
+Skłaniam się                    [D]
+Przed świętym tronem Twym.      [G] [A4-3]
+Wznoszę ręce moje wzwyż,        [D] [G]
+Miłość mą wyznaję dziś.         [D/Fis] [h]
+Uwielbiam Ciebie w Duchu,       [e] [A7]
+Uwielbiam w Prawdzie Cię.       [e] [A7]
+Życie me oddaję Tobie,          [e] [A7]
+Uświęć je.                      [D]
+
+                                [G] [g] [D7+]
+
 
 `;
 
