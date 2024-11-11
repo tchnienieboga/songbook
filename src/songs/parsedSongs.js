@@ -2421,7 +2421,7 @@ I dobroć,               [G] [A4-3]
 Tam gdzie miłość jest   [D] [A] [h]
 Tam mieszka Bóg.        [G] [A] [D]
 
-Solo skrzypiec          [D] [A] [h]
+(Solo skrzypce)         [D] [A] [h]
                         [G] [D] [G] [A7]
                         [D] [A] [h]
                         [G] [D] [G] [A7]
@@ -2728,13 +2728,15 @@ Ref.x3 Niepojęty, niezmierzony... [D] [A] [G] [h] [A] [G]
 ---
 {title:  Witaj, Pokarmie}
 {number: 146}
-1. Witaj Pokarmie,                  [e] [hsus4] 
-W którym niezmierzony               [C] [a/C]
-Nieba i ziemie                      [e] [hsus4]
-Twórca jest zamkniony,              [C] [a/C]
-Witaj napoju                        [G] [Dsus4] 
-Zupełnie gaszący                    [a] [Dsus4] [D]
-Umysł pragnący.                     [G] [hsus4] [e]
+
+                                    [e] [h] [C] [a7/9]
+1. Witaj Pokarmie,                  [e] [h] 
+W którym niezmierzony               [C] [D]
+Nieba i ziemie                      [e] [h]
+Twórca jest zamkniony,              [C] [D]
+Witaj napoju                        [G] [D] 
+Zupełnie gaszący                    [a] [D4-3]
+Umysł pragnący.                     [G] [h] [e]
 
 2. Witaj Krynico wszystkiego dobrego
 Gdy bowiem w sobie masz Boga samego
@@ -2904,30 +2906,35 @@ A noc tak jak dzień zajaśnieje [a] [G] [C] [d] [E]
 ---
 {title:  Mrok ogarnął całą ziemię}
 {number: 158}
-Solo gitara fis E cis7 D7+ h7 cis7 E fis (E) |x2
 
-1. Mrok ogarnął całą ziemię [fis] [E] [cis7] [D7+]
-na ulicy cisza. [h7] [cis7] [fis] [E]
-Tylko Twoje kroki słychać, [fis] [E] [cis7] [D7+]
-Twój płacz i jęk. [h7] [cis7] [E] [fis]
+(Solo gitara x2)                    [fis] [E] [cis] [D7+] 
+                                    [h] [cis] [E] [fis] [(E)]
 
-Ref. x2: On przyszedł po to, [h7] [cis7] [fis]
-by ci pomóc z upadku twego wyjść [h7] [cis7] [fis]
-Byś nigdy więcej już nie błądził [h7] [cis7] [fis]
-byś znalazł drogę w życiu tym. [h7] [cis7] [fis]
+1. Mrok ogarnął całą ziemię         [fis] [E] [cis] [D7+]
+na ulicy cisza.                     [h] [cis] [fis] [E]
+Tylko Twoje kroki słychać,          [fis] [E] [cis] [D7+]
+Twój płacz i jęk.                   [h] [cis] [E] [fis]
 
-2. Jesteś przecież jeszcze młody [fis] [E] [cis7] [D7+]
-Wiele możesz zdziałać. [h7] [cis7] [fis] [E]
-Tylko życie tracisz swoje [fis] [E] [cis7] [D7+]
-W różny sposób. [h7] [cis7] [E] [fis]
+Ref. x2: On przyszedł po to,        [h] [cis] [fis]
+by ci pomóc z upadku twego wyjść    [h] [cis] [fis]
+Byś nigdy więcej już nie błądził    [h] [cis] [fis]
+byś znalazł drogę w życiu tym.      [h] [cis] [fis]
 
-Ref. x2: On przyszedł po to... [h7] [cis7] [fis]
+2. Jesteś przecież jeszcze          [fis] [E] 
+młody.                              [cis] [D7+]
+Wiele możesz zdziałać.              [h] [cis] [D7+]
+Tylko życie tracisz swoje           [fis] [E] [cis] [D7+]
+W różny sposób.                     [h] [cis] [E] [fis]
 
-Solo akordeon cis7 D7+ A E cis D7+ A |x2
+Ref. x2: On przyszedł po to...      [h] [cis] [fis]
 
-Jesteś przecież jeszcze młody [fis] [E] [cis7] [D7+]
-Wiele możesz zdziałać. [h7] [cis7] [D7+]
- [fis] [E] [fis]
+(Solo skrzypce x2)                  [cis] [D7+] [A] [E] 
+                                    [cis] [D7+] [A]
+
+Jesteś przecież jeszcze             [fis] [E] 
+młody.                              [cis] [D7+]
+Wiele możesz zdziałać.              [h] [cis] [D7+]
+                                    [fis] [E] [fis]
 ---
 {title:  Rzekł Pan stało się}
 {number: 159}
