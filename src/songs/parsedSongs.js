@@ -5462,7 +5462,35 @@ Uświęć je.                      [D]
 
                                 [G] [g] [D7+]
 
+---
+{title: Głoś imię Pana}
+{number: 261}
 
+1. Głoś imię Pana,            [C] [a]
+Króla wszechmocy i chwały.    [e] [F] [G] [C]
+Złącz się z chórami           [C] [a]
+zastępów wspaniałych.         [e] [F] [G] [C]
+Harfa i róg niech zagra:      [C] [F]
+„Któż jest, jak Bóg!”         [a] [d] [G]
+by krańce ziemi słyszały.     [e] [F] [G] [C]
+
+2. Głoś imię Pana,            [C] [a]
+On twoim losem kieruje.       [e] [F] [G] [C]
+Na skrzydłach niesie,         [C] [a]
+jak orzeł się opiekuje.       [e] [F] [G] [C]
+Daj Mu swą dłoń,              [C] [F]
+w przygodzie zawołaj doń.     [a] [d] [G]
+On cię od zła zachowuje.      [e] [F] [G] [C]
+                              [Asus] [A]
+
+3. Głoś imię Pana,            [D] [h]
+razem ze wszystkim, co żyje.  [fis] [G] [A] [D]
+On twoim światłem,            [D] [h]
+Jemu niech serce twe bije!    [fis] [G] [A] [D]
+On życiem twym,               [D] [G]
+wdzięczności śpiewaj Mu hymn  [h] [e] [A] 
+teraz i na wieki. Amen.       [fis] [G] [A]  
+                              [g] [D7+]
 `;
 
 const parsedSongs = parseSongs(rawSongs);
