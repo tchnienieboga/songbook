@@ -5491,6 +5491,39 @@ On życiem twym,               [D] [G]
 wdzięczności śpiewaj Mu hymn  [h] [e] [A] 
 teraz i na wieki. Amen.       [fis] [G] [A]  
                               [g] [D7+]
+
+---
+{title: Niepokalana (J. Tomalak)}
+{number: 262}
+
+1. Otwarta na Boga, odwiecznie wybrana  [e] [C] [D] [e]
+Matko Chrystusa,                        [C] [D] [A]
+Pełna wiary na wzór Abrahama            [e] [C] [D] [e]
+- Niepokalana.                          [C] [D] [A]
+
+Ref. Ciebie otacza nieziemski blask,    [C] [G] [D] [e]
+A nad Twą głową dwanaście gwiazd,       [a] [G] [D] [e]
+Księżyc się srebrzy u Twoich stóp,      [C] [G] [D] [e]
+Boga uwielbia Twój pokorny duch.        [a] [G] [D] [e]
+
+2. Troskliwa, radosna, spiesząca z pomocą
+Oblubienico Ducha
+Śpiewasz Panu hymn uwielbienia
+- Magnificat.
+
+3. Najdoskonalsza uczennico Jezusa,
+Do końca wierna,
+Współcierpiąca pod Krzyżem Syna
+- Maryjo.
+
+4. Z miłości nam dana w godzinie zbawienia
+Matko Kościoła,
+Ty, która jesteś znakiem nadziei
+- módl się za nami.
+
+Bridge: Błogosławią Ciebie wszystkie pokolenia,
+Najpiękniejsza z niewiast, uczczona przez Syna.
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
