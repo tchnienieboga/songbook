@@ -5468,7 +5468,7 @@ Uświęć je.                      [D]
 
 1. Głoś imię Pana,            [C] [a]
 Króla wszechmocy i chwały.    [e] [F] [G] [C]
-Złącz się z chórami           [C] [a]
+Złącz się z chórami niebios   [C] [a]
 zastępów wspaniałych.         [e] [F] [G] [C]
 Harfa i róg niech zagra:      [C] [F]
 „Któż jest, jak Bóg!”         [a] [d] [G]
@@ -5496,13 +5496,13 @@ teraz i na wieki. Amen.       [fis] [G] [A]
 {title: Niepokalana (J. Tomalak)}
 {number: 262}
 
-1. Otwarta na Boga, odwiecznie wybrana  [e] [C] [D] [e]
+1. Otwarta na Boga, odwiecznie wybrana  [e]
 Matko Chrystusa,                        [C] [D] [A]
-Pełna wiary na wzór Abrahama            [e] [C] [D] [e]
+Pełna wiary na wzór Abrahama            [e]
 - Niepokalana.                          [C] [D] [A]
 
 Ref. Ciebie otacza nieziemski blask,    [C] [G] [D] [e]
-A nad Twą głową dwanaście gwiazd,       [a] [G] [D] [e]
+A nad Twą głową dwanaście gwiazd,       [C] [G] [D] [e]
 Księżyc się srebrzy u Twoich stóp,      [C] [G] [D] [e]
 Boga uwielbia Twój pokorny duch.        [a] [G] [D] [e]
 
