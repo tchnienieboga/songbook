@@ -5524,6 +5524,41 @@ Ty, która jesteś znakiem nadziei
 Bridge: Błogosławią Ciebie wszystkie pokolenia,
 Najpiękniejsza z niewiast, uczczona przez Syna.
 
+
+---
+{title: Skrzypi wóz}
+{number: 263}
+
+1. Skrzypi wóz, wielki mróz,  [F] [B]
+wielki mróz na ziemi          [C] [d]
+Trzej królowie jadą           [F] [C]
+Złoto, mirrę kładą            [B] [F]
+Hej, kolęda, kolęda           [B] [C] [F]
+
+2. A komuż takiemu, 
+Dzieciątku małemu
+Cóż to za Dzieciątko
+Musi być paniątko
+Hej, kolęda, kolęda
+
+3. Pasterze na lirze, 
+na skrzypeczkach grali
+W tę stronę do szopy
+Prędko przybiegali
+Hej, kolęda, kolęda
+
+4. To Jezus maluśki, 
+to Dzieciątko krasne
+Cichutkie, malutkie
+Jak słoneczko jasne
+Hej, kolęda, kolęda
+
+5. Skrzypi wóz, wielki mróz, 
+wielki mróz na ziemi
+Trzej królowie jadą
+Złoto, mirrę kładą
+Hej, kolęda, kolęda
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
