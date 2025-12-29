@@ -5751,7 +5751,34 @@ Bóg grzesznym ludziom Zbawcę dał!
 Cud! Cud, bo w żłobie śpi
 Dzieciątko, Syn Maryi
 
+---
+{title: Narodził się Jezus Chrystus}
+{number: 269}
 
+Ref. Narodził się, narodził się,  [D] [A] [e] [h]
+Jezus Chrystus, Bóg i Pan!        [D/Fis] [G] [A]
+Narodził się, narodził się,       [D] [A] [e] [h]
+Jezus Chrystus, Bóg i Pan!        [D/Fis] [G] [A7] [D]
+
+1. Tobie chwała, narodzony        [D] [A] [h] [fis]
+Dla zbawienia wszystkich ludzi.   [G] [fis/A] [G/B] [A/Cis]
+Panie Jezu, Synu Matki,           [D] [A] [h] [fis]
+Która z Ducha Cię poczęła.        [e] [A] [D]
+
+2. Tobie dzisiaj oddajemy         [D] [A] [h] [fis]        
+Myśli, słowa i uczynki,           [G] [fis/A] [G/B] [A/Cis]
+Ty przeniknij je swą łaską,       [D] [A] [h] [fis]        
+Aby godne były Ciebie.            [e] [A] [D]              
+
+3. Twoja gwiazda betlejemska      [D] [A] [h] [fis]        
+Stała się już jasnym słońcem      [G] [fis/A] [G/B] [A/Cis]
+I oświeca drogę życia,            [D] [A] [h] [fis]        
+Którą chcemy iść ku Tobie.        [e] [A] [D]              
+
+4. Chryste, któryś się objawił    [D] [A] [h] [fis]        
+Wielkim mędrcom i pasterzom,      [G] [fis/A] [G/B] [A/Cis]
+Cześć i wieczne panowanie         [D] [A] [h] [fis]        
+Ojcu, Tobie i Duchowi. Amen.      [e] [A] [D]              
 
 `;
 
