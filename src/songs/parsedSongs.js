@@ -5604,6 +5604,46 @@ Dom nasz i majętność całą,
 I wszystkie wioski z miastami.
 A Słowo... x2
 
+---
+{title: Mędrcy świata, monarchowie}
+{number: 265}
+
+1. Mędrcy świata Monarchowie,     [G] [C] [G]
+Gdzie śpiesznie dążycie?          [D7] [G]
+Powiedzcież nam, Trzej Królowie,  [G] [C] [D]
+Chcecie widzieć Dziecię?          [G] [D] [D7] [G]
+Ono w żłobie, nie ma tronu,       [D] [G]
+I berła nie dzierży,              [a] [G] [D]
+A proroctwo Jego zgonu,           [G] [C] [D]
+Już się w świecie szerzy.         [G] [D] [D7] [G]
+
+2. Mędrcy świata, złość okrutna,
+Dziecię prześladuje.
+Wieść okropna, wieść to smutna,
+Herod spisek knuje:
+Nic monarchów nie odstrasza,
+Do Betlejem śpieszą,
+Gwiazda Zbawcę im ogłasza,
+Nadzieją się cieszą.
+
+3. Przed Maryją stają społem,
+Niosą Panu dary.
+Przed Jezusem biją czołem,
+Składają ofiary.
+Trzykroć szczęśliwi królowie,
+Któż wam nie zazdrości?
+Cóż my damy, kto nam powie,
+Pałając z miłości?
+
+4. Tak, jak każą nam kapłani,
+Damy dar troisty:
+Modły, pracę niosąc w dani,
+I żar serca czysty.
+To kadzidło, mirrę, złoto
+Niesiem, Jezu szczerze,
+Co dajemy Ci z ochotą,
+Od nas przyjm w ofierze.
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
