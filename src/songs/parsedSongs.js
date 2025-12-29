@@ -5780,6 +5780,42 @@ Wielkim mędrcom i pasterzom,      [G] [fis/A] [G/B] [A/Cis]
 Cześć i wieczne panowanie         [D] [A] [h] [fis]        
 Ojcu, Tobie i Duchowi. Amen.      [e] [A] [D]              
 
+---
+{title: Adeste, fideles}
+{number: 270}
+
+1. Adeste, fideles,             [D] [A] 
+laeti triumphantes:             [D] [A]
+Venite, venite in Bethlehem:    [h] [A] [E] [A]
+Natum videte                    [D] [G] [D] 
+Regem Angelorum.                [e] [G] [A]
+
+Ref. Venite, adoremus.          [D]
+Venite, adoremus.               [D]
+Venite, adoremus                [a] [A] [h]
+Dominum.                        [G] [A] [D]
+
+2. En grege relicto, humiles ad cunas
+Vocati pastores approperant:
+Et nos ovanti gradu festinemus:
+
+Ref. Venite, adoremus...
+
+3. Aeterni Parentis splendorem aeternum
+Velatum sub carne videbimus.
+Deum infantem pannis involutum.
+
+Ref. Venite, adoremus...
+
+4. Pro nobis egenum, et foeno cubantem
+Piis foveamus amplexibus:
+Sic nos amantem quis non redamaret ?
+
+Ref. Venite, adoremus...
+
+5. Qui foeno iacebat panis speciebus,
+Pro nobis effectus Emmanuel.
+Sic nos amantem, quis non redamaret?
 `;
 
 const parsedSongs = parseSongs(rawSongs);
