@@ -5673,6 +5673,53 @@ Poczęła Panna Syna w czystości,
 Porodziła w całości
 Panieństwa swojego.
 
+---
+{title: Do szopy hej pasterze}
+{number: 267}
+
+1. Do szopy, hej pasterze,  [D] [A]
+Do Szopy, bo tam cud!       [A7] [D]
+Syn Boży w żłobie leży,     [D] [A]
+by zbawić ludzki ród.       [A7] [D]
+
+Ref.: Śpiewajcie Aniołowie, [D] [A]
+pasterze, grajcie Mu.       [G] [D]
+Kłaniajcie się Królowie,    [h] [e]
+nie budźcie Go ze snu.      [A] [D]    
+
+2. Padnijmy na kolana,
+to Dziecię to nasz Bóg,
+Uczcijmy niebios Pana;
+miłości złóżmy dług.
+
+Ref.: Śpiewajcie...
+
+3. O Boże niepojęty, kto
+pojmie miłość Twą?
+Na sianie wśród bydlęty,
+masz tron i służbę swą.
+
+Ref.: Śpiewajcie...
+
+4. On Ojcu równy w Bóstwie
+opuszcza niebo swe
+A rodzi się w ubóstwie
+i cierpi wszystko złe
+
+Ref.: Śpiewajcie...
+
+5.Bóg, Stwórca wiecznej chwały,
+Bóg godzien wszelkiej czci,
+patrz, w szopie tej zbutwiałej,
+jak słodko On w niej śpi.
+
+Ref.: Śpiewajcie...
+
+6. Jezuniu mój najsłodszy,
+Tobie oddaję się.
+O skarbie mój najdroższy,
+racz wziąć na własność mnie.
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
