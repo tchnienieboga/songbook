@@ -5720,6 +5720,38 @@ Tobie oddaję się.
 O skarbie mój najdroższy,
 racz wziąć na własność mnie.
 
+---
+{title: Cóż to za Dziecię}
+{number: 268}
+
+1. Cóż to za Dziecię słodko śpi   [a] [C] [G] [e]
+na sianie, w twardym żłobie?      [a] [F] [E]
+Aniołów pieśń dla niego brzmi     [a] [C] [G] [e]
+wśród pól w tej nocnej dobie.     [a] [E] [a]
+
+Ref. To, to jest Chrystus Pan     [C] [G] [e]
+co ludziom z nieba został dan     [a] [F] [E]
+Śpiesz, śpiesz Mu oddać cześć!    [C] [G] [e]
+To Jezus, Syn Maryi               [a] [E] [a]
+
+2. Dlaczego leży w stajni tej
+wśród zwierząt w podłym żłobie
+Bezgrzeszny, grzesznym ludziom śle
+nadzieję w swoim słowie
+
+Ref. To, to jest Chrystus Pan
+
+3. Przynieście Jemu dary swe
+królowie i wieśniacy
+Przez Niego Bóg zbawienie śle
+dzisiejszej dziwnej nocy
+
+Ref. Brzmij, brzmij ma pieśni chwał
+Bóg grzesznym ludziom Zbawcę dał!
+Cud! Cud, bo w żłobie śpi
+Dzieciątko, Syn Maryi
+
+
 `;
 
 const parsedSongs = parseSongs(rawSongs);
