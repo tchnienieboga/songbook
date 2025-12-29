@@ -5104,14 +5104,14 @@ sianka pod główeczki.   [a] [D7] [G]
 {title: Gore gwiazda Jezusowi}
 {number: 250}
 
-1. Gore gwiazda Jezusowi        [h] [D]
-W obłoku, w obłoku              [e] [Fis]
-Józef z Panną asystują          [h] [D]
-Przy boku, przy boku            [e] [Fis]
+1. Gore gwiazda Jezusowi        [d] [F]
+W obłoku, w obłoku              [g] [A]
+Józef z Panną asystują          [d] [F]
+Przy boku, przy boku            [g] [A]
 
-Ref. x2 Hejże ino dyna, dyna,   [D] [A]
-Narodził się Bóg dziecina       [D] [A]
-W Betlejem, w Betlejem.         [D] [e] [Fis] [h]
+Ref. x2 Hejże ino dyna, dyna,   [d] [A]
+Narodził się Bóg dziecina       [d] [A]
+W Betlejem, w Betlejem.         [F] [g] [A] [d]
 
 2. Wół i osioł w parze służą przy żłobie, przy żłobie
 Huczą, buczą delikatnej osobie, osobie.
@@ -5724,15 +5724,15 @@ racz wziąć na własność mnie.
 {title: Cóż to za Dziecię}
 {number: 268}
 
-1. Cóż to za Dziecię słodko śpi   [a] [C] [G] [e]
-na sianie, w twardym żłobie?      [a] [F] [E]
-Aniołów pieśń dla niego brzmi     [a] [C] [G] [e]
-wśród pól w tej nocnej dobie.     [a] [E] [a]
+1. Cóż to za Dziecię słodko śpi   [d] [F] [C] [a]
+na sianie, w twardym żłobie?      [d] [G] [A7]
+Aniołów pieśń dla niego brzmi     [d] [F] [C] [a]
+wśród pól w tej nocnej dobie.     [d] [A] [d] [(C)]
 
-Ref. To, to jest Chrystus Pan     [C] [G] [e]
-co ludziom z nieba został dan     [a] [F] [E]
-Śpiesz, śpiesz Mu oddać cześć!    [C] [G] [e]
-To Jezus, Syn Maryi               [a] [E] [a]
+Ref. To, to jest Chrystus Pan     [F] [C] [a]
+co ludziom z nieba został dan     [d] [G] [A7]
+Śpiesz, śpiesz Mu oddać cześć!    [F] [C] [a]
+To Jezus, Syn Maryi               [d] [A7] [d] [(C)]
 
 2. Dlaczego leży w stajni tej
 wśród zwierząt w podłym żłobie
@@ -5750,6 +5750,7 @@ Ref. Brzmij, brzmij ma pieśni chwał
 Bóg grzesznym ludziom Zbawcę dał!
 Cud! Cud, bo w żłobie śpi
 Dzieciątko, Syn Maryi
+
 
 
 `;
