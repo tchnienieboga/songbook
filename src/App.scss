@@ -43,7 +43,9 @@ $container-max-widths: (
 );
 
 $body-bg: #ced4da;
-$grid-gutter-width: 20px;
+$modal-content-bg: #ffffff;
+$input-bg: #ffffff;
+$min-contrast-ratio: 2.5;
 
 $blue:       #007bff;
 $indigo:     #6610f2;
@@ -57,6 +59,12 @@ $teal:       #20c997;
 $cyan:       #17a2b8;
 $gray:       #c2bcb4;
 $lightgray:  #eae3d9;
+
+$link-decoration: none;
+
+$border-radius:    .25rem;
+$border-radius-sm: .2rem;
+$border-radius-lg: .3rem;
 
 @import '~bootstrap/scss/bootstrap';
 

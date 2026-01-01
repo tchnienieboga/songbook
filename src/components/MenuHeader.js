@@ -4,53 +4,62 @@ import Button from 'react-bootstrap/Button';
 import Star from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faCaretUp, faListUl, faTimes, faTrash} from '@fortawesome/free-solid-svg-icons';
-import classNames from 'classnames';
 
-const MenuHeader = ({onlyStarred, toggleOnlyStarred, starredCount, selectedSong, searchText, setSearchText, onClose}) => {
+const MenuHeader = ({
+                        onlyStarred,
+                        toggleOnlyStarred,
+                        starredCount,
+                        selectedSong,
+                        searchText,
+                        setSearchText,
+                        onClose
+                    }) => {
     const changeSearchText = (event) => {
         setSearchText(event.target.value);
     };
 
     return <>
-        <div className="col-10 px-1">
-            <div className="form-row px-1">
-                {!!starredCount
-                    ? <Button className="mx-1" variant={'info'} onClick={toggleOnlyStarred}>
-                        {onlyStarred
-                            ? <>
-                                <FontAwesomeIcon icon={faListUl} role="button" size={"lg"} />
-                            </>
-                            : <>
-                                <Star mode="starred" />
-                                <span className={classNames({ 'font-weight-bold': onlyStarred })}>&nbsp;{starredCount}</span>
-                            </>}
-                    </Button>
-                    : null}
-                {!onlyStarred
-                    ? <input type="search" className="form-control col-8 mx-2" placeholder="Szukaj"
-                        autoCapitalize="none" autoCorrect="off"
-                        value={searchText} onChange={changeSearchText} />
-                    : !!selectedSong
-                        ? <>
-                            <Button className="ml-3" variant={'success'} disabled={!selectedSong.moveUp} onClick={selectedSong.moveUp}>
-                                <FontAwesomeIcon icon={faCaretUp} role="button" size={"lg"} />
-                            </Button>
-                            <Button className="ml-1" variant={'success'} disabled={!selectedSong.moveDown} onClick={selectedSong.moveDown}>
-                                <FontAwesomeIcon icon={faCaretDown} role="button" size={"lg"} />
-                            </Button>
-                            <Button className="ml-4" variant={'danger'} onClick={selectedSong.toggleStarred}>
-                                <FontAwesomeIcon icon={faTrash} role="button" size={"lg"} />
-                            </Button>
-                        </>
-                        : <input type="text" readOnly={true}
-                            className="form-control-plaintext col-8 ml-1 font-weight-bold"
-                            value={`Wybrane`} />
-            }
+        {!!starredCount
+            ? <div className="me-2">
+                <Button variant={'info'} onClick={toggleOnlyStarred}>
+                    {onlyStarred
+                        ? <FontAwesomeIcon icon={faListUl} role="button" size={"lg"}/>
+                        : <>
+                            <Star mode="starred"/>
+                            <span>&nbsp;{starredCount}</span>
+                        </>}
+                </Button>
             </div>
-        </div>
-        <div className="col-2 px-1">
-            <Button className="float-right" variant={'light'} onClick={onClose}>
-                <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose} />
+            : null}
+        {!onlyStarred
+            ? <div className="me-2">
+                <input type="search" className="form-control" placeholder="Szukaj"
+                       autoCapitalize="none" autoCorrect="off"
+                       value={searchText} onChange={changeSearchText}/>
+            </div>
+            : !!selectedSong
+                ? <>
+                    <Button className="ms-2 me-1" variant={'success'} disabled={!selectedSong.moveUp}
+                            onClick={selectedSong.moveUp}>
+                        <FontAwesomeIcon icon={faCaretUp} role="button" size={"lg"}/>
+                    </Button>
+                    <Button className="me-3" variant={'success'} disabled={!selectedSong.moveDown}
+                            onClick={selectedSong.moveDown}>
+                        <FontAwesomeIcon icon={faCaretDown} role="button" size={"lg"}/>
+                    </Button>
+                    <Button className="me-1" variant={'danger'} onClick={selectedSong.toggleStarred}>
+                        <FontAwesomeIcon icon={faTrash} role="button" size={"lg"}/>
+                    </Button>
+                </>
+                :
+                <div className="ms-2">
+                    <input type="text" readOnly={true} className="form-control-plaintext fw-bold"
+                           value={`Wybrane: ${starredCount}`}/>
+                </div>
+        }
+        <div className="ms-auto">
+            <Button variant={'light'} onClick={onClose}>
+                <FontAwesomeIcon icon={faTimes} role="button" size={"lg"} onClick={onClose}/>
             </Button>
         </div>
     </>;

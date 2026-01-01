@@ -1,15 +1,15 @@
 import React, {useEffect, useRef, useState} from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-bootstrap/Modal';
+import {Modal} from "react-bootstrap";
 import MenuSong from './MenuSong';
 import MenuHeader from './MenuHeader';
 import {smallLatinLetters} from '../utils/text';
 
-const Menu = ({ songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose }) => {
+const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef(null);
- 
+
     useEffect(() => {
         if (!show || onlyStarred) {
             setSearchText('');
@@ -49,8 +49,8 @@ const Menu = ({ songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred,
 
     return (
         <Modal show={show} onHide={onClose} scrollable={true} animation={false}>
-            <Modal.Header className="py-2 px-1">
-                <MenuHeader onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred} 
+            <Modal.Header className="py-2 px-2">
+                <MenuHeader onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
                             starredCount={starredCount} selectedSong={selectedSong}
                             searchText={searchText} setSearchText={setSearchText} onClose={onClose}/>
             </Modal.Header>
@@ -62,6 +62,12 @@ const Menu = ({ songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred,
                     </React.Fragment>
                 )}
             </Modal.Body>
+            {!onlyStarred
+                ? <Modal.Footer className="py-0">
+                    <p className="text-secondary small">„Tchnienie Boga” - Śpiewnik v{process.env.REACT_APP_VERSION}</p>
+                </Modal.Footer>
+                : null
+            }
         </Modal>
     );
 }
