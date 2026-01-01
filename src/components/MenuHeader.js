@@ -25,14 +25,15 @@ const MenuHeader = ({
                     {onlyStarred
                         ? <FontAwesomeIcon icon={faListUl} role="button" size={"lg"}/>
                         : <>
-                            <Star mode="starred"/>
-                            <span>&nbsp;{starredCount}</span>
+                            <span className="sb-no-wrap">
+                                <Star mode="starred"/>&nbsp;{starredCount}
+                            </span>
                         </>}
                 </Button>
             </div>
             : null}
         {!onlyStarred
-            ? <div className="me-2">
+            ? <div className="me-2 flex-grow-1">
                 <input type="search" className="form-control" placeholder="Szukaj"
                        autoCapitalize="none" autoCorrect="off"
                        value={searchText} onChange={changeSearchText}/>
