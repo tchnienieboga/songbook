@@ -54,8 +54,7 @@ const MenuHeader = ({
                 </>
                 :
                 <div className="ms-2">
-                    <input type="text" readOnly={true} className="form-control-plaintext fw-bold"
-                           value={`Wybrane: ${starredCount}`}/>
+                    <span className="fw-bold sb-no-wrap">Wybrane <Star mode="starred"/>&nbsp;{starredCount}</span>
                 </div>
         }
         <div className="ms-auto">
