@@ -40,8 +40,18 @@ export default defineConfig({
 
         })
     ],
+    css: {
+        preprocessorOptions: {
+            scss: {
+                api: 'modern-compiler',
+                quietDeps: true,
+                silenceDeprecations: ['import']
+            }
+        }
+    },
     server: {
-      open: true
+        host: true,
+        open: true
     },
     build: {
         outDir: 'build'

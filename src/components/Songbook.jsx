@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
@@ -9,16 +9,18 @@ import usePersistentState from '../hooks/usePersistentState';
 
 const Songbook = ({parsedSongs}) => {
 
-    const { 
+    const songContainer = useRef(null);
+
+    const {
         songs,
         setChosenSong,
         starredCount,
         onlyStarred,
         selectedSong,
-        toggleOnlyStarred,
-        swipeChangeSong
-    } = useSongs(parsedSongs);
-    const [zoomLevel, pinchZoomLevel] = useZoomLevel(1, 20, 5);
+        toggleOnlyStarred
+    } = useSongs(parsedSongs, songContainer);
+
+    const [zoomLevel] = useZoomLevel(1, 20, 5, songContainer);
     const [menuShown, setMenuShown] = usePersistentState('menuShown', false);
     const [chordsShown, setChordsShown] = usePersistentState('chordsShown', true);
 
@@ -40,7 +42,7 @@ const Songbook = ({parsedSongs}) => {
             {!menuShown && <MenuButtons onlyStarred={onlyStarred} chordsShown={chordsShown}
                                         onClickMenu={openMenu} onClickGuitar={chordsShown ? hideChords : showChords}/>}
 
-            <div {...swipeChangeSong()} {...pinchZoomLevel()}
+            <div ref={songContainer}
                  className={`container-lg pt-1 min-vh-100 bg-white songbook zoom-level-${zoomLevel}`}>
                 {!!chosenSong && <Song song={chosenSong} starredCount={starredCount} chordsShown={chordsShown}/>}
             </div>

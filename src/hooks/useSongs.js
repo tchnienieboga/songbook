@@ -1,8 +1,8 @@
 import usePersistentState from './usePersistentState';
-import {useDrag} from 'react-use-gesture';
+import {useDrag} from '@use-gesture/react';
 import {useEffect} from 'react';
 
-const useSongs = (parsedSongs) => {
+const useSongs = (parsedSongs, gestureTarget) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
@@ -86,11 +86,13 @@ const useSongs = (parsedSongs) => {
 
     const toggleOnlyStarred = () => setOnlyStarred(current => !current);
 
-    const swipeChangeSong = useDrag(state => {
+    useDrag(state => {
         const [swipeX] = state.swipe;
         if (swipeX !== 0) {
             swipe(swipeX);
         }
+    }, {
+        target: gestureTarget
     });
 
     return {
@@ -98,8 +100,7 @@ const useSongs = (parsedSongs) => {
         setChosenSong,
         starredCount,
         onlyStarred,
-        toggleOnlyStarred,
-        swipeChangeSong
+        toggleOnlyStarred
     };
 
 };
