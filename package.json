@@ -1,21 +1,20 @@
 {
   "name": "songbook",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "homepage": "https://spiewnik.tchnienieboga.pl",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "@fortawesome/fontawesome-svg-core": "1.2.34",
-    "@fortawesome/free-regular-svg-icons": "5.15.2",
-    "@fortawesome/free-solid-svg-icons": "5.15.2",
-    "@fortawesome/react-fontawesome": "0.1.14",
+    "@fortawesome/fontawesome-svg-core": "7.1.0",
+    "@fortawesome/free-regular-svg-icons": "7.1.0",
+    "@fortawesome/free-solid-svg-icons": "7.1.0",
+    "@fortawesome/react-fontawesome": "3.1.1",
     "@use-gesture/react": "10.3.1",
     "bootstrap": "5.3.8",
     "classnames": "2.5.1",
     "prop-types": "15.7.2",
-    "react": "16.14.0",
+    "react": "18.3.1",
     "react-bootstrap": "2.10.10",
-    "react-dom": "16.14.0"
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "5.1.2",
