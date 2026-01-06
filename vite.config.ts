@@ -1,10 +1,14 @@
 import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import {VitePWA} from 'vite-plugin-pwa';
+import checker from "vite-plugin-checker";
 
 export default defineConfig({
     plugins: [
         react(),
+        checker({
+            typescript: true
+        }),
         VitePWA({
             registerType: 'autoUpdate',
             includeAssets: ['favicon.ico'],
@@ -43,7 +47,6 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             scss: {
-                api: 'modern-compiler',
                 quietDeps: true,
                 silenceDeprecations: ['import']
             }

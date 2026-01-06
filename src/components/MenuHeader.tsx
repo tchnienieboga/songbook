@@ -1,9 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, {ChangeEventHandler, Dispatch, SetStateAction} from 'react';
 import Button from 'react-bootstrap/Button';
-import Star from './Star';
+import Star, {Mode} from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCaretDown, faCaretUp, faListUl, faTimes, faTrash} from '@fortawesome/free-solid-svg-icons';
+import {Song} from "../utils/types";
+
+interface MenuHeaderProps {
+    onlyStarred: boolean;
+    toggleOnlyStarred: () => void;
+    starredCount: number;
+    selectedSong?: Song;
+    searchText: string;
+    setSearchText: Dispatch<SetStateAction<string>>;
+    onClose: () => void;
+}
 
 const MenuHeader = ({
                         onlyStarred,
@@ -13,8 +23,8 @@ const MenuHeader = ({
                         searchText,
                         setSearchText,
                         onClose
-                    }) => {
-    const changeSearchText = (event) => {
+                    }: MenuHeaderProps) => {
+    const changeSearchText: ChangeEventHandler<HTMLInputElement> = (event) => {
         setSearchText(event.target.value);
     };
 
@@ -26,7 +36,7 @@ const MenuHeader = ({
                         ? <FontAwesomeIcon icon={faListUl} role="button" size={"lg"}/>
                         : <>
                             <span className="sb-no-wrap">
-                                <Star mode="starred"/>&nbsp;{starredCount}
+                                <Star mode={Mode.STARRED}/>&nbsp;{starredCount}
                             </span>
                         </>}
                 </Button>
@@ -54,7 +64,7 @@ const MenuHeader = ({
                 </>
                 :
                 <div className="ms-2">
-                    <span className="fw-bold sb-no-wrap">Wybrane <Star mode="starred"/>&nbsp;{starredCount}</span>
+                    <span className="fw-bold sb-no-wrap">Wybrane <Star mode={Mode.STARRED}/>&nbsp;{starredCount}</span>
                 </div>
         }
         <div className="ms-auto">
@@ -63,16 +73,6 @@ const MenuHeader = ({
             </Button>
         </div>
     </>;
-}
-
-MenuHeader.propTypes = {
-    onlyStarred: PropTypes.bool.isRequired,
-    toggleOnlyStarred: PropTypes.func.isRequired,
-    starredCount: PropTypes.number.isRequired,
-    selectedSong: PropTypes.object,
-    searchText: PropTypes.string.isRequired,
-    setSearchText: PropTypes.func.isRequired,
-    onClose: PropTypes.func.isRequired
 }
 
 export default MenuHeader;

@@ -1,16 +1,25 @@
 import usePersistentState from './usePersistentState';
-import {useGesture} from '@use-gesture/react';
+import {Target, useGesture} from '@use-gesture/react';
 import {useEffect, useState} from 'react';
+import {ParsedSong, Song, SongState} from "../utils/types";
 
-const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}) => {
+interface UseSongsParameters {
+    parsedSongs: ParsedSong[];
+    minZoom: number;
+    maxZoom: number;
+    defaultZoom: number;
+    gesturesTarget: Target
+}
+
+const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: UseSongsParameters) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
-    const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
+    const [starredSongs, setStarredSongs] = usePersistentState<number[]>('starredSongs', []);
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
-    const [selectedSong, setSelectedSong] = usePersistentState('selectedSong', null);
+    const [selectedSong, setSelectedSong] = usePersistentState<number | null>('selectedSong', null);
     const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', defaultZoom);
-    const [initialDistance, setInitialDistance] = useState(null);
-    const [initialZoomLevel, setInitialZoomLevel] = useState(null);
+    const [initialDistance, setInitialDistance] = useState<number | null>(null);
+    const [initialZoomLevel, setInitialZoomLevel] = useState<number | null>(null);
 
     const starredCount = starredSongs.length;
 
@@ -24,7 +33,7 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}) 
         }
     }, [onlyStarred, setOnlyStarred, chosenSong, setChosenSong, starredSongs]);
 
-    const songState = (songNumber) => {
+    const songState = (songNumber: number): SongState => {
         const chosen = chosenSong === songNumber;
         const starredSongsIndex = starredSongs.indexOf(songNumber);
         const starredNumber = starredSongsIndex + 1;
@@ -73,29 +82,32 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}) 
         };
     };
 
-    const mapSong = parsedSong => ({
+    const mapSong = (parsedSong: ParsedSong): Song => ({
         ...parsedSong,
         ...songState(parsedSong.number)
     });
 
-    const getParsedStarredSongs = () => starredSongs.map(number => parsedSongs.find(ps => ps.number === number));
+    const getParsedStarredSongs = (): ParsedSong[] => {
+        return starredSongs.flatMap(number => {
+            const found = parsedSongs.find(ps => ps.number === number);
+            return found ? [found] : [];
+        });
+    };
     const songs = (onlyStarred ? getParsedStarredSongs() : parsedSongs).map(mapSong);
 
-    const swipe = (swipeX) => {
+    const swipe = (swipeX: number) => {
         const chosenIndex = songs.findIndex(song => song.chosen);
         const newIndex = chosenIndex - swipeX;
         const newIndexRolled = newIndex >= songs.length ? 0 : newIndex < 0 ? songs.length - 1 : newIndex;
         setChosenSong(songs[newIndexRolled].number);
     };
 
-    const pinchStart = (distance) => {
-
+    const pinchStart = (distance: number) => {
         setInitialDistance(distance);
         setInitialZoomLevel(zoomLevel);
     }
-    const pinchContinue = (distance) => {
-
-        if (!initialDistance) {
+    const pinchContinue = (distance: number) => {
+        if (initialDistance === null || initialZoomLevel === null) {
             return;
         }
         const ratio = distance / initialDistance;

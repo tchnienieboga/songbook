@@ -1,14 +1,20 @@
 import React from 'react';
 import { memo } from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Star from './Star';
+import Star, {Mode, StarMode} from './Star';
+import {Song} from "../utils/types";
 
-const MenuSong = memo(({song, chooseSong, onlyStarred}) => {
+interface MenuSongProps {
+    song: Song;
+    chooseSong: (number: number) => void;
+    onlyStarred: boolean;
+}
+
+const MenuSong = memo(({song, chooseSong, onlyStarred}: MenuSongProps) => {
     const onClickSong = () => chooseSong(song.number);
-    const starMode = onlyStarred
-        ? (song.selected ? 'selected' : 'starred')
-        : (song.starred ? 'starred' : 'plain');
+    const starMode: StarMode = onlyStarred
+        ? (song.selected ? Mode.SELECTED : Mode.STARRED)
+        : (song.starred ? Mode.STARRED : Mode.PLAIN);
     const onClickStar = onlyStarred ? song.toggleSelected : song.toggleStarred;
     return <span className={classNames('sb-menu-songtitle', { 'sb-starred-song': song.starred })}>
         <span onClick={onClickStar}>
@@ -25,11 +31,5 @@ const MenuSong = memo(({song, chooseSong, onlyStarred}) => {
         </a>
     </span>;
 });
-
-MenuSong.propTypes = {
-    song: PropTypes.object.isRequired,
-    chooseSong: PropTypes.func.isRequired,
-    onlyStarred: PropTypes.bool.isRequired
-}
 
 export default MenuSong;

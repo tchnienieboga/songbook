@@ -184,15 +184,15 @@ $link-decoration: none;
 
 .sb-star {
 
-  &.sb-star-plain {
+  &.sb-star-mode-plain {
     color: $lightgray;
   }
 
-  &.sb-star-starred {
+  &.sb-star-mode-starred {
     color: $yellow;
   }
 
-  &.sb-star-selected {
+  &.sb-star-mode-selected {
     color: $red;
   }
 

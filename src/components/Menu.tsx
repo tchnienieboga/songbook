@@ -1,14 +1,24 @@
-import React, {useEffect, useRef, useState} from 'react';
-import PropTypes from 'prop-types';
+import React, {Fragment, useEffect, useRef, useState} from 'react';
 import {Modal} from "react-bootstrap";
 import MenuSong from './MenuSong';
 import MenuHeader from './MenuHeader';
 import {smallLatinLetters} from '../utils/text';
+import {Song} from "../utils/types";
 
-const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}) => {
+interface MenuProps {
+    songs: Song[];
+    chooseSong: (number: number) => void;
+    starredCount: number;
+    onlyStarred: boolean;
+    toggleOnlyStarred: () => void;
+    show: boolean;
+    onClose: () => void;
+}
+
+const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}: MenuProps) => {
 
     const [searchText, setSearchText] = useState('');
-    const songToScrollRef = useRef(null);
+    const songToScrollRef = useRef<HTMLBRElement>(null);
 
     useEffect(() => {
         if (!show || onlyStarred) {
@@ -17,9 +27,14 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         scrollToSong();
     }, [show, onlyStarred]);
 
-    const getSearchPhrase = () => !searchText.trim() ? undefined
-        : !isNaN(searchText) ? parseInt(searchText)
-            : smallLatinLetters(searchText.trim());
+    const getSearchPhrase = () => {
+        const trimmed = searchText.trim();
+        if (!trimmed) {
+            return undefined;
+        }
+        const numericValue = parseInt(trimmed, 10);
+        return Number.isNaN(numericValue) ? smallLatinLetters(trimmed) : numericValue;
+    };
 
     const searchPhrase = getSearchPhrase();
 
@@ -29,7 +44,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         }
     }, [searchPhrase]);
 
-    const filterSong = (song) => {
+    const filterSong = (song: Song): boolean => {
         if (!searchPhrase) {
             return true;
         }
@@ -56,10 +71,10 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
             </Modal.Header>
             <Modal.Body>
                 {songs.filter(song => filterSong(song)).map((song, index) =>
-                    <React.Fragment key={song.number}>
+                    <Fragment key={song.number}>
                         <MenuSong song={song} chooseSong={chooseSong} onlyStarred={onlyStarred}/>
                         <br ref={index === songToScroll ? songToScrollRef : null}/>
-                    </React.Fragment>
+                    </Fragment>
                 )}
             </Modal.Body>
             <Modal.Footer className="py-0">
@@ -68,15 +83,5 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
         </Modal>
     );
 }
-
-Menu.propTypes = {
-    songs: PropTypes.array.isRequired,
-    chooseSong: PropTypes.func.isRequired,
-    starredCount: PropTypes.number.isRequired,
-    onlyStarred: PropTypes.bool.isRequired,
-    toggleOnlyStarred: PropTypes.func.isRequired,
-    show: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired
-};
 
 export default Menu;

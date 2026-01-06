@@ -1,9 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Chord from './Chord';
 import classNames from 'classnames';
+import {Song} from "../utils/types";
 
-const Song = ({song, chordsShown, starredCount}) => {
+interface SongViewProps {
+    song: Song;
+    chordsShown: boolean;
+    starredCount: number;
+}
+
+const SongView = ({song, chordsShown, starredCount}: SongViewProps) => {
     return <>
         <div className="row songtitle mt-1 mb-1">
             <div className={classNames('col-10', {'sb-starred-song': song.starred})}>
@@ -25,10 +31,4 @@ const Song = ({song, chordsShown, starredCount}) => {
 
 }
 
-Song.propTypes = {
-    song: PropTypes.object.isRequired,
-    chordsShown: PropTypes.bool.isRequired,
-    starredCount: PropTypes.number.isRequired
-};
-
-export default Song;
+export default SongView;
