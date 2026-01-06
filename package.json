@@ -1,6 +1,6 @@
 {
   "name": "songbook",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://spiewnik.tchnienieboga.pl",
   "private": true,
   "dependencies": {
