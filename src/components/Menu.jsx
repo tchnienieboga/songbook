@@ -62,12 +62,9 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                     </React.Fragment>
                 )}
             </Modal.Body>
-            {!onlyStarred
-                ? <Modal.Footer className="py-0">
-                    <p className="text-secondary small">Śpiewnik - Tchnienie Boga v{import.meta.env.VITE_VERSION}</p>
-                </Modal.Footer>
-                : null
-            }
+            <Modal.Footer className="py-0">
+                <p className="text-secondary small">Śpiewnik - Tchnienie Boga v{import.meta.env.VITE_VERSION}</p>
+            </Modal.Footer>
         </Modal>
     );
 }

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Song from './Song';
 import Menu from './Menu';
 import MenuButtons from './MenuButtons';
-import useZoomLevel from '../hooks/useZoomLevel';
 import useSongs from '../hooks/useSongs';
 import usePersistentState from '../hooks/usePersistentState';
 
@@ -16,11 +15,16 @@ const Songbook = ({parsedSongs}) => {
         setChosenSong,
         starredCount,
         onlyStarred,
-        selectedSong,
-        toggleOnlyStarred
-    } = useSongs(parsedSongs, songContainer);
+        toggleOnlyStarred,
+        zoomLevel
+    } = useSongs({
+        parsedSongs,
+        minZoom: 1,
+        maxZoom: 20,
+        defaultZoom: 5,
+        gesturesTarget: songContainer
+    });
 
-    const [zoomLevel] = useZoomLevel(1, 20, 5, songContainer);
     const [menuShown, setMenuShown] = usePersistentState('menuShown', false);
     const [chordsShown, setChordsShown] = usePersistentState('chordsShown', true);
 
@@ -47,9 +51,9 @@ const Songbook = ({parsedSongs}) => {
                 {!!chosenSong && <Song song={chosenSong} starredCount={starredCount} chordsShown={chordsShown}/>}
             </div>
 
-        <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount} selectedSong={selectedSong}
-            onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
-            show={menuShown} onClose={closeMenu} />
+            <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount}
+                  onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
+                  show={menuShown} onClose={closeMenu}/>
 
         </React.Fragment>
     );

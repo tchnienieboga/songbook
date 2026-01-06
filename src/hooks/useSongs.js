@@ -1,13 +1,17 @@
 import usePersistentState from './usePersistentState';
-import {useDrag} from '@use-gesture/react';
-import {useEffect} from 'react';
+import {useGesture} from '@use-gesture/react';
+import {useEffect, useState} from 'react';
 
-const useSongs = (parsedSongs, gestureTarget) => {
+const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}) => {
 
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState('starredSongs', []);
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
     const [selectedSong, setSelectedSong] = usePersistentState('selectedSong', null);
+    const [zoomLevel, setZoomLevel] = usePersistentState('zoomLevel', defaultZoom);
+    const [initialDistance, setInitialDistance] = useState(null);
+    const [initialZoomLevel, setInitialZoomLevel] = useState(null);
+
     const starredCount = starredSongs.length;
 
     useEffect(() => {
@@ -84,23 +88,53 @@ const useSongs = (parsedSongs, gestureTarget) => {
         setChosenSong(songs[newIndexRolled].number);
     };
 
-    const toggleOnlyStarred = () => setOnlyStarred(current => !current);
+    const pinchStart = (distance) => {
 
-    useDrag(state => {
-        const [swipeX] = state.swipe;
-        if (swipeX !== 0) {
-            swipe(swipeX);
+        setInitialDistance(distance);
+        setInitialZoomLevel(zoomLevel);
+    }
+    const pinchContinue = (distance) => {
+
+        if (!initialDistance) {
+            return;
+        }
+        const ratio = distance / initialDistance;
+        const change = Math.floor(Math.log10(ratio) * 10);
+        const newZoomLevel = Math.min(Math.max(minZoom, initialZoomLevel + change), maxZoom);
+        setZoomLevel(newZoomLevel);
+    }
+
+    useGesture({
+        onDrag: ({swipe: [swipeX]}) => {
+            if (swipeX !== 0) {
+                swipe(swipeX);
+            }
+        },
+        onPinch: ({first, da: [distance]}) => {
+            if (first) {
+                pinchStart(distance);
+            }
+            pinchContinue(distance);
         }
     }, {
-        target: gestureTarget
+        target: gesturesTarget,
+        drag: {
+            swipe: {
+                distance: 30,
+                velocity: 0.1
+            }
+        }
     });
+
+    const toggleOnlyStarred = () => setOnlyStarred(current => !current);
 
     return {
         songs,
         setChosenSong,
         starredCount,
         onlyStarred,
-        toggleOnlyStarred
+        toggleOnlyStarred,
+        zoomLevel
     };
 
 };
