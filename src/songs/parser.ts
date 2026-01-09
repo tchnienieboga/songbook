@@ -1,5 +1,5 @@
-import {smallLatinLetters} from './text';
-import {ParsedSong, SongLine} from "./types";
+import {smallLatinLetters} from '../utils/text';
+import {ParsedSong, SongLine} from "../utils/types";
 
 const LineType = {
     DIRECTIVE: 'DIRECTIVE',

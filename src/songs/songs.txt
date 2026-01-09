@@ -1,7 +1,4 @@
-import {parseSongs} from '../utils/parser';
 
-// language=TEXT
-const rawSongs = `
 {title:  Panie, zmiłuj się}
 {number: 1}
  [Cadd9] [G] [e7] [D]
@@ -37,11 +34,11 @@ Jezu Chryste, Jezu Chryste, Jezu Chryste! [D] [E] [D7+] [E7]
 
 Ref. Gloria in excelsis Deo, Gloria, Gloria!
 
-Panie Boże, Baranku Boży Synu Ojca, 
+Panie Boże, Baranku Boży Synu Ojca,
 Który gładzisz grzechy świata, zmiłuj się nad nami
 Który gładzisz grzechy świata, przyjm błaganie nasze,
 Który siedzisz po prawicy Ojca, zmiłuj się nad nami.
-Albowiem tylko Tyś jest Święty, tylko tyś jest Panem, 
+Albowiem tylko Tyś jest Święty, tylko tyś jest Panem,
 Tylko tyś najwyższy, Jezu Chryste, z Duchem Świętym,
 W chwale Boga Ojca.
 
@@ -53,7 +50,7 @@ Ref. Chwała na wysokości! [A] [D] [E]
 Chwała Jedynemu Bogu! [A] [D] [E]
 Chwała na wysokości! [A] [D] [E]
 Chwała, a ludziom pokój! [A] [D] [E]
- 
+
 1. Chwalimy Cię, błogosławimy Cię [D] [E] [A]
 Wielbimy Cię, wysławiamy [D] [E] [A]
 Dzięki Ci składamy [D] [E] [fis]
@@ -92,7 +89,7 @@ Alleluja, alleluja, alleluja, alleluuuuja!   |2x
 {title:  O usłysz mój głos - modlitwa wiernych}
 {number: 5}
                             [G7]
-O usłysz mój głos!          [c] 
+O usłysz mój głos!          [c]
 O usłysz mój głos!          [B]
 Przyjdź i wysłuchaj mnie.   [As] [G7] [c]
 ---
@@ -167,14 +164,14 @@ Jezusowi śpiewają, Jezusowi śpiewają, śpiewają!
 ---
 {title:  Gdy śliczna Panna}
 {number: 10}
-1. Gdy śliczna Panna        [D] [A] [h] 
+1. Gdy śliczna Panna        [D] [A] [h]
 Syna kołysała               [e] [G] [A7] [D]
 Z wielkim weselem           [D] [A] [h]
 tak Jemu śpiewała:          [e] [G] [A7] [D]
 
 Ref. Li, li, li, li, laj,   [h] [e] [G]
 moje Dzieciąteczko          [A] [G] [D]
-Li, li, li, li, laj,        [h] [G] [g] 
+Li, li, li, li, laj,        [h] [G] [g]
 śliczne Paniąteczko         [D] [e] [A] [D]
 
 2. Wszystko stworzenie śpiewaj Panu swemu
@@ -312,20 +309,20 @@ Lulaj, Synku, lulaj, Syneczku [e] [fis] [h]
 Pokój niesie ludziom wszem  [D] [D7] [G] [G7]
 A u żłobka Matka Święta     [C] [G]
 Czuwa sama uśmiechnięta     [C] [G]
-Nad Dzieciątka              [a] [D] [dis0]  
+Nad Dzieciątka              [a] [D] [dis0]
 Snem...                     [e] [cis7/5-]
 Nad Dzieciątka snem         [G] [D] [G]
 
-2. Cicha noc, święta noc, 
+2. Cicha noc, święta noc,
 Pastuszkowie od swych trzód
 Biegną wielce zadziwieni
 Za anielskim głosem pieni
 Gdzie się spełnił cud...
 Gdzie się spełnił cud.
 
-3. Cicha noc, święta noc, 
+3. Cicha noc, święta noc,
 Narodzony Boży Syn
-Pan wielkiego majestatu 
+Pan wielkiego majestatu
 Niesie dziś całemu światu
 Odkupienie win...
 Odkupienie win.
@@ -363,7 +360,7 @@ paść owieczki. /x2 [F] [C] [F]
 Solo akordeon x2 [B] [C] [F] [d7] [B] [C] [F]
 
 3. Wśród stajenki Bóg się rodzi co świat z grzechów oswobodzi.
-...Więc zaprowadź nas do Niego zagramy Mu krzesanego 
+...Więc zaprowadź nas do Niego zagramy Mu krzesanego
 na osłodę. /x2
 
 4. A co żeście mu przynieśli [G]
@@ -393,7 +390,7 @@ in excelsis Deo! [a] [e] [F] [f] [D9] [G] [C]
 2. Mówią do pasterzy, którzy trzód swych strzegli.
 Aby do Betlejem, czem prędzej pobiegli.
 
-Ref. Bo się narodził Zbawiciel, wszego świata Odkupiciel, 
+Ref. Bo się narodził Zbawiciel, wszego świata Odkupiciel,
 Gloria, gloria, gloria, in excelsis Deo!
 
 3. "O niebieskie Duchy i posłowie nieba.
@@ -460,19 +457,19 @@ zaufaj dziś Bogu, a na wieki będziesz żył.
 ---
 {title:  Drzewo krzyża surowe}
 {number: 23}
-1. Drzewo krzyża surowe, 
+1. Drzewo krzyża surowe,
 Tyś Ciało Chrystusowe dźwigało.
-Marii Panny lamenty 
+Marii Panny lamenty
 i bok święty rozcięty widziało.
 
-2. Na Ciebie krew i woda 
+2. Na Ciebie krew i woda
 i łaska Chrystusowa spłynęły.
-Na Tobie Kościół święty 
+Na Tobie Kościół święty
 i wiary fundamenty stanęły.
 
-3. Potężnym majestatem 
+3. Potężnym majestatem
 wysoko ponad światem górujesz.
-Przemija postać świata, 
+Przemija postać świata,
 a Ty po wszystkie lata królujesz.
 ---
 {title:  Dzięki za Twój krzyż}
@@ -553,7 +550,7 @@ Ref. To będzie Jezus, Jezus, Jezus. [C] [d]
 Żydowski Król, Boży Syn. [C] [d]
 
 2. Poznaję Twoją twarz, tyś był razem z Nim.
-Przyznaj, że Go znasz. Na co czekasz? Tyś jest Kefas. 
+Przyznaj, że Go znasz. Na co czekasz? Tyś jest Kefas.
 NIE ZNAM TEGO CZŁOWIEKA!
 Tyś uczniem Jego był, twoja mowa cię zdradza. Mów nie zwlekaj.
 NIE ZNAM TEGO CZŁOWIEKA!
@@ -618,7 +615,7 @@ Na cichy, ciemny kościół, dziecko wzywające Ciebie.
 
 Ref.: Rozpięty...
 
-3. A gdy nas będziesz sądził, Boskie miłosierdzie, 
+3. A gdy nas będziesz sądził, Boskie miłosierdzie,
 Prosimy, Twoje dzieci, nie sądź na miarę siebie.
 
 Ref.: Rozpięty…
@@ -640,7 +637,7 @@ On Bogiem Ojca mego, będę Go wywyższał.
 Wybrani Jego wodzowie zginęli w Morzu Czerwonym.
 Przepaści ich ogarnęły, jak głaz runęli w głębinę.
 
-4. Wyprowadziłeś lud swój i osadziłeś 
+4. Wyprowadziłeś lud swój i osadziłeś
 na górze Twojego dziedzictwa,
 w miejscu, które uczyniłeś swoim mieszkaniem.
 Pan Bóg jest Królem na zawsze i na wieki. / x2
@@ -696,7 +693,7 @@ Budziło ze snu to, co żyje na ziemi. [a7] [H7]
 Swym ciepłym tchnieniem, suszyło trawę [e] [D] [e] [H7]
 Całowało litośnie oczy łzawe. [e] [h7] [e] [D] [D7]
 
-Ref. 
+Ref.
 To dzień, dzień, dzień zmartwychwstania [G]
 To dzień, dzień, dzień ukazania się [D] [H7]
 Dzień, dzień, dzień zmartwychwstania [e]
@@ -839,13 +836,13 @@ Panie mój /2x [C] [c] [G]
 {title:  Swojego Ducha, Panie}
 {number: 38}
 Swojego Ducha, Panie,    [D]
-Wylej na nas dziś!       
+Wylej na nas dziś!
 Swojego Ducha, Panie,    [h]
-Wylej na nas dziś!       
+Wylej na nas dziś!
 Swojego Ducha, Panie,    [G]
-Wylej na nas dziś!       
+Wylej na nas dziś!
 Swojego Ducha, Panie,    [D]
-Wylej na nas dziś!       
+Wylej na nas dziś!
 
 Swojego Ducha, Panie,    [D]
 Wylej na nas dziś!       [cis7/5-] [Fis7]
@@ -1448,7 +1445,7 @@ Przychodzimy przed Twój tron,          [E7+] [Fis]
 chcemy widzieć Twoją moc               [gis] [H]
 i doświadczyć, Panie, łaski Twej. /x2  [E7+] [Fis] [Gis5]
 
-Tylko w Bogu moje jest zbawienie.      [E7+] [Fis] [gis] 
+Tylko w Bogu moje jest zbawienie.      [E7+] [Fis] [gis]
                                        [E7+] [Fis] [Gis]
 ---
 {title:  Więcej miłości, więcej mocy}
@@ -1972,7 +1969,7 @@ Aż na wieki.                            [A7]
 Oto moje serce, przecież wiesz,         [D] [A] [h]
 Tyś miłością mą jedyną jest             [fis] [G] [g6]
                                         [D7+]
-                                        
+
 ---
 {title:  Jestem tu, by wielbić}
 {number: 103}
@@ -2011,7 +2008,7 @@ Jezus daje pokój nam            [d] [C] [a] [d]
 Jemu składam dziękczynienie     [d] [C] [a] [d]
 Chwałę z serca mego dam         [d] [C] [a] [d]
 
-Ref. Jezus siłą mą,             [F] [C] 
+Ref. Jezus siłą mą,             [F] [C]
 Jezus pieśnią mego życia        [a] [d]
 Królem wiecznym On              [F] [C]
 niepojęty w mocy Swej           [a] [d]
@@ -2020,9 +2017,9 @@ szukałem do dzisiaj             [a] [d]
 Sam mi podał dłoń               [F] [C]
 bym zwyciężał każdy dzień       [a] [d]
 
-2. W Jego ranach uzdrowienie, 
+2. W Jego ranach uzdrowienie,
 w Jego śmierci życia dar.
-Jego krew to oczyszczenie, 
+Jego krew to oczyszczenie,
 Jego życie chwałą nam.
 
 Ref. Jezus siłą mą…
@@ -2164,14 +2161,14 @@ Przychodzisz do nas             [C] [D]
 Już od wieków                   [G] [e]
 By ofiarować Siebie nam         [C] [a7] [D] [D+]
 
-2. W tych kroplach wina Twoja krew, 
+2. W tych kroplach wina Twoja krew,
 Przelana za nas Panie mój.
-Tak wiele jej na krzyżu było 
+Tak wiele jej na krzyżu było
 By odkupić nas od win.
 
-3. Ty, Panie miłością jesteś, 
+3. Ty, Panie miłością jesteś,
 Ty Panie kochasz nas.
-I proszę Ciebie, by tak było, 
+I proszę Ciebie, by tak było,
 Wciąż przez wiele lat.
 ---
 {title:  Spocznij na nas, Duchu Pana}
@@ -2253,7 +2250,7 @@ Ref: Kiedyś wino i chleb…
 {title:  Duchu Święty ogarnij mnie}
 {number: 121}
 Duchu Święty ogarnij mnie           [C] [G] [E] [a]
-Otwórz oczy mego serca,             [F] [d] 
+Otwórz oczy mego serca,             [F] [d]
 Napełnij miłością                   [G] [G7]
 Duchu święty ja kocham Cię          [C] [G] [E] [a]
 Niech Twa święta wola spełni się    [d] [G7] [C]
@@ -2600,12 +2597,12 @@ Jezus jest z nami tu. [B] [C] [F]
 ---
 {title:  Niech zabrzmi Panu chwała w niebiosach}
 {number: 140}
-Ref. x2 Alleluja, Alleluja,     [fis] [E] 
+Ref. x2 Alleluja, Alleluja,     [fis] [E]
 Alleluja, Alleluja!             [D] [cis] [fis]
 
-1. Niech zabrzmi Panu               [fis] 
+1. Niech zabrzmi Panu               [fis]
 chwała w niebiosach,                [E] [fis]
-na wysokościach                     [cis] [D] 
+na wysokościach                     [cis] [D]
 cześć niech oddadzą,                [E] [fis]
 wielbijcie Pana, duchy niebieskie,  [fis] [E] [D] [fis]
 wielbicie Pana, Jego zastępy        [fis] [E] [cis] [fis]
@@ -2641,11 +2638,11 @@ Twoje usta dziś wyrzekły me imię.       [e] [A7] [D] [D7]
 Swoją barkę pozostawiam na brzegu,      [G] [A] [D] [H7]
 razem z Tobą nowy zacznę dziś łów.      [e] [A7] [D] [G] [D]
 
-2. Jestem ubogim człowiekiem, 
+2. Jestem ubogim człowiekiem,
 moim skarbem są ręce gotowe
 do pracy z Tobą i czyste serce.
 
-3. Ty potrzebujesz mych dłoni, 
+3. Ty potrzebujesz mych dłoni,
 mego serca młodego zapałem,
 mych kropli potu i samotności.
 
@@ -2730,11 +2727,11 @@ Ref.x3 Niepojęty, niezmierzony... [D] [A] [G] [h] [A] [G]
 {number: 146}
 
                                     [e] [h] [C] [a7/9]
-1. Witaj Pokarmie,                  [e] [h] 
+1. Witaj Pokarmie,                  [e] [h]
 W którym niezmierzony               [C] [D]
 Nieba i ziemie                      [e] [h]
 Twórca jest zamkniony,              [C] [D]
-Witaj napoju                        [G] [D] 
+Witaj napoju                        [G] [D]
 Zupełnie gaszący                    [a] [D4-3]
 Umysł pragnący.                     [G] [h] [e]
 
@@ -2907,7 +2904,7 @@ A noc tak jak dzień zajaśnieje [a] [G] [C] [d] [E]
 {title:  Mrok ogarnął całą ziemię}
 {number: 158}
 
-(Solo gitara x2)                    [fis] [E] [cis] [D7+] 
+(Solo gitara x2)                    [fis] [E] [cis] [D7+]
                                     [h] [cis] [E] [fis] [(E)]
 
 1. Mrok ogarnął całą ziemię         [fis] [E] [cis] [D7+]
@@ -2920,7 +2917,7 @@ by ci pomóc z upadku twego wyjść    [h] [cis] [fis]
 Byś nigdy więcej już nie błądził    [h] [cis] [fis]
 byś znalazł drogę w życiu tym.      [h] [cis] [fis]
 
-2. Jesteś przecież jeszcze          [fis] [E] 
+2. Jesteś przecież jeszcze          [fis] [E]
 młody.                              [cis] [D7+]
 Wiele możesz zdziałać.              [h] [cis] [D7+]
 Tylko życie tracisz swoje           [fis] [E] [cis] [D7+]
@@ -2928,10 +2925,10 @@ W różny sposób.                     [h] [cis] [E] [fis]
 
 Ref. x2: On przyszedł po to...      [h] [cis] [fis]
 
-(Solo skrzypce x2)                  [cis] [D7+] [A] [E] 
+(Solo skrzypce x2)                  [cis] [D7+] [A] [E]
                                     [cis] [D7+] [A]
 
-Jesteś przecież jeszcze             [fis] [E] 
+Jesteś przecież jeszcze             [fis] [E]
 młody.                              [cis] [D7+]
 Wiele możesz zdziałać.              [h] [cis] [D7+]
                                     [fis] [E] [fis]
@@ -2976,7 +2973,7 @@ Nauczył nas wołać do Ciebie.    [A] [D] [E] [E7]
 
 Ref.: Abba Ojcze,               [A] [D] [A] [E]
 Abba Ojcze!                     [A] [D] [A] [E]
-Abba, Abba Ojcze                [A] [Cis] [fis] [D]                      
+Abba, Abba Ojcze                [A] [Cis] [fis] [D]
 Abba Ojcze! (Ojcze!)            [A] [E] [A] [E7]
 
 2. Bo Kościół jak drzewo życia w wieczności zapuszcza korzenie
@@ -3010,7 +3007,7 @@ Ref.: Błogosław duszo moja …
 2. Tak jak ojciec nad swoimi dziećmi [e7/9] [G7+]
 Pan lituje się nad pokornym. [D]
 On oddala od nas nasze winy jak daleko wschód od zachodu.
-Jak wysoko niebo jest nad ziemią tak jest wielka dobroć dla ludzi, 
+Jak wysoko niebo jest nad ziemią tak jest wielka dobroć dla ludzi,
 którzy się Go boją.
 Dni człowieka są jak trawa, [e7/9]
 Kwitnie On jak polny kwiat. [e7/9]
@@ -3082,7 +3079,7 @@ Stoi pośród nas! [A] [H7] [E] [E7]
 Ma moc nas teraz uzdrawiać [A] [H7] [E]
 (uzdrowienia moc) [cis]
 Ma przebaczenia dar. [A] [H7] [E] [(H7)]
- 
+
 2. Ja wierzę Tobie, Panie. Wierzę, że Tyś Synem Boga jest.
 Zmarłeś i powstałeś, aby żyć i za cenę śmierci życie dać.
 
@@ -3171,13 +3168,13 @@ Ref. Lud Twój, Panie…
 {title:  Otwórz me oczy, chcę widzieć Jezusa}
 {number: 170}
 
-Otwórz me oczy,         [e] [A] 
+Otwórz me oczy,         [e] [A]
 Chcę widzieć Jezusa     [D] [h]
-I być bliżej Niego,     [e] [A7]      
+I być bliżej Niego,     [e] [A7]
 I kochać goręcej.       [D] [D7]
-Otwórz me uszy          [e] [A7]  
+Otwórz me uszy          [e] [A7]
 I naucz mnie słuchać.   [D] [h]
-Otwórz me oczy,         [e] [A7] 
+Otwórz me oczy,         [e] [A7]
 chcę widzieć Jezusa     [D]
                         [G] [g] [D]
 
@@ -3353,7 +3350,7 @@ Tyś wszystkim dla mnie jest i Ciebie uwielbiam
 błyskawic blask i grzmotów huk
 Błogosławieństwo mądrość,
 wdzięczność i moc, i chwałę
-niech przyjmie Pan, potężny Bóg 
+niech przyjmie Pan, potężny Bóg
 
 Ref. Święty, Święty, Święty...
 
@@ -3361,7 +3358,7 @@ Ref. Święty, Święty, Święty...
 gdy wspominam imię Twe
 Twe imię żywą wodą,
 oddechem mym i mocą
-Niepojęty, wielki Bóg 
+Niepojęty, wielki Bóg
 
 Ref. Święty, Święty, Święty...
 ---
@@ -3494,12 +3491,12 @@ Przecież spod Twojej nie wyjdziem opieki, [d] [C] [B] [a]
 Gdy Cię pośród nas czujemy. [e7/5-] [A] [A+]
 
 2. My za Chrystusa idziemy przykładem
-Czy w nieszczęściu, czy w niedoli. 
-On nam wytyczył i drogi, i szlaki, 
-Jak żyć według Ojca woli. 
-Boży Baranku co gładzisz grzech świata, 
-Aby lud Twój żył bezpieczny, 
-Uproś nam wiarę i miłość do brata, 
+Czy w nieszczęściu, czy w niedoli.
+On nam wytyczył i drogi, i szlaki,
+Jak żyć według Ojca woli.
+Boży Baranku co gładzisz grzech świata,
+Aby lud Twój żył bezpieczny,
+Uproś nam wiarę i miłość do brata,
 Daj nam pokój, pokój wieczny.
 ---
 {title:  Chwała Bogu Ojcu}
@@ -3550,7 +3547,7 @@ W świecie uwielbiajcie Go!
 {number: 189}
 
 Ref. Chwalcie Pana Niebios [e]
-Chwalcie Go na cytrze 
+Chwalcie Go na cytrze
 Chwalcie Króla świata, [D]
 bo On Bogiem jest [C] [D] [e]
 
@@ -3559,15 +3556,15 @@ Chcę chwalić Pana, jak długo będę żył [D] [C] [D] [e]
 Chcę śpiewać memu Bogu, póki będę istniał [e]
 Chcę Go wysławiać, śpiewać Alleluja! [D] [C] [D] [e]
 
-2. Szczęśliwy ten, któremu Pan jest pomocą 
-Kto ma nadzieję w Panu Bogu swym 
-W Bogu, który stworzył niebo i ziemię 
-Wszystko, co żyje śpiewa Alleluja! 
+2. Szczęśliwy ten, któremu Pan jest pomocą
+Kto ma nadzieję w Panu Bogu swym
+W Bogu, który stworzył niebo i ziemię
+Wszystko, co żyje śpiewa Alleluja!
 
-3. Pan Bóg króluje, wesel się ziemio 
-Bóg Twój Syjonie przez pokolenia 
-On dał Ci życie, On da ci wszystko 
-Śpiewaj Mu wysławiaj Go Alleluja! 
+3. Pan Bóg króluje, wesel się ziemio
+Bóg Twój Syjonie przez pokolenia
+On dał Ci życie, On da ci wszystko
+Śpiewaj Mu wysławiaj Go Alleluja!
 ---
 {title:  Wszystkie narody klaskajcie w dłonie}
 {number: 190}
@@ -3625,7 +3622,7 @@ O Zbawcza Hostio godna czci,
 Co lud do niebios wiedziesz bram:
 Znój srogi nęka wiernych Ci,
 Daj siłę, pomoc ześlij nam.
- 
+
 Jednemu w Trójcy Władcy ziem,
 Niech będzie chwała w każdy czas.
 Niech On wieczystym życiem swym.
@@ -3662,21 +3659,21 @@ chlebem przebaczenia karmisz moją duszę. [e] [e7] [Fis]
 {title:  Boże wieczny, Boże żywy}
 {number: 195}
 1. Boże wieczny, Boże żywy, [D5]
-Odkupicielu prawdziwy, 
-Wysłuchaj nasz głos płaczliwy. 
- 
+Odkupicielu prawdziwy,
+Wysłuchaj nasz głos płaczliwy.
+
 2. Któryś jest na wysokości, [D5]
 schyl nieba, użycz litości,
 spuść się w nasze głębokości.
- 
+
 3. O, niebieskie góry srogie, [D5] [G5] [D5]
 spuśćcie rosę na ubogie, [D5] [C5]
 dajcie nam zbawienie drogie. [C5] [A5] [D5]
- 
-4. Nie trzymajcie Przejrzanego, 
+
+4. Nie trzymajcie Przejrzanego,
 Chmury, swoim dżdżem naszego
 Przynieście Sprawiedliwego.
- 
+
 5. Przyjdź co rychlej, Miłosierny; [d] [G] [d]
 O Boże, człowiek mizerny [d] [C]
 Ciebie czeka, Tobie wierny. [C] [a7] [d]
@@ -3853,19 +3850,19 @@ i na ziemię noc spłynęła, [A] [D]
 tylko gwiazda świeci. [e] [Fis7] [h] [(A)]
 W ciemnej szopie Maria miła [D] [G] [A]
 tuli do snu Dziecię. [D] [A] [D]
-   
+
 Luli, la-a-aj, luli, luli, luli laj, [D] [G] [A]
 luli, la-a-aj, luli, luli, luli laj, luli laj. [D] [e] [Fis7] [h]
 
-2. Pochowały się ptaszęta 
-w ciepłą słomę pod strzechami. 
+2. Pochowały się ptaszęta
+w ciepłą słomę pod strzechami.
 Dzieci śpią w łóżeczkach.
 Zaśnij, prosi Matka Święta, zaśnij mój Syneczku.
 Luli, la-a-aj...
 
 3. Skrzy się mrozem śnieg na polach,
 już ucichły leśne szmery.
-Drzew wiatr nie porusza. 
+Drzew wiatr nie porusza.
 Maria płacze nad niedolą małego Jezusa
 Luli, la-a-aj…
 ---
@@ -3877,30 +3874,30 @@ My jako pielgrzymi przybywamy dzisiaj tu [D] [h]
 z różnych kontynentów, miast i wsi [G] [A]
 Dobrą Nowinę chcemy z mocą głosić światu  G A h
 każdy z nas jest Twoim misjonarzem [G] [A]
- 
+
 Tak jak Maryja chcemy odpowiedzieć "tak" [D] [A/Cis] [h] [D]
 na Twe wezwanie i Twój plan [G] [A]
 Niebo się raduje i rozbrzmiewa śpiewem [G] [Fis7] [h7] [E7]
 Cała Ziemia chwali Twoje dzieła [G] [A]
- 
+
 Ref. Oto ja - służebnica Pańska [D] [A] [h] [D]
 Niech mi się stanie według Słowa Twego x2 [G] [h] [A4-3]
- 
+
 Służebnicą jestem, córką Twoją jestem [D] [D7]
 Synem Twoim jestem [G] [A]
- 
+
 Tak jak Maryja chcemy teraz razem pójść [D] [A/Cis] [h] [D]
 jako Kościół niosąc Twoją Miłość [G] [A]
 Młodzi świadkowie i uczniowie [G] [Fis7] [h7] [E7]
 pełni wiary, radości, powołania! [G] [A]
- 
-Ref. Oto ja - służebnica Pańska... 
- 
+
+Ref. Oto ja - służebnica Pańska...
+
 Nie lękajcie się! Nie bójcie się! [Fis7] [G]
 zanieść światu Bożą Miłość [e7] [h] [A]
 oddać Mu życie swe, tak jak Maryja [Fis7] [G]
 wskazuje nam, jak służebnicą być [e7] [G] [h] [A]
- 
+
 Ref. Oto ja - służebnica Pańska...
 ---
 {title:  Memu Bogu, królowi}
@@ -3927,14 +3924,14 @@ Niech mnie ogarnie, [C]
 Panie, łaska Twa [D]
 Niech Twoja moc przemienia mnie [G] [e]
 Pełen miłości Twej, zaśpiewam Tobie pieśń! [C] [D] [E]
- 
+
 Ref. Śpiewam, póki starczy mi sił [E] [A]
 Będę śpiewał Tobie pieśń [cis] [D]
 Ja pragnę śpiewać aż do końca mych dni [E] [A]
 Twoja Miłość uzdalnia mnie. [D11] [E]
  [G] [(A] [G] [D] [G)] [x3] [E]
 2. Gdy radości, kiedy cierpienia, ja do Ciebie podnoszę ręce swe
-Bo tylko w Tobie jest życia pełnia, czyste serce 
+Bo tylko w Tobie jest życia pełnia, czyste serce
 z radością wielbi Cię. Niech mnie ogarnie...
 
 Ref. Śpiewam… Dlatego śpiewam…
@@ -3947,9 +3944,9 @@ Ref. Śpiewam… Dlatego śpiewam
 {title:  Panie Jezu, przyjdź}
 {number: 207}
 
-                                            [G] [D/Fis] [fis0] 
-                                            [e] [Es] [e0] 
-                                            [C] [c] 
+                                            [G] [D/Fis] [fis0]
+                                            [e] [Es] [e0]
+                                            [C] [c]
                                             [G/H] [A7] [D7] [G]
 1. Panie Jezu, przyjdź, serce swe otworzę [G] [D/Fis]
 Chcę, byś mieszkał w nim, [a] [C]
@@ -4000,7 +3997,7 @@ On cię nigdy nie porzuci, On cię nigdy nie opuści,
 nawet jeśli zrobią to najbliżsi On przygarnie cię.
 Gdy napotkasz swoich wrogów, ludzi z nienawiści chorych,
 co potrafią kłamać w żywe oczy, On ochroni cię.
-Niech się wzmocni twoja wiara, niech wypełni cię odwaga 
+Niech się wzmocni twoja wiara, niech wypełni cię odwaga
 w sercu nie do pokonania niech światło świeci się.
 
 Ref. Jahwe – Ty jesteś światłem…
@@ -4021,9 +4018,9 @@ Boże, więcej Ciebie chcę [G]
 {title:  Duchu Święty, Tchnienie Ojca}
 {number: 210}
 
-Duchu Święty, Tchnienie Ojca,   [F] [B] 
+Duchu Święty, Tchnienie Ojca,   [F] [B]
 Dawco życia.                    [F]
-Duchu Święty, Źródło wody       [F] [B] 
+Duchu Święty, Źródło wody       [F] [B]
 żywej w nas.                    [F]
 
 Ref. Tak pragniemy Ciebie Panie,    [d] [a]
@@ -4031,15 +4028,15 @@ jak spękana ziemia deszczu,         [B] [F/A]
 jak pustynia kropli wody,           [B] [F/A]
 Duchu, przyjdź.                     [C]
 
-Duchu Święty, Tyś Mądrością     [F] [B] 
+Duchu Święty, Tyś Mądrością     [F] [B]
 niezmierzoną.                   [F]
-Duchu Święty, Ty oświetlasz     [F] [B] 
+Duchu Święty, Ty oświetlasz     [F] [B]
 drogi nam.                      [F]
 
-Ref. I prowadzisz nas do domu, 
+Ref. I prowadzisz nas do domu,
 gdzie mieszkanie przed wiekami
 przygotował dla nas Ojciec, Duchu, przyjdź.
-Tak pragniemy Ciebie Panie, 
+Tak pragniemy Ciebie Panie,
 jak spękana ziemia deszczu,
 jak pustynia kropli wody, Duchu, przyjdź.
 
@@ -4100,13 +4097,13 @@ Niebiańskiej muzyki aniołów śpiew       [a] [B] [C]
 Jaśnieje światłem gwiazdy tej           [d] [C]
 Co narodziła się w Betlejem             [G] [a] [d]
 
-2. Choć rośnie miasto w koło,           [d] [d7/11] 
+2. Choć rośnie miasto w koło,           [d] [d7/11]
 Lombardów i banków tłok                 [d6] [d]
-I miejsca wciąż tak mało                [d] [d7/11] 
+I miejsca wciąż tak mało                [d] [d7/11]
 Na zwykłą, pomocną dłoń                 [d6] [d]
-2x Niech nie zabraknie                  [d] [G] 
+2x Niech nie zabraknie                  [d] [G]
 Miłości w świąteczny czas               [B] [F] [C]
-Głodnych nakarmimy,                     [d] [d7/11] 
+Głodnych nakarmimy,                     [d] [d7/11]
 Wystarczy dla wszystkich nas            [d6] [d]
 
 Ref. Jak w Betlejem cud zdarzył się     [d] [C]
@@ -4120,7 +4117,7 @@ Co narodziła się w Betlejem             [G] [a] [d]
 
 3x Solo skrzypce                        [d]
 Ło ło ło ło, ło ło ło, ło ło...         [d] [C] [G] [a] [d] [C] [G] [a]
-Ło ło ło ło, ło ło ło ło, ło ło         [B] [C] [a] [B] [C] 
+Ło ło ło ło, ło ło ło ło, ło ło         [B] [C] [a] [B] [C]
 Ło ło ło ło, ło ło ło, ło ło            [d] [C] [G] [a]
 Ło ło, ło ło ło ło                      [d]
 ---
@@ -4148,22 +4145,22 @@ Jak dziecko słabe matka [d] [C]
 przed ciemnością bronisz, [g] [d]
 Zmiłuj się nad nami. [g] [A7] [d]
 
-Krzyżu Święty, masz moc pojednania 
-i północy z południem i wschodu z zachodem, 
-który nienawiść łamiesz, a niewolę kruszysz, 
+Krzyżu Święty, masz moc pojednania
+i północy z południem i wschodu z zachodem,
+który nienawiść łamiesz, a niewolę kruszysz,
 zmiłuj się nad nami.
-   
+
 Ref. Z Tobą mury rozwalać, [d] [A7] [d]
 Tobą się osłonić, [F] [C] [F]
 Tobie się ufnym sercem [B] [F] [C]
 z miłością pokłonić. x2 [B] [F] [C] [A7]
 
 2. Krzyżu Święty, który ziemię spinasz,
-Jak gdy żelazną klamrą 
+Jak gdy żelazną klamrą
 człowiek dom swój chroni,
 By się w gruzy nie rozpadł na zwęglonej ziemi,
 Zmiłuj się nad nami.
-  
+
 Krzyżu Święty, nad nami wzniesiony,
 Jak bandaż litościwie ściągasz brzegi rany,
 By się nowe zaczęło w sercu wyleczonym,
@@ -4178,7 +4175,7 @@ Daj mi zobaczyć Twą twarz, zatrzymać wzrok. [G] [D]
 Pokój znajduję w Tobie, gdy widzę Ciebie blisko. [e] [C] [D]
 Ref. Jezus, Jezus, Jezus, Jezus... x2 [G] [D] [e] [C] [D]
 
-2. Daj mi łaskę Twą, bym nie bał się. 
+2. Daj mi łaskę Twą, bym nie bał się.
 Daj mi uwierzyć, że mogę czynić cuda w Twoje Imię.
 Ref. Jezus, Jezus, Jezus, Jezus... x2 [G] [D] [e] [C] [D]
 
@@ -4211,7 +4208,7 @@ Nie bój się, Ja Jestem [D] [e7]
 Blisko tak, gdy zechcesz [D/Fis] [G]
 Przytul się i trwaj tak przy mnie [D] [A/Cis]
 Zawsze [h7/9] [A]
- 
+
 Czekam tu na ciebie [D] [e7]
 Abyś był w mym niebie [D/Fis] [G]
 Tylko zechciej wybrać właśnie [D] [A/Cis]
@@ -4398,7 +4395,7 @@ Gdziekolwiek mnie zabierzesz
 Prowadź głębiej niż
 Pójść mogą moje stopy
 Moja wiara się umocni
-W Twej obecności Boże /x5 
+W Twej obecności Boże /x5
 
 Ja chcę iść za Tobą więc prowadź mnie [h] [A/Cis] [D] [A] [G]
 Dokądkolwiek pójdziesz [h] [A/Cis] [D] [A] [G]
@@ -4464,14 +4461,14 @@ I wychwalaj miłości dar                 [f] [Es] [c]
 Stwórca twój odnawia Ciebie             [c] [As]
 Pokój dziś przynosząc nam. /x2          [B] [F]
 
-solo skrzypce                           [As] [B] [c] [Es] 
+solo skrzypce                           [As] [B] [c] [Es]
                                         [As] [B] [F]
 
 Ref. Śpiewaj, śpiewaj, Jemu ziemio      [c] [Es] [F]
 I wychwalaj miłości dar                 [f] [Es] [c]
 Stwórca twój odnawia Ciebie             [c] [As]
 Pokój dziś przynosząc nam. /x3          [B] [F]
-                                        
+
 ---
 {title:  W żłobie leży}
 {number: 226}
@@ -4511,7 +4508,7 @@ Lecz objawił Ciebie nam            [F] [a] [G]
 Ref. Jakie piękne jest Imię Twe   [C]
 Jakie piękne jest Imię Twe        [G]
 Twe Imię, Jezu, Królu nasz        [a] [G] [F]
-Jakie piękne jest Imię Twe        [C/E] 
+Jakie piękne jest Imię Twe        [C/E]
 Nic z nim nie równa się           [G]
 Jakie piękne jest Imię Twe        [a]
 Twe Imię Jezu                     [G] [F]
@@ -4524,7 +4521,7 @@ Nic nas nie rozłączy już                  [F] [a] [G]
 Ref. Jak cudowne jest Imię Twe    [C]
 Jak cudowne jest Imię Twe         [G]
 Twe Imię, Jezu, Królu nasz        [a] [G] [F]
-Jak cudowne jest Imię Twe         [C/E] 
+Jak cudowne jest Imię Twe         [C/E]
 Nic z nim nie równa się           [G]
 Jak cudowne jest Imię Twe         [a]
 Twe Imię Jezu x2                  [G] [F]
@@ -4542,7 +4539,7 @@ A Imię Twe najwyższe jest              [a] [C/E]
 Ref. Jak potężne jest Imię Twe    [C]
 Jak potężne jest Imię Twe         [G]
 Twe Imię, Jezu, Królu nasz        [a] [G] [F]
-Jak potężne jest Imię Twe         [C/E] 
+Jak potężne jest Imię Twe         [C/E]
 Nic z nim nie równa się           [G]
 Jak potężne jest Imię Twe         [a]
 Twe Imię Jezu x2                  [G] [F]
@@ -4552,10 +4549,10 @@ Twe Imię Jezu x2                  [G] [F]
 
 Mój Jezu, mój Zbawco,              [A] [E]
 Któż jest tak wielki jak Ty?       [fis] [cis] [D]
-Przez wszystkie dni wysławiać chcę [A] [E] 
+Przez wszystkie dni wysławiać chcę [A] [E]
 Wspaniałe dzieła Twoich rąk.       [G] [E]
 
-Mój Panie, Obrońco                 [A] [E] 
+Mój Panie, Obrońco                 [A] [E]
 Zródło mych natchnień i sił.       [fis] [cis] [D]
 Niech cały świat, wszystko co jest [A] [E]
 Zawsze wielbi Imię Twe.            [G] [E]
@@ -4563,54 +4560,54 @@ Zawsze wielbi Imię Twe.            [G] [E]
 Ref. Krzycz na cześć Pana      [A] [fis]
 Rozraduj się w Nim             [D] [E]
 Ogłaszaj wszędzie              [A] [fis]
-Że On Panem jest               [D] [E]  
+Że On Panem jest               [D] [E]
 Góry ustąpią                   [A] [fis]
 na dźwięk Jego słów            [D]
 Gdy przemówi Stwórca ziem.     [E] [E7]
 
 Patrzę z podziwem              [A] [fis]
 Na dzieła Twych rąk            [D] [E]
-Zawsze chcę kochać Cię         [A] [fis] 
+Zawsze chcę kochać Cię         [A] [fis]
 Przy Tobie być                 [D] [E]
-Co może równać się             [A] [fis] 
+Co może równać się             [A] [fis]
 Z tym, co u Ciebie mam?        [D] [E] [A]
 ---
 {title:  Wykrzykujcie Bogu, wykrzykujcie Królowi}
 {number: 229}
 
-Ref. Wykrzykujcie Bogu,        [d] 
+Ref. Wykrzykujcie Bogu,        [d]
 wykrzykujcie Królowi,          [d]
 klaszczcie w dłonie            [g]
 i hymny śpiewajcie. /2x        [C] [d]
 
-1. Pan najwyższy, straszliwy,  [C] [a]  
-jest Królem całej ziemi.       [d]   
+1. Pan najwyższy, straszliwy,  [C] [a]
+jest Królem całej ziemi.       [d]
 On poddaje nam narody          [C] [a]
-jest Królem całej ziemi;       [d]   
+jest Królem całej ziemi;       [d]
 ludy rzuca pod stopy,          [C] [a]
-jest Królem całej ziemi.       [d]  
-Bóg Abrahama                   [d]    
+jest Królem całej ziemi.       [d]
+Bóg Abrahama                   [d]
 
 2. Wybrał dla nas dziedzictwo, [C] [a]
-jest Królem całej ziemi.       [d]    
+jest Królem całej ziemi.       [d]
 On nas bardzo miłuje,          [C] [a]
-jest Królem całej ziemi.       [d]    
+jest Królem całej ziemi.       [d]
 Śpiewajcie Mu, śpiewajcie,     [C] [a]
-jest Królem całej ziemi.       [d]    
-Bóg Abrahama                   [d]    
+jest Królem całej ziemi.       [d]
+Bóg Abrahama                   [d]
 
 3. On zasiada na tronie,       [C] [a]
-jest Królem całej ziemi.       [d]    
+jest Królem całej ziemi.       [d]
 możni świata hołd Mu złożą,    [C] [a]
-jest Królem całej ziemi,       [d]    
+jest Królem całej ziemi,       [d]
 bo do Niego należą,            [C] [a]
-jest Królem całej ziemi.       [d]    
+jest Królem całej ziemi.       [d]
 Bóg Abrahama                   [d]
 ---
 {title: Duszo ma, Pana chwal}
 {number: 230}
 
-Ref. Duszo ma, Pana chwal,  [G] [D] 
+Ref. Duszo ma, Pana chwal,  [G] [D]
 Oddaj Bogu cześć,           [A/Cis] [h]
 Świętemu śpiewaj pieśń.     [G] [D] [A]
 Z mocą wywyższaj Go,        [G] [D]
@@ -4628,15 +4625,15 @@ Gdy nadejdzie zmrok.          [A] [D]
 
 2. Bogaty w miłość, gniew oddalasz, Panie,
 Twe serce miłe, wielkie Imię Twe.
-Ze względu na Twą dobroć 
+Ze względu na Twą dobroć
 Będę śpiewać Tobie pieśni,
 Wiele powodów, by uwielbiać Cię.
 
 3. Przyjdzie dzień, gdy bez sił zostanę,
 Nadejdzie czas mego końca tu.
-Dusza moja będzie 
+Dusza moja będzie
 Już na zawsze Cię uwielbiać,
-W wieczności z Tobą piękna zabrzmi pieśń.    
+W wieczności z Tobą piękna zabrzmi pieśń.
 ---
 {title: Zaufałem Panu i już}
 {number: 231}
@@ -4677,11 +4674,11 @@ Piękne winnice                  [e] [D] [e]
 Ty wiesz, gdzie otworzyć        [C] [D] [C] [h]
 Ukryte źródła.                  [e]
 
-2. Niech we mnie zamilkną       [e] [D]       
-Pragnienia i myśli              [C7+] [h]     
+2. Niech we mnie zamilkną       [e] [D]
+Pragnienia i myśli              [C7+] [h]
 Abyś mógł mówić Ty.             [a] [dis0] [e]
-Niech słowa miłości             [e] [D]       
-I przebaczenia                  [C7+] [h]     
+Niech słowa miłości             [e] [D]
+I przebaczenia                  [C7+] [h]
 Ogarną duszę mą.                [a] [dis0] [e]
 ---
 {title: Miłość przychodzi teraz (Jezus cię kocha)}
@@ -4733,7 +4730,7 @@ Uwielbiam Cię, uwielbiam Cię       [E] [fis]
 Jesteś tu i odnawiasz mnie         [D] [A]
 Uwielbiam Cię, uwielbiam Cię       [E] [fis]
 
-Ref. Jesteś Wszechmocny..          
+Ref. Jesteś Wszechmocny..
 
 Taki jesteś Ty, taki jesteś Ty,    [D] [A]
 taki jesteś Ty, taki jesteś Ty     [E] [fis]
@@ -4771,7 +4768,7 @@ Ref 2x. Mój płacz słyszałeś...
                                        [e] [D/Fis] [G] [D/Fis]
 Bridge 4x: Życiem swym wywyższam Cię   [e] [D/Fis]
 miłość ma wywyższa Cię                 [G] [D/Fis]
-chcę by świat wywyższał Cię            [e] [D/Fis] [C] [D] 
+chcę by świat wywyższał Cię            [e] [D/Fis] [C] [D]
 ---
 {title: Dom na skale}
 {number: 237}
@@ -4783,7 +4780,7 @@ runął z wielkim trzaskiem,          [h]
 zbudowany na piasku dom.            [Fis] [h]
 Ktoś zbudował dom na skale,
 wymarzony wspaniały dom,
-przyszły chmury ciemne, uderzyły fale, 
+przyszły chmury ciemne, uderzyły fale,
 dom na skale ani drgnął.
 
 Ref. Trzeba miłość budować na skale,    [h] [Fis]
@@ -4827,13 +4824,13 @@ Niech będzie tak, jak chcesz Ty.        [B6/9] [C]
 {title: Dzięki Ci, Maryjo}
 {number: 239}
 
-Dzięki Ci Maryjo,           [E] [H7] [A] [E] 
+Dzięki Ci Maryjo,           [E] [H7] [A] [E]
 Maryjo dzięki Ci. x2        [Fis] [A] [E]
 
-1.Za błękitu nieba toń,     [gis] [cis] 
+1.Za błękitu nieba toń,     [gis] [cis]
 za pomocną Twoją dłoń,      [gis] [A]
-Maryjo, dzięki Ci.          [Fis] [H7] 
-Za nadziei Syna twarz,      [gis] [cis] 
+Maryjo, dzięki Ci.          [Fis] [H7]
+Za nadziei Syna twarz,      [gis] [cis]
 że matczyną miłość masz,    [gis] [A]
 Maryjo, dzięki Ci.          [Fis] [A] [E]
 
@@ -4859,7 +4856,7 @@ przyjdź Duchu Światło,              [g] [F]
 Duchu Ogniu przyjdź,                [B] [F]
 przyjdź i rozpal nas.               [d] [g]
 
-1.Przyjdź Duchu Ojca,   [g] [d] [g] 
+1.Przyjdź Duchu Ojca,   [g] [d] [g]
 bądź naszym światłem,   [d] [g]
 Niech promienieje       [F] [B]
 Twej chwały blask.      [F] [d] [g]
@@ -4911,38 +4908,38 @@ Rozdaj tym, którzy nie wierzą w swój głód
 
 Przyjacielu, przyjacielu    [G] [e]
 chcę zostać z tobą          [C]
-Przy tobie chcę być         [D]  
+Przy tobie chcę być         [D]
 I nie trzeba, i nie trzeba  [G] [e]
 byś mówił coś               [C]
 Wystarczy byś był. /x2      [D]
 
 Ref.x2 Bo nie ma            [G]
 większej miłości niż ta,    [e]
-Gdy ktoś życie oddaje       [C] 
+Gdy ktoś życie oddaje       [C]
 bym ja mógł żyć             [D]
 
-2. Chcę być z tobą, chcę być z Tobą 
+2. Chcę być z tobą, chcę być z Tobą
 Gdy jest mi dobrze i kiedy mi źle
-Przyjacielu, przyjacielu 
+Przyjacielu, przyjacielu
 Otwieram przed Tobą serce me /x2
 ---
 {title: O Matko, z Częstochowskiego wizerunku}
 {number: 244}
 
-Ref. O, Matko       [D] 
+Ref. O, Matko       [D]
 z Częstochowskiego  [A] [G]
 Wizerunku,          [A]
 Pani Jasnogórska,   [G] [fis]
 Jutrzenko Wolności, [e] [A]
 Źródło Światła      [Fis] [h]
 i Życia dla nas,    [D] [e] [G] [Fis]
-Bądź Matką,         [h] [G] 
-bądź Matką          [fis] [h] 
+Bądź Matką,         [h] [G]
+bądź Matką          [fis] [h]
 naszego zawierzenia [e] [h]
 
-1.Wraz z Tobą, Matko,       [D] [A] 
+1.Wraz z Tobą, Matko,       [D] [A]
 chcemy dziś się zanurzyć    [h] [A]
-W jedynym świetle,          [G] [fis] 
+W jedynym świetle,          [G] [fis]
 którym jest Jezus,          [e] [A]
 Aby moc Zmartwychwstałego   [D] [A] [h] [D]
 była uzdrowieniem.          [e] [G] [A]
@@ -4953,8 +4950,8 @@ Wytrysnęło źródło życia, dar miłości Ojca.
 
 3.Pomóż nam, Matko, przyjąć całą prawdę
 I za Jezusem pójść drogą krzyża,
-By w ciemności nikt nie chodził, 
-lecz miał światło życia. 
+By w ciemności nikt nie chodził,
+lecz miał światło życia.
 ---
 {title: Koronka do Miłosierdzia Bożego}
 {number: 245}
@@ -4964,13 +4961,13 @@ Ojcze nasz, Zdrowaś Maryjo, Wierzę w Boga
 Ojcze przedwieczny, ofiaruję Ci     [a] [G]
 Ciało i Krew, Duszę i Bóstwo        [F] [E7]
 Najmilszego Syna Twojego,           [a] [G]
-A Pana naszego                      [F] 
+A Pana naszego                      [F]
 Jezusa Chrystusa                    [E7]
 Na przebłaganie                     [F]
-za grzechy nasze                    [C] 
+za grzechy nasze                    [C]
 i świata całego                     [F] [E7]
 Na przebłaganie                     [F]
-za grzechy nasze                    [C] 
+za grzechy nasze                    [C]
 i świata całego                     [F] [E7]
 
 Dla Jego bolesnej męki              [a] [G] [a]
@@ -4989,21 +4986,21 @@ i nad całym światem                 [E7] [a]
 1. Pańska jest ziemia       [d] [C]
 I co jest na ziemi          [a] [d]
 Jej długi okrąg z mieszkańcami swymi
-On ją na morzach utrzymuje stale,           
-I miękkie wody chciał dać za grunt skale. 
+On ją na morzach utrzymuje stale,
+I miękkie wody chciał dać za grunt skale.
 
-Ref.: Otwórzcie bramy,      [d] [C] 
+Ref.: Otwórzcie bramy,      [d] [C]
 Co nietknione stały.        [a] [d]
 Bramy wieczyste! Bo idzie Król chwały.
 Któż ten Król chwały? I kto jest ten mężny?
 Pan mocny w boju i Bóg nasz potężny.
-Otwórzcie bramy,            [d] [g] 
+Otwórzcie bramy,            [d] [g]
 Co nietknione stały.        [C] [d]
-Bramy wieczyste,            [d] [g] 
+Bramy wieczyste,            [d] [g]
 Bo idzie Król chwały.       [C] [d]
 Któż ten Król chwały?       [F] [g]
 Pan o cnoty dbały.          [C] [d]
-On w te drzwi wnijdzie,     [F] [g] 
+On w te drzwi wnijdzie,     [F] [g]
 On jest Królem chwały.      [C] [d] [C] [d]
 
 2. Któż na Twą górę może wstąpić, Panie?
@@ -5019,7 +5016,7 @@ Tych, co chcą znaleźć twarz Boga Jakuba.
 ---
 {title: Przybieżeli do Betlejem (żydowskie)}
 {number: 247}
-                                        [C5] [B5] [C5] 
+                                        [C5] [B5] [C5]
                                         [C5] [Cis5] [C5]
                                         [C5] [B5] [C5] [Cis5]
                                         [C5] [B5] [C5]
@@ -5042,7 +5039,7 @@ i myśleli, co to będzie za Dziecię?
 {title:  Wśród nocnej ciszy}
 {number: 248}
 
-1. Wśród nocnej ciszy           [D] [A] [D] [A7] 
+1. Wśród nocnej ciszy           [D] [A] [D] [A7]
 głos się rozchodzi:             [h] [e] [A7] [D]
 Wstańcie, pasterze,             [D] [A] [D] [A7]
 Bóg się wam rodzi               [h] [e] [A7] [D]
@@ -5050,7 +5047,7 @@ Czem prędzej się wybierajcie,   [D] [h] [e] [A7]
 Do Betlejem pospieszajcie,      [D] [h] [e] [A7]
 Przywitać Pana,                 [D] [A] [D]
 Przywitać Pana.                 [h] [e] [A7] [D]
- 
+
 2. Poszli, znaleźli Dzieciątko w żłobie
 Z wszystkimi znaki danymi sobie.
 Jako Bogu cześć Mu dali,
@@ -5075,29 +5072,29 @@ Chleba i wina, chleba i wina.
 
 1. Jezus malusieńki     [e] [H7]
 Leży wśród stajenki     [e] [H7]
-Płacze z zimna          [a] [D7] 
-Nie dała mu             [G] [E7]
-Matula sukienki.        [a] [D7] [G] 
 Płacze z zimna          [a] [D7]
-Nie dała mu             [G] [E7] 
+Nie dała mu             [G] [E7]
+Matula sukienki.        [a] [D7] [G]
+Płacze z zimna          [a] [D7]
+Nie dała mu             [G] [E7]
 Matula sukienki.        [a] [D7] [G] [es0]
 
-2. Bo uboga była,       [e] [H7]    
-Rąbek z głowy zdjęła,   [e] [H7]      
-W który Dziecię         [a] [D7]  
-Owinąwszy,              [G] [E7]   
-Siankiem Je okryła      [a] [D7] [G]           
+2. Bo uboga była,       [e] [H7]
+Rąbek z głowy zdjęła,   [e] [H7]
 W który Dziecię         [a] [D7]
-Owinąwszy,              [G] [E7] 
+Owinąwszy,              [G] [E7]
+Siankiem Je okryła      [a] [D7] [G]
+W który Dziecię         [a] [D7]
+Owinąwszy,              [G] [E7]
 Siankiem Je okryła      [a] [D7] [G] [es0]
 
-3. Nie ma kolebeczki,   [e] [H7]    
-Ani poduszeczki,        [C] [H7]      
-We żłobie Mu            [a] [D7]   
-Położyła                [G] [E7]    
-Sianka pod główeczki.   [a] [D7] [G]      
-We żłobie Mu            [a] [D7] 
-Położyła                [G] [E7] 
+3. Nie ma kolebeczki,   [e] [H7]
+Ani poduszeczki,        [C] [H7]
+We żłobie Mu            [a] [D7]
+Położyła                [G] [E7]
+Sianka pod główeczki.   [a] [D7] [G]
+We żłobie Mu            [a] [D7]
+Położyła                [G] [E7]
 sianka pod główeczki.   [a] [D7] [G]
 
 ---
@@ -5199,11 +5196,11 @@ Daj szczęście bez miary!
 {title: Zjednoczeni w Duchu}
 {number: 254}
 
-1. Zjednoczeni w Duchu,     [e] 
+1. Zjednoczeni w Duchu,     [e]
 Zjednoczeni w Nim,          [e]
-Zjednoczeni w Duchu,        [a] 
+Zjednoczeni w Duchu,        [a]
 Zjednoczeni w Nim,          [e]
-Módlmy się, aby jedność     [a] 
+Módlmy się, aby jedność     [a]
 Była odnowiona w nas,       [e]
 Aby świat cały poznał       [C]
 Uczniów Chrystusa w nas,    [e] [a]
@@ -5211,20 +5208,20 @@ Aby świat cały              [C]
 Ujrzał miłość w nas.        [D] [e]
 [H7]
 
-2. Wraz z innymi pójdziemy, 
+2. Wraz z innymi pójdziemy,
 Podaj mi swoją dłoń. /x2
 Wszystkim głosić będziemy tę radosną dla nas wieść,
 Że nasz Pan kroczy z nami, że nasz Pan z nami jest,
 Że nasz Pan zawsze z nami wszędzie jest.
 
-3. Chcemy razem pracować, 
+3. Chcemy razem pracować,
 Chcemy złączyć swój trud. /x2
 By nie stracić godności, którą Pan obdarzył nas,
-Aby strzec ludzką dumę, aby strzec dumę swą, 
+Aby strzec ludzką dumę, aby strzec dumę swą,
 Żeby człowiek zachował godność swą.
 
-4. Niechaj chwała brzmi Ojcu, 
-Który stworzył ten świat. /x2 
+4. Niechaj chwała brzmi Ojcu,
+Który stworzył ten świat. /x2
 Chwała też Chrystusowi, który Synem Jego jest
 I Duchowi też chwała, który jednoczy nas,
 I Duchowi też, który łączy nas.
@@ -5232,7 +5229,7 @@ I Duchowi też, który łączy nas.
 ---
 {title: Życie trzeba umieć oddać}
 {number: 255}
-                                    [d] [B] [g] 
+                                    [d] [B] [g]
                                     [Asus4] [A7]
 Ref. Życie trzeba umieć oddać       [D] [B]
 Zawierzyć na Miłość Wieczystą       [d]
@@ -5252,7 +5249,7 @@ Czy oliwne gaje?                    [A]
 
 2. Spoczniemy w dolinie cienistej,
 w paprociach, we mchach rosa błyśnie.
-Jak ptaki zranione wysoko wzlecimy, 
+Jak ptaki zranione wysoko wzlecimy,
 Bóg życie wywiedzie ze śmierci doliny.
 
 Ref Życie trzeba umieć oddać...
@@ -5295,27 +5292,27 @@ Niezłomnych jak stal!           [a] [C] [H7]
 
 Ref. Uwierz, Polsko!            [G]
 Naszej wiary nie zabraknie nam! [dis0] [e]
-Żaden wróg                      [a] 
-Nie zwycięży                    [C] 
+Żaden wróg                      [a]
+Nie zwycięży                    [C]
 Boga w nas!                     [H7]
 Z Bogiem zawsze                 [e]
 Pokonamy każde zło.             [C] [D] [G] [e]
 Dopomóż, Boże, nam,             [a] [a7] [a6]
 Dopomóż nam.                    [H7]
 
-3. Kraju mój piękny, mój Wiślany, 
-Kraju mej nadziei w lepszy los. 
-Z wiarą Ojców tak niepokonany, 
-Bo wiara - to broń! 
+3. Kraju mój piękny, mój Wiślany,
+Kraju mej nadziei w lepszy los.
+Z wiarą Ojców tak niepokonany,
+Bo wiara - to broń!
 
-Ref. Uwierz, Polsko!... 
+Ref. Uwierz, Polsko!...
 
-4. Śladem naszych przodków iść będziemy, 
-Za Ojczyznę walczyć - to nasz cel! 
-Do lepszego jutra iść pragniemy. 
-Wznieś w górę swą skroń! 
+4. Śladem naszych przodków iść będziemy,
+Za Ojczyznę walczyć - to nasz cel!
+Do lepszego jutra iść pragniemy.
+Wznieś w górę swą skroń!
 
-Ref. Uwierz, Polsko!... 
+Ref. Uwierz, Polsko!...
 ---
 {title:  Niech Ci błogosławi Pan}
 {number: 257}
@@ -5327,7 +5324,7 @@ I niech miłościw Ci będzie          [cis] [H] [Fis]
 
 2. Niech Ci błogosławi Pan          [H] [E] [H] [E]
 Niechaj Cię strzeże                 [cis] [H] [Fis]
-Niech obróci                        [cis] [dis] 
+Niech obróci                        [cis] [dis]
 twarz Swoją ku Tobie                [gis]
 I niech da Ci Swój pokój            [cis] [H] [Fis]
 
@@ -5488,8 +5485,8 @@ razem ze wszystkim, co żyje.  [fis] [G] [A] [D]
 On twoim światłem,            [D] [h]
 Jemu niech serce twe bije!    [fis] [G] [A] [D]
 On życiem twym,               [D] [G]
-wdzięczności śpiewaj Mu hymn  [h] [e] [A] 
-teraz i na wieki. Amen.       [fis] [G] [A]  
+wdzięczności śpiewaj Mu hymn  [h] [e] [A]
+teraz i na wieki. Amen.       [fis] [G] [A]
                               [g] [D7+]
 
 ---
@@ -5535,25 +5532,25 @@ Trzej królowie jadą           [F] [C]
 Złoto, mirrę kładą            [B] [F]
 Hej, kolęda, kolęda           [B] [C] [F]
 
-2. A komuż takiemu, 
+2. A komuż takiemu,
 Dzieciątku małemu
 Cóż to za Dzieciątko
 Musi być paniątko
 Hej, kolęda, kolęda
 
-3. Pasterze na lirze, 
+3. Pasterze na lirze,
 na skrzypeczkach grali
 W tę stronę do szopy
 Prędko przybiegali
 Hej, kolęda, kolęda
 
-4. To Jezus maluśki, 
+4. To Jezus maluśki,
 to Dzieciątko krasne
 Cichutkie, malutkie
 Jak słoneczko jasne
 Hej, kolęda, kolęda
 
-5. Skrzypi wóz, wielki mróz, 
+5. Skrzypi wóz, wielki mróz,
 wielki mróz na ziemi
 Trzej królowie jadą
 Złoto, mirrę kładą
@@ -5576,7 +5573,7 @@ I mieszkało między nami. x2       [d] [G7] [C]
 Bóg porzucił szczęście swoje,
 Wszedł między lud ukochany,
 Dzieląc z nim trudy i znoje.
-Niemało cierpiał, niemało,nvm 
+Niemało cierpiał, niemało,nvm
 Żeśmy byli winni sami,
 A Słowo... x2
 
@@ -5650,7 +5647,7 @@ Od nas przyjm w ofierze.
 
 1. Anioł pasterzom mówił:     [D] [A] [D] [A] [D]
 Chrystus się wam narodził!    [D] [G] [D] [E7] [A]
-W Betlejem, nie bardzo        [D] [G] [D] [G] 
+W Betlejem, nie bardzo        [D] [G] [D] [G]
 podłym mieście                [D] [A]
 Narodził się w ubóstwie       [D] [G] [D] [A]
 Pan wszego stworzenia.        [D] [G] [A] [D]
@@ -5685,7 +5682,7 @@ by zbawić ludzki ród.       [A7] [D]
 Ref.: Śpiewajcie Aniołowie, [D] [A]
 pasterze, grajcie Mu.       [G] [D]
 Kłaniajcie się Królowie,    [h] [e]
-nie budźcie Go ze snu.      [A] [D]    
+nie budźcie Go ze snu.      [A] [D]
 
 2. Padnijmy na kolana,
 to Dziecię to nasz Bóg,
@@ -5765,29 +5762,29 @@ Dla zbawienia wszystkich ludzi.   [G] [fis] [G] [A]
 Panie Jezu, Synu Matki,           [D] [A] [h] [fis]
 Która z Ducha Cię poczęła.        [e] [A] [D]
 
-2. Tobie dzisiaj oddajemy         [D] [A] [h] [fis]        
+2. Tobie dzisiaj oddajemy         [D] [A] [h] [fis]
 Myśli, słowa i uczynki,           [G] [fis] [G] [A]
-Ty przeniknij je swą łaską,       [D] [A] [h] [fis]        
-Aby godne były Ciebie.            [e] [A] [D]              
+Ty przeniknij je swą łaską,       [D] [A] [h] [fis]
+Aby godne były Ciebie.            [e] [A] [D]
 
-3. Twoja gwiazda betlejemska      [D] [A] [h] [fis]        
+3. Twoja gwiazda betlejemska      [D] [A] [h] [fis]
 Stała się już jasnym słońcem      [G] [fis] [G] [A]
-I oświeca drogę życia,            [D] [A] [h] [fis]        
-Którą chcemy iść ku Tobie.        [e] [A] [D]              
+I oświeca drogę życia,            [D] [A] [h] [fis]
+Którą chcemy iść ku Tobie.        [e] [A] [D]
 
-4. Chryste, któryś się objawił    [D] [A] [h] [fis]        
+4. Chryste, któryś się objawił    [D] [A] [h] [fis]
 Wielkim mędrcom i pasterzom,      [G] [fis] [G] [A]
-Cześć i wieczne panowanie         [D] [A] [h] [fis]        
-Ojcu, Tobie i Duchowi. Amen.      [e] [A] [D]              
+Cześć i wieczne panowanie         [D] [A] [h] [fis]
+Ojcu, Tobie i Duchowi. Amen.      [e] [A] [D]
 
 ---
 {title: Adeste, fideles}
 {number: 270}
 
-1. Adeste, fideles,             [D] [A] 
+1. Adeste, fideles,             [D] [A]
 laeti triumphantes:             [D] [A]
 Venite, venite in Bethlehem:    [h] [A] [E] [A]
-Natum videte                    [D] [G] [D] 
+Natum videte                    [D] [G] [D]
 Regem Angelorum.                [e] [G] [A]
 
 Ref. Venite, adoremus.          [D]
@@ -5816,7 +5813,3 @@ Ref. Venite, adoremus...
 5. Qui foeno iacebat panis speciebus,
 Pro nobis effectus Emmanuel.
 Sic nos amantem, quis non redamaret?
-`;
-
-const parsedSongs = parseSongs(rawSongs);
-export default parsedSongs;
