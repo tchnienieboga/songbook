@@ -7,6 +7,7 @@ import {Song} from "../utils/types";
 
 interface MenuProps {
     songs: Song[];
+    checksum: string;
     chooseSong: (number: number) => void;
     starredCount: number;
     onlyStarred: boolean;
@@ -15,7 +16,7 @@ interface MenuProps {
     onClose: () => void;
 }
 
-const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}: MenuProps) => {
+const Menu = ({songs, checksum, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, show, onClose}: MenuProps) => {
 
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef<HTMLBRElement>(null);
@@ -78,7 +79,7 @@ const Menu = ({songs, chooseSong, starredCount, onlyStarred, toggleOnlyStarred, 
                 )}
             </Modal.Body>
             <Modal.Footer className="py-0">
-                <p className="text-secondary small">Śpiewnik - Tchnienie Boga v{import.meta.env.VITE_VERSION}</p>
+                <p className="text-secondary small">Śpiewnik - Tchnienie Boga v{import.meta.env.VITE_VERSION} [{checksum}]</p>
             </Modal.Footer>
         </Modal>
     );

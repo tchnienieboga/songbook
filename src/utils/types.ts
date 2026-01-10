@@ -10,6 +10,11 @@ export interface ParsedSong {
     body: SongLine[];
 }
 
+export interface ParsedSongbook {
+    songs: ParsedSong[],
+    checksum: string;
+}
+
 export interface SongState {
     chosen: boolean;
     starredNumber: number;

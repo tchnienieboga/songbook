@@ -4,14 +4,13 @@ import Menu from './Menu';
 import MenuButtons from './MenuButtons';
 import useSongs from '../hooks/useSongs';
 import usePersistentState from '../hooks/usePersistentState';
-
-import {ParsedSong} from "../utils/types";
+import {ParsedSongbook} from "../utils/types";
 
 interface SongbookProps {
-    parsedSongs: ParsedSong[]
+    parsedSongbook: ParsedSongbook
 }
 
-const Songbook = ({parsedSongs}: SongbookProps) => {
+const Songbook = ({parsedSongbook}: SongbookProps) => {
 
     const songContainer = useRef<HTMLDivElement>(null);
 
@@ -22,7 +21,7 @@ const Songbook = ({parsedSongs}: SongbookProps) => {
         onlyStarred,
         toggleOnlyStarred,
         zoomLevel
-    } = useSongs({parsedSongs, minZoom: 1, maxZoom: 20, defaultZoom: 5, gesturesTarget: songContainer});
+    } = useSongs({parsedSongs: parsedSongbook.songs, minZoom: 1, maxZoom: 20, defaultZoom: 5, gesturesTarget: songContainer});
 
     const [menuShown, setMenuShown] = usePersistentState('menuShown', false);
     const [chordsShown, setChordsShown] = usePersistentState('chordsShown', true);
@@ -50,7 +49,7 @@ const Songbook = ({parsedSongs}: SongbookProps) => {
                 {!!chosenSong && <SongView song={chosenSong} starredCount={starredCount} chordsShown={chordsShown}/>}
             </div>
 
-            <Menu songs={songs} chooseSong={chooseSong} starredCount={starredCount}
+            <Menu songs={songs} checksum={parsedSongbook.checksum} chooseSong={chooseSong} starredCount={starredCount}
                   onlyStarred={onlyStarred} toggleOnlyStarred={toggleOnlyStarred}
                   show={menuShown} onClose={closeMenu}/>
 

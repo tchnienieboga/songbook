@@ -1,5 +1,5 @@
 import {smallLatinLetters} from '../utils/text';
-import {ParsedSong, SongLine} from "../utils/types";
+import {ParsedSong, ParsedSongbook, SongLine} from "../utils/types";
 
 const LineType = {
     DIRECTIVE: 'DIRECTIVE',
@@ -78,6 +78,20 @@ const parseSong = (song: string): ParsedSong | null  => {
     };
 };
 
-export const parseSongs = (rawSongs: string): ParsedSong[] => {
-    return rawSongs.split(/---\s*\n/).map(parseSong).filter((song): song is ParsedSong => song !== null);
+const getChecksum = (s: string): string => {
+    let hash = 0;
+    for (let i = 0; i < s.length; i++) {
+        hash = ((hash << 5) - hash) + s.charCodeAt(i);
+        hash = hash & 0xFFFF;
+    }
+
+    return hash.toString(16).toUpperCase().padStart(4, '0');
+}
+
+export const parseSongbook = (rawSongs: string): ParsedSongbook => {
+    const songs = rawSongs.split(/---\s*\n/).map(parseSong).filter((song): song is ParsedSong => song !== null);
+    return {
+        songs,
+        checksum: getChecksum(rawSongs)
+    };
 };
