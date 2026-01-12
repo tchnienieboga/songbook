@@ -1,4 +1,4 @@
-import React, {ChangeEventHandler, Dispatch, SetStateAction} from 'react';
+import {ChangeEventHandler, Dispatch, SetStateAction} from 'react';
 import Button from 'react-bootstrap/Button';
 import Star, {Mode} from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

@@ -1,5 +1,4 @@
-import React from 'react';
-import { memo } from 'react';
+import {memo} from 'react';
 import classNames from 'classnames';
 import Star, {Mode, StarMode} from './Star';
 import {Song} from "../utils/types";

@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import Songbook from './components/Songbook';
 import rawSongs from './songs/songs.txt?raw';

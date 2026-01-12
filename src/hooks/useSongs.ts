@@ -129,13 +129,7 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
             pinchContinue(distance);
         }
     }, {
-        target: gesturesTarget,
-        drag: {
-            swipe: {
-                distance: 30,
-                velocity: 0.1
-            }
-        }
+        target: gesturesTarget
     });
 
     const toggleOnlyStarred = () => setOnlyStarred(current => !current);

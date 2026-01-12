@@ -1,4 +1,3 @@
-import React from 'react';
 import Chord from './Chord';
 import classNames from 'classnames';
 import {Song} from "../utils/types";

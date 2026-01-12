@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import Star, {Mode} from './Star';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
