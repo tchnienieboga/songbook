@@ -2350,37 +2350,40 @@ Niech ogarnia nas Jego moc! x2 [D] [E] [fis]
 ---
 {title:  Przed Tobą, Wszechmocny}
 {number: 94}
-Przed Tobą, Wszechmocny, [B] [F/A]
-kolana zginamy. [g7] [Ges7+]
-Dla Ciebie, żyjemy, [B] [F/A]
-stworzeni, by kochać Cię. [g7] [Es7+]
-Przed Tobą, Przedwieczny, [B] [F/A]
-korony składamy [g7] [Ges7+]
-Ty jesteś spełnieniem [B/F] [c7]
-Tęsknoty naszych serc [B/D] [Es7+]
 
-Ref. Wszystko, co mam [c7] [Es7+] [g7]
-to prawda i łaska [c7] [Es7+] [g7]
-wypisać je chcę [c7] [Es7+] [g7]
-na serca tablicach [c7] [Fsus]
+Przed Tobą, Wszechmocny,    [B] [F/A]
+kolana zginamy.             [g7] [Ges7+]
+Dla Ciebie, żyjemy,         [B] [F/A]
+stworzeni, by kochać Cię.   [g7] [Es7+]
+Przed Tobą, Przedwieczny,   [B] [F/A]
+korony składamy             [g7] [Ges7+]
+Ty jesteś spełnieniem       [B/F] [c7]
+Tęsknoty naszych serc       [B/D] [Es7+]
 
-Przed Tobą, Wszechmocny, [G] [D/Fis]
-kolana zginamy. [e7] [Es7+]
-Dla Ciebie, żyjemy, [G] [D/Fis]
-stworzeni, by kochać Cię. [e7] [C7+]
-Przed Tobą, Przedwieczny, [G] [D/Fis]
-korony składamy [e7] [Es7+]
-Ty jesteś spełnieniem [B/D] [c7]
-Tęsknoty naszych serc [B/D] [Es7+]
+Ref. Wszystko, co mam       [c7] [Es7+] [g7]
+to prawda i łaska           [c7] [Es7+] [g7]
+wypisać je chcę             [c7] [Es7+] [g7]
+na serca tablicach          [c7] [Fsus]
 
-Ref. Wszystko, co mam....
+Przed Tobą, Wszechmocny,    [G] [D/Fis]
+kolana zginamy.             [e7] [Es7+]
+Dla Ciebie, żyjemy,         [G] [D/Fis]
+stworzeni, by kochać Cię.   [e7] [C7+]
+Przed Tobą, Przedwieczny,   [G] [D/Fis]
+korony składamy             [e7] [Es7+]
+Ty jesteś spełnieniem       [B/D] [c7]
+Tęsknoty naszych serc       [B/D] [Es7+]
 
-Bridge: Jesteś naszą chlubą, grą na strunach [B] [c7/11]
-niewinnego serca śpiewem. [Es7/9] [F]
-Jesteś naszą chlubą, grą na strunach [g7] [F/A] [Bsus2]
-serca niewinnego. [Es7+/9] [F]
+Ref. Wszystko, co mam...
 
-Ref. x2 Wszystko, co mam…
+Bridge: Jesteś naszą chlubą,  [B]
+grą na strunach,              [c7/11]
+niewinnego serca śpiewem.     [Es7/9] [F]
+Jesteś naszą chlubą,          [g7]
+grą na strunach               [F/A] [Bsus2]
+serca niewinnego.             [Es7+/9] [F]
+
+Ref. x2 Wszystko, co mam...
 ---
 {title:  Szukam Cię, Panie, o wschodzie}
 {number: 95}
