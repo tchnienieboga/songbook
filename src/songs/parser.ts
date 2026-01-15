@@ -1,5 +1,5 @@
-import {smallLatinLetters} from '../utils/text';
-import {ParsedSong, ParsedSongbook, SongLine} from "../utils/types";
+import { smallLatinLetters } from '../utils/text';
+import { ParsedSong, ParsedSongbook, SongLine } from '../utils/types';
 
 const LineType = {
     DIRECTIVE: 'DIRECTIVE',
@@ -24,11 +24,11 @@ interface BodyLine {
     body: SongLine;
 }
 
-type ParsedLine = DirectiveLine | BodyLine
+type ParsedLine = DirectiveLine | BodyLine;
 
 const isValidDirective = (key: string): key is DirectiveName => {
     return ['title', 'number'].includes(key);
-}
+};
 
 const parseLine = (line: string): ParsedLine | null => {
     const directiveRegex = /{(.*):(.*)}/;
@@ -49,22 +49,30 @@ const parseLine = (line: string): ParsedLine | null => {
 
     const chordRegex = /\[.*?]/g;
     const lyrics = line.replace(chordRegex, '').trim();
-    const chords = (line.match(chordRegex) || []).map(chord => chord.replace(/[[\]]/g, ''));
-    const body = {lyrics, chords};
+    const chords = (line.match(chordRegex) || []).map((chord) => chord.replace(/[[\]]/g, ''));
+    const body = { lyrics, chords };
 
-    return {type: LineType.BODY_LINE, body}
+    return { type: LineType.BODY_LINE, body };
 };
 
-const parseSong = (song: string): ParsedSong | null  => {
-    const parsedLines = song.split('\n').map(parseLine).filter((line): line is ParsedLine => line !== null);
-    const body = parsedLines.filter(line => line.type === LineType.BODY_LINE).map(line => line.body);
-    const firstNotEmptyHead = body.findIndex(line => line.lyrics || line.chords.length);
-    const firstEmptyTail = body.length - body.slice().reverse().findIndex(line => line.lyrics || line.chords.length);
+const parseSong = (song: string): ParsedSong | null => {
+    const parsedLines = song
+        .split('\n')
+        .map(parseLine)
+        .filter((line): line is ParsedLine => line !== null);
+    const body = parsedLines.filter((line) => line.type === LineType.BODY_LINE).map((line) => line.body);
+    const firstNotEmptyHead = body.findIndex((line) => line.lyrics || line.chords.length);
+    const firstEmptyTail =
+        body.length -
+        body
+            .slice()
+            .reverse()
+            .findIndex((line) => line.lyrics || line.chords.length);
     const trimmedBody = body.slice(firstNotEmptyHead, firstEmptyTail);
 
     const directives = parsedLines
-        .filter(line => line.type === LineType.DIRECTIVE)
-        .reduce<Partial<DirectiveMap>>((acc, val) => ({...acc, [val.directive]: val.value}), {});
+        .filter((line) => line.type === LineType.DIRECTIVE)
+        .reduce<Partial<DirectiveMap>>((acc, val) => ({ ...acc, [val.directive]: val.value }), {});
 
     if (directives.title === undefined || directives.number === undefined) {
         return null;
@@ -81,15 +89,18 @@ const parseSong = (song: string): ParsedSong | null  => {
 const getChecksum = (s: string): string => {
     let hash = 0;
     for (let i = 0; i < s.length; i++) {
-        hash = ((hash << 5) - hash) + s.charCodeAt(i);
-        hash = hash & 0xFFFF;
+        hash = (hash << 5) - hash + s.charCodeAt(i);
+        hash = hash & 0xffff;
     }
 
     return hash.toString(16).toUpperCase().padStart(4, '0');
-}
+};
 
 export const parseSongbook = (rawSongs: string): ParsedSongbook => {
-    const songs = rawSongs.split(/---\s*\n/).map(parseSong).filter((song): song is ParsedSong => song !== null);
+    const songs = rawSongs
+        .split(/---\s*\n/)
+        .map(parseSong)
+        .filter((song): song is ParsedSong => song !== null);
     return {
         songs,
         checksum: getChecksum(rawSongs)

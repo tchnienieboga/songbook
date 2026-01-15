@@ -11,7 +11,7 @@ export interface ParsedSong {
 }
 
 export interface ParsedSongbook {
-    songs: ParsedSong[],
+    songs: ParsedSong[];
     checksum: string;
 }
 
@@ -23,8 +23,7 @@ export interface SongState {
     selected: boolean;
     toggleSelected: () => void;
     moveUp: (() => void) | undefined;
-    moveDown: (() => void) | undefined
+    moveDown: (() => void) | undefined;
 }
 
-export interface Song extends ParsedSong, SongState {
-}
+export interface Song extends ParsedSong, SongState {}

@@ -1,18 +1,17 @@
 import usePersistentState from './usePersistentState';
-import {Target, useGesture} from '@use-gesture/react';
-import {useEffect, useState} from 'react';
-import {ParsedSong, Song, SongState} from "../utils/types";
+import { Target, useGesture } from '@use-gesture/react';
+import { useEffect, useState } from 'react';
+import { ParsedSong, Song, SongState } from '../utils/types';
 
 interface UseSongsParameters {
     parsedSongs: ParsedSong[];
     minZoom: number;
     maxZoom: number;
     defaultZoom: number;
-    gesturesTarget: Target
+    gesturesTarget: Target;
 }
 
-const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: UseSongsParameters) => {
-
+const useSongs = ({ parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget }: UseSongsParameters) => {
     const [chosenSong, setChosenSong] = usePersistentState('chosenSong', 1);
     const [starredSongs, setStarredSongs] = usePersistentState<number[]>('starredSongs', []);
     const [onlyStarred, setOnlyStarred] = usePersistentState('onlyStarred', false);
@@ -27,7 +26,7 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
         if (onlyStarred) {
             if (!starredSongs.length) {
                 setOnlyStarred(false);
-            } else if (!starredSongs.find(song => song === chosenSong)) {
+            } else if (!starredSongs.find((song) => song === chosenSong)) {
                 setChosenSong(starredSongs[0]);
             }
         }
@@ -37,7 +36,7 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
         const chosen = chosenSong === songNumber;
         const starredSongsIndex = starredSongs.indexOf(songNumber);
         const starredNumber = starredSongsIndex + 1;
-        const starred = !!(starredNumber);
+        const starred = !!starredNumber;
         const selected = selectedSong === songNumber;
         return {
             chosen,
@@ -45,13 +44,13 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
             starred,
             toggleStarred: () => {
                 if (starred) {
-                    setSelectedSong(current => {
+                    setSelectedSong((current) => {
                         if (current === songNumber) {
                             return starredSongs.length <= 1
                                 ? null
                                 : starredSongs.length > starredSongsIndex + 1
-                                    ? starredSongs[starredSongsIndex + 1]
-                                    : starredSongs[starredSongsIndex - 1]
+                                  ? starredSongs[starredSongsIndex + 1]
+                                  : starredSongs[starredSongsIndex - 1];
                         } else {
                             return current;
                         }
@@ -59,26 +58,30 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
                 } else {
                     setSelectedSong(songNumber);
                 }
-                setStarredSongs(current => starred
-                    ? current.filter(v => v !== songNumber)
-                    : [...current, songNumber]);
+                setStarredSongs((current) =>
+                    starred ? current.filter((v) => v !== songNumber) : [...current, songNumber]
+                );
             },
             selected,
             toggleSelected: () => setSelectedSong(selected ? null : songNumber),
-            moveUp: starredSongsIndex < 1
-                ? undefined
-                : () => setStarredSongs(current => {
-                    const newStarredSongs = current.filter(number => number !== songNumber);
-                    newStarredSongs.splice(starredSongsIndex - 1, 0, songNumber);
-                    return newStarredSongs;
-                }),
-            moveDown: starredSongsIndex > starredSongs.length - 2
-                ? undefined
-                : () => setStarredSongs(current => {
-                    const newStarredSongs = current.filter(number => number !== songNumber);
-                    newStarredSongs.splice(starredSongsIndex + 1, 0, songNumber);
-                    return newStarredSongs;
-                }),
+            moveUp:
+                starredSongsIndex < 1
+                    ? undefined
+                    : () =>
+                          setStarredSongs((current) => {
+                              const newStarredSongs = current.filter((number) => number !== songNumber);
+                              newStarredSongs.splice(starredSongsIndex - 1, 0, songNumber);
+                              return newStarredSongs;
+                          }),
+            moveDown:
+                starredSongsIndex > starredSongs.length - 2
+                    ? undefined
+                    : () =>
+                          setStarredSongs((current) => {
+                              const newStarredSongs = current.filter((number) => number !== songNumber);
+                              newStarredSongs.splice(starredSongsIndex + 1, 0, songNumber);
+                              return newStarredSongs;
+                          })
         };
     };
 
@@ -88,15 +91,15 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
     });
 
     const getParsedStarredSongs = (): ParsedSong[] => {
-        return starredSongs.flatMap(number => {
-            const found = parsedSongs.find(ps => ps.number === number);
+        return starredSongs.flatMap((number) => {
+            const found = parsedSongs.find((ps) => ps.number === number);
             return found ? [found] : [];
         });
     };
     const songs = (onlyStarred ? getParsedStarredSongs() : parsedSongs).map(mapSong);
 
     const swipe = (swipeX: number) => {
-        const chosenIndex = songs.findIndex(song => song.chosen);
+        const chosenIndex = songs.findIndex((song) => song.chosen);
         const newIndex = chosenIndex - swipeX;
         const newIndexRolled = newIndex >= songs.length ? 0 : newIndex < 0 ? songs.length - 1 : newIndex;
         setChosenSong(songs[newIndexRolled].number);
@@ -105,7 +108,7 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
     const pinchStart = (distance: number) => {
         setInitialDistance(distance);
         setInitialZoomLevel(zoomLevel);
-    }
+    };
     const pinchContinue = (distance: number) => {
         if (initialDistance === null || initialZoomLevel === null) {
             return;
@@ -114,25 +117,28 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
         const change = Math.floor(Math.log10(ratio) * 10);
         const newZoomLevel = Math.min(Math.max(minZoom, initialZoomLevel + change), maxZoom);
         setZoomLevel(newZoomLevel);
-    }
+    };
 
-    useGesture({
-        onDrag: ({swipe: [swipeX]}) => {
-            if (swipeX !== 0) {
-                swipe(swipeX);
+    useGesture(
+        {
+            onDrag: ({ swipe: [swipeX] }) => {
+                if (swipeX !== 0) {
+                    swipe(swipeX);
+                }
+            },
+            onPinch: ({ first, da: [distance] }) => {
+                if (first) {
+                    pinchStart(distance);
+                }
+                pinchContinue(distance);
             }
         },
-        onPinch: ({first, da: [distance]}) => {
-            if (first) {
-                pinchStart(distance);
-            }
-            pinchContinue(distance);
+        {
+            target: gesturesTarget
         }
-    }, {
-        target: gesturesTarget
-    });
+    );
 
-    const toggleOnlyStarred = () => setOnlyStarred(current => !current);
+    const toggleOnlyStarred = () => setOnlyStarred((current) => !current);
 
     return {
         songs,
@@ -142,7 +148,6 @@ const useSongs = ({parsedSongs, minZoom, maxZoom, defaultZoom, gesturesTarget}: 
         toggleOnlyStarred,
         zoomLevel
     };
-
 };
 
 export default useSongs;
