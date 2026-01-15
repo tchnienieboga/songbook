@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     arrowParens: 'always',
     bracketSpacing: true,
     bracketSameLine: true,
@@ -6,5 +6,5 @@ module.exports = {
     semi: true,
     singleQuote: true,
     tabWidth: 4,
-    trailingComma: 'none',
-}
+    trailingComma: 'none'
+};
