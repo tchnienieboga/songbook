@@ -1,7 +1,7 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import {VitePWA} from 'vite-plugin-pwa';
-import checker from "vite-plugin-checker";
+import { VitePWA } from 'vite-plugin-pwa';
+import checker from 'vite-plugin-checker';
 
 export default defineConfig({
     plugins: [
@@ -14,7 +14,6 @@ export default defineConfig({
             includeAssets: ['favicon.ico'],
             workbox: {
                 globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2,ttf}']
-
             },
             manifest: {
                 name: 'Śpiewnik - Tchnienie Boga',
@@ -41,7 +40,6 @@ export default defineConfig({
                 theme_color: '#000000',
                 background_color: '#ffffff'
             }
-
         })
     ],
     css: {
@@ -57,6 +55,7 @@ export default defineConfig({
         open: true
     },
     build: {
-        outDir: 'build'
+        outDir: 'build',
+        chunkSizeWarningLimit: 600
     }
-})
+});

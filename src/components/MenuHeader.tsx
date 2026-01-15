@@ -28,11 +28,16 @@ const MenuHeader = ({
         setSearchText(event.target.value);
     };
 
+    const handleToggleButton = () => {
+        toggleOnlyStarred();
+        setSearchText('');
+    };
+
     return (
         <>
-            {!!starredCount ? (
+            {starredCount ? (
                 <div className="me-2">
-                    <Button variant={'info'} onClick={toggleOnlyStarred}>
+                    <Button variant={'info'} onClick={handleToggleButton}>
                         {onlyStarred ? (
                             <FontAwesomeIcon icon={faListUl} role="button" size={'lg'} />
                         ) : (
@@ -58,7 +63,7 @@ const MenuHeader = ({
                         onChange={changeSearchText}
                     />
                 </div>
-            ) : !!selectedSong ? (
+            ) : selectedSong ? (
                 <>
                     <Button
                         className="ms-2 me-1"

@@ -29,10 +29,9 @@ const Menu = ({
     const [searchText, setSearchText] = useState('');
     const songToScrollRef = useRef<HTMLBRElement>(null);
 
+    const scrollToSong = () => songToScrollRef.current?.scrollIntoView();
+
     useEffect(() => {
-        if (!show || onlyStarred) {
-            setSearchText('');
-        }
         scrollToSong();
     }, [show, onlyStarred]);
 
@@ -61,10 +60,6 @@ const Menu = ({
             return song.number === searchPhrase;
         }
         return song.latinTitle.includes(searchPhrase);
-    };
-
-    const scrollToSong = () => {
-        songToScrollRef.current && songToScrollRef.current.scrollIntoView();
     };
 
     const chosenSongIndex = songs.findIndex((song) => song.chosen);

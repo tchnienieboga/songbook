@@ -26,7 +26,6 @@ const MenuSong = memo(({ song, chooseSong, onlyStarred }: MenuSongProps) => {
                 &nbsp;
                 <span className={classNames({ 'sb-chosen-song': song.chosen })}>{song.number}.&nbsp;</span>
             </span>
-            {/* eslint-disable-next-line */}
             <a href="#" onClick={onClickSong} className={classNames('text-reset', { 'sb-chosen-song': song.chosen })}>
                 {song.title}
             </a>
