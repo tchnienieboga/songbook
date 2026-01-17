@@ -11,20 +11,19 @@ const songModules = import.meta.glob('./lyrics/*.txt', {
 
 const songLyrics = Object.entries(songModules).reduce(
     (acc, [path, content]) => {
-        const fileName = path.split('/').pop()?.replace('.txt', '');
-        if (fileName) {
-            acc[fileName] = content;
+        const file = path.split('/').pop();
+        if (file) {
+            acc[file] = content;
         }
         return acc;
     },
     {} as Record<string, string | undefined>
 );
 
-export const rawSongs: RawSong[] = songMetadata.map(({ number, title }) => {
-    const fileName = `song-${String(number).padStart(3, '0')}`;
+export const rawSongs: RawSong[] = songMetadata.map(({ number, title, file }) => {
     return {
         number,
         title,
-        body: songLyrics[fileName] || missingLyricsText
+        body: songLyrics[file] || missingLyricsText
     };
 });
