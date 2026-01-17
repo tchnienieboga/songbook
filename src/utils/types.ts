@@ -1,3 +1,14 @@
+export interface SongMetadata {
+    number: number;
+    title: string;
+}
+
+export interface RawBody {
+    body: string;
+}
+
+export interface RawSong extends SongMetadata, RawBody {}
+
 export type SongLine = {
     lyrics: string;
     chords: string[];

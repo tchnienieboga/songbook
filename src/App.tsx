@@ -1,11 +1,9 @@
 import './App.scss';
 import Songbook from './components/Songbook';
-import rawSongs from './songs/songs.txt?raw';
-import { parseSongbook } from './songs/parser';
+import { parsedSongbook } from './songs/parsedSongbook';
 
 const App = () => {
-    const songbook = parseSongbook(rawSongs);
-    return <Songbook parsedSongbook={songbook} />;
+    return <Songbook parsedSongbook={parsedSongbook} />;
 };
 
 export default App;
