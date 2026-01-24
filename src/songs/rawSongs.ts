@@ -20,9 +20,9 @@ const songLyrics = Object.entries(songModules).reduce(
     {} as Record<string, string | undefined>
 );
 
-export const rawSongs: RawSong[] = songMetadata.map(({ number, title, file }) => {
+export const rawSongs: RawSong[] = songMetadata.map(({ title, file }, index) => {
     return {
-        number,
+        number: index + 1,
         title,
         body: songLyrics[file] || missingLyricsText
     };

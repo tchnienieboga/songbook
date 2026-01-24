@@ -1,12 +1,11 @@
 export interface SongMetadata {
     title: string;
-    number: number;
     file: string;
 }
 
 export interface RawSong {
-    title: string;
     number: number;
+    title: string;
     body: string;
 }
 
@@ -16,8 +15,8 @@ export type SongLine = {
 };
 
 export interface ParsedSong {
-    title: string;
     number: number;
+    title: string;
     latinTitle: string;
     body: SongLine[];
 }
