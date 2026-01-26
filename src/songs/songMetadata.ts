@@ -1092,6 +1092,10 @@ const songMetadata: SongMetadata[] = [
     {
         title: 'Upadnij na kolana',
         file: 'upadnij-na-kolana.txt'
+    },
+    {
+        title: 'Chrystus Pan, Boży Syn',
+        file: 'chrystus-pan-bozy-syn.txt'
     }
 ];
 
