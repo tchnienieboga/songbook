@@ -1080,6 +1080,18 @@ const songMetadata: SongMetadata[] = [
     {
         title: 'Adeste, fideles',
         file: 'adeste-fideles.txt'
+    },
+    {
+        title: 'O Jezu, cichy i pokorny',
+        file: 'o-jezu-cichy-i-pokorny.txt'
+    },
+    {
+        title: 'Duszo Chrystusowa',
+        file: 'duszo-chrystusowa.txt'
+    },
+    {
+        title: 'Upadnij na kolana',
+        file: 'upadnij-na-kolana.txt'
     }
 ];
 
