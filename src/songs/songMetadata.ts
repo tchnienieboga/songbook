@@ -1096,6 +1096,10 @@ const songMetadata: SongMetadata[] = [
     {
         title: 'Chrystus Pan, Boży Syn',
         file: 'chrystus-pan-bozy-syn.txt'
+    },
+    {
+        title: 'Pokładam w Panu ufność mą',
+        file: 'pokladam-w-panu-ufnosc-ma.txt'
     }
 ];
 
