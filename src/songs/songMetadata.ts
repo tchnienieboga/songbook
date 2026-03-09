@@ -1100,6 +1100,10 @@ const songMetadata: SongMetadata[] = [
     {
         title: 'Pokładam w Panu ufność mą',
         file: '275-pokladam-w-panu-ufnosc-ma.txt'
+    },
+    {
+        title: 'Zamieszkałem w cieniu Twoich rąk',
+        file: '276-zamieszkalem-w-cieniu-twoich-rak.txt'
     }
 ];
 
