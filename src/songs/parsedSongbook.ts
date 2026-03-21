@@ -31,21 +31,34 @@ const parseSong = (song: RawSong): ParsedSong => {
     };
 };
 
-const getChecksum = (songs: RawSong[]): string => {
+const getChecksum = (songs: ParsedSong[]): string => {
     let hash = 0;
-    for (const song of songs) {
-        const s = `${song.number}|${song.title}|${song.body}`;
-        for (let i = 0; i < s.length; i++) {
-            hash = (hash << 5) - hash + s.charCodeAt(i);
+    const updateHash = (val: string | number) => {
+        const str = val.toString();
+        for (let i = 0; i < str.length; i++) {
+            hash = (hash << 5) - hash + str.charCodeAt(i);
             hash = hash & 0xffff;
         }
+    };
+
+    for (const song of songs) {
+        updateHash(song.number);
+        updateHash(song.title);
+        updateHash(song.latinTitle);
+        for (const line of song.body) {
+            updateHash(line.lyrics);
+            for (const chord of line.chords) {
+                updateHash(chord);
+            }
+        }
     }
+
     return hash.toString(16).toUpperCase().padStart(4, '0');
 };
 
 const parseSongbook = (rawSongs: RawSong[]): ParsedSongbook => {
     const songs = rawSongs.map(parseSong);
-    const checksum = getChecksum(rawSongs);
+    const checksum = getChecksum(songs);
     return { songs, checksum };
 };
 

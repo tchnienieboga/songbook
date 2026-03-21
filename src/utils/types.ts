@@ -1,5 +1,4 @@
 export interface SongMetadata {
-    title: string;
     file: string;
 }
 
