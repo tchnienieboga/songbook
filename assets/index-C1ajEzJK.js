@@ -2629,7 +2629,7 @@ Pan jest mocą Swojego ludu          [F] [B] [C7]
 Pieśnią moją jest Pan               [F] [B] [C7]
 Moja tarcza i moja moc              [B] [a] [d]
 On jest mym Bogiem, nie jestem sam  [C7] [F] [B] [C7]
-W Nim moja siła, nie jestem sam     [e] [B] [C7] [F]
+W Nim moja siła, nie jestem sam     [a] [B] [C7] [F]
 `,tD=`Ty masz moc uzdrowienia
 
 Ty masz moc uzdrowienia, Jezu. [A] [G/A]
