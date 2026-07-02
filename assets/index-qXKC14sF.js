@@ -2341,14 +2341,14 @@ i twarz pełna wdzięku [G] [e]
 Ukaż mi, Panie, Swą twarz. [G] [A6/4] [D]
 `,PA=`Panie, Twój tron
 
-Panie, Twój tron wznosi się [e] [A]
-Nad wszystkie ziemie świata [D] [fis] [h]
-Jesteś Najwyższy, Panie mój [e] [A]
-i Królu mój. x2 [D]
+Panie, Twój tron wznosi się     [e] [A]
+Nad wszystkie ziemie świata     [D] [fis] [h]
+Jesteś Najwyższy, Panie mój     [e] [A]
+i Królu mój. x2                 [G] [D]
 
-Ref. Wywyższamy Cię, Alleluja [D]
-Wywyższamy Cię, Alleluja [fis]
-Wywyższamy Cię, Boże nasz. [G] [D] [A] [(A] [D)]
+Ref. Wywyższamy Cię,            [D]
+Wywyższamy Cię,                 [fis]
+Wywyższamy Cię, Boże nasz.      [G] [D] [A] [(A] [D)]
 `,JA=`Nic nie odłączy mnie
 
 Nic nie odłączy mnie od miłości Twej [C] [C7] [F] [F7+] [d]
